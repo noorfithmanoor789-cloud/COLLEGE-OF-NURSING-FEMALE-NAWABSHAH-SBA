@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Admin Dashboard</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#1a2a6c" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+    <div class="app-wrapper">
+        <header class="app-header admin-header">
+            <img src="../assets/logo.jpeg" alt="Exam System" class="logo" />
+            <h1>Admin Dashboard</h1>
+            <div style="display:flex; gap:15px; align-items:center;">
+                <span id="connectionStatus" style="font-size:0.9rem; padding:5px 15px; border-radius:20px; background:#d4edda; color:#155724;">
+                    ✅ Online
+                </span>
+                <button id="adminLogoutBtn" class="btn btn-secondary">Logout</button>
+            </div>
+        </header>
+
+        <main class="admin-container">
+            <!-- ====== TEST MANAGEMENT ====== -->
+            <div class="card" style="margin-bottom:20px;">
+                <h3>📋 Test Management</h3>
+                <div style="display:flex; gap:15px; flex-wrap:wrap; align-items:center; padding:15px 0;">
+                    <div style="flex:1; min-width:200px;">
+                        <label style="font-weight:600; display:block; margin-bottom:5px;">Current Active Test:</label>
+                        <select id="activeTestSelect" style="width:100%; padding:10px; border:2px solid #dce3ef; border-radius:10px;">
+                            <!-- Options will be loaded dynamically -->
+                        </select>
+                    </div>
+                    <button id="updateTestBtn" class="btn btn-primary">🔄 Switch Test</button>
+                    <span id="testStatus" style="padding:8px 15px; border-radius:20px; background:#d4edda; color:#155724;">
+                        ✅ Active
+                    </span>
+                </div>
+                <div style="background:#f8f9fa; padding:15px; border-radius:10px; margin-top:10px;">
+                    <p style="margin:0; font-size:0.9rem; color:#6c757d;">
+                        <strong>📌 Note:</strong> Switch between tests easily. All test results are preserved in database.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ====== SEARCH & FILTER ====== -->
+            <div class="admin-controls">
+                <input type="text" id="searchInput" placeholder="🔍 Search student..." />
+                <select id="testFilterSelect">
+                    <option value="all">All Tests</option>
+                    <!-- Options will be loaded dynamically -->
+                </select>
+                <select id="sortSelect">
+                    <option value="latest">Latest Submission</option>
+                    <option value="highest">Highest Score</option>
+                    <option value="lowest">Lowest Score</option>
+                </select>
+                <button id="refreshBtn" class="btn btn-primary">🔄 Refresh</button>
+            </div>
+
+            <!-- ====== RESULT COUNT ====== -->
+            <div id="resultCount" style="margin:10px 0; padding:10px; border-radius:8px; font-weight:bold; background:#d4edda; color:#155724;">
+                Loading results...
+            </div>
+
+            <!-- ====== RESULTS TABLE ====== -->
+            <div class="card table-card">
+                <div id="resultsTableContainer" style="overflow-x:auto;">
+                    <table id="resultsTable">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Username</th>
+                                <th>Test</th>
+                                <th>Score</th>
+                                <th>Percentage</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultsBody">
+                            <tr><td colspan="8">No results found</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- ====== NOTE ====== -->
+            <div style="margin-top:20px; padding:15px; background:#f8f9fa; border-radius:10px; border:1px solid #dee2e6;">
+                <p style="margin:0; font-size:0.9rem; color:#6c757d;">
+                    📱 <strong>Note:</strong> Results with 📱 icon are from offline exams and will sync automatically when students connect to internet.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "firebase/app": "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js",
+                "firebase/firestore": "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"
+            }
+        }
+    </script>
+    <script type="module" src="../assets/app.js"></script>
+</body>
+</html>
