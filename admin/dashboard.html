@@ -13,12 +13,7 @@
         <header class="app-header admin-header">
             <img src="../assets/logo.jpeg" alt="Exam System" class="logo" />
             <h1>Admin Dashboard</h1>
-            <div style="display:flex; gap:15px; align-items:center;">
-                <span id="connectionStatus" style="font-size:0.9rem; padding:5px 15px; border-radius:20px; background:#d4edda; color:#155724;">
-                    ✅ Online
-                </span>
-                <button id="adminLogoutBtn" class="btn btn-secondary">Logout</button>
-            </div>
+            <button id="adminLogoutBtn" class="btn btn-secondary">Logout</button>
         </header>
 
         <main class="admin-container">
@@ -27,9 +22,9 @@
                 <h3>📋 Test Management</h3>
                 <div style="display:flex; gap:15px; flex-wrap:wrap; align-items:center; padding:15px 0;">
                     <div style="flex:1; min-width:200px;">
-                        <label style="font-weight:600; display:block; margin-bottom:5px;">Current Active Test:</label>
+                        <label style="font-weight:600; display:block; margin-bottom:5px;">Select Test:</label>
                         <select id="activeTestSelect" style="width:100%; padding:10px; border:2px solid #dce3ef; border-radius:10px;">
-                            <!-- Options will be loaded dynamically -->
+                            <!-- Options loaded dynamically -->
                         </select>
                     </div>
                     <button id="updateTestBtn" class="btn btn-primary">🔄 Switch Test</button>
@@ -39,7 +34,7 @@
                 </div>
                 <div style="background:#f8f9fa; padding:15px; border-radius:10px; margin-top:10px;">
                     <p style="margin:0; font-size:0.9rem; color:#6c757d;">
-                        <strong>📌 Note:</strong> Switch between tests easily. All test results are preserved in database.
+                        📌 <strong>Note:</strong> Switching test will change what students see. All results are preserved.
                     </p>
                 </div>
             </div>
@@ -49,7 +44,9 @@
                 <input type="text" id="searchInput" placeholder="🔍 Search student..." />
                 <select id="testFilterSelect">
                     <option value="all">All Tests</option>
-                    <!-- Options will be loaded dynamically -->
+                    <option value="test1">Cellular Trauma & Injury</option>
+                    <option value="test2">Pathophysiology</option>
+                    <option value="test3">Immunological Disorders</option>
                 </select>
                 <select id="sortSelect">
                     <option value="latest">Latest Submission</option>
@@ -85,13 +82,6 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
-
-            <!-- ====== NOTE ====== -->
-            <div style="margin-top:20px; padding:15px; background:#f8f9fa; border-radius:10px; border:1px solid #dee2e6;">
-                <p style="margin:0; font-size:0.9rem; color:#6c757d;">
-                    📱 <strong>Note:</strong> Results with 📱 icon are from offline exams and will sync automatically when students connect to internet.
-                </p>
             </div>
         </main>
     </div>
