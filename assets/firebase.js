@@ -1,19 +1,25 @@
+// ============================================================
+// FIREBASE CONFIG - College of Nursing Female Nawabshah
+// ============================================================
+
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
+// ====== NEW FIREBASE CONFIG ======
 const firebaseConfig = {
-    apiKey: "AIzaSyCcrys22PRc_RMYlP9d0_sKqBJrGxceE1c",
-    authDomain: "exam-systembk.firebaseapp.com",
-    databaseURL: "https://exam-systembk-default-rtdb.firebaseio.com",
-    projectId: "exam-systembk",
-    storageBucket: "exam-systembk.firebasestorage.app",
-    messagingSenderId: "814165573278",
-    appId: "1:814165573278:web:5838ffc3dc76cbf81c858f",
-    measurementId: "G-WX8K8873BK"
+    apiKey: "AIzaSyBejSqJprFEVEAj_Ax3kbsGbgmROS3pXBI",
+    authDomain: "college-nursing-nawabshah.firebaseapp.com",
+    projectId: "college-nursing-nawabshah",
+    storageBucket: "college-nursing-nawabshah.firebasestorage.app",
+    messagingSenderId: "475371473614",
+    appId: "1:475371473614:web:87c7dcfc7ae530051bde9f"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+
+console.log('✅ Firebase Connected Successfully!');
+console.log('📊 Project ID:', firebaseConfig.projectId);
 
 export { app, db };
