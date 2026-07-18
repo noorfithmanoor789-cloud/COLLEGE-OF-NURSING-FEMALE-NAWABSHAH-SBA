@@ -36,12 +36,6 @@
                 <button type="submit" class="btn btn-primary">Login</button>
             </form>
             <div id="loginError" class="error-msg"></div>
-            <div id="connectionStatus" style="margin-top:15px; padding:10px; border-radius:8px; text-align:center; font-weight:bold;">
-                <!-- Status will be shown here -->
-            </div>
-            <div id="offlineStatus" style="margin-top:10px; padding:8px; border-radius:8px; text-align:center; font-size:0.9rem; background:#e8f4fd; color:#0066cc; display:none;">
-                📱 App is ready for offline use!
-            </div>
         </div>
 
         <!-- Instructions Section -->
@@ -49,7 +43,7 @@
             <h2>📋 Exam Instructions</h2>
             <div id="welcomeMessage" style="font-size:1.3rem; color:#1a2a6c; margin-bottom:15px; font-weight:bold;"></div>
             <div id="testInfo" style="background:#f0f7ff; padding:12px; border-radius:10px; margin-bottom:15px; font-size:0.95rem; color:#1a2a6c;">
-                <!-- Test info will be loaded dynamically -->
+                <!-- Test info loaded dynamically -->
             </div>
             <div class="instructions-content">
                 <ul>
@@ -78,23 +72,6 @@
             }
         }
     </script>
-    
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then((registration) => {
-                        console.log('Service Worker registered successfully!');
-                        document.getElementById('offlineStatus').style.display = 'block';
-                        document.getElementById('offlineStatus').textContent = '✅ App is ready for offline use!';
-                    })
-                    .catch((error) => {
-                        console.log('Service Worker registration failed:', error);
-                    });
-            });
-        }
-    </script>
-    
     <script type="module" src="../assets/app.js"></script>
 </body>
 </html>
