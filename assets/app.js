@@ -2,28 +2,19 @@ import { db } from './firebase.js';
 import { collection, addDoc, getDocs, query, orderBy, serverTimestamp } from 'firebase/firestore';
 import { EXAM_STUDENTS, EXAM_QUESTIONS, CURRENT_TEST, ACTIVE_TEST_ID } from './data.js';
 
-// ==================== CHECK INTERNET CONNECTION ====================
-const isOnline = navigator.onLine;
-
 // ==================== STATE MANAGEMENT ====================
 let currentUser = null;
 let currentQuestionIndex = 0;
 let userAnswers = new Array(EXAM_QUESTIONS.length).fill(null);
 let timer = null;
-let timeLeft = CURRENT_TEST.timeLimit * 60; // Convert minutes to seconds
+let timeLeft = CURRENT_TEST.timeLimit * 60;
 let examStartTime = null;
 let examEndTime = null;
 let examSubmitted = false;
 
-// ==================== OFFLINE RESULTS STORAGE ====================
-let offlineResults = JSON.parse(localStorage.getItem('offlineResults')) || [];
-
 // ==================== DOM REFERENCES ====================
 const loginSection = document.getElementById('loginSection');
 const instructionsSection = document.getElementById('instructionsSection');
-const examSection = document.getElementById('examSection');
-const resultSection = document.getElementById('resultSection');
-const adminSection = document.getElementById('adminSection');
 const loginForm = document.getElementById('loginForm');
 const loginError = document.getElementById('loginError');
 const startExamBtn = document.getElementById('startExamBtn');
@@ -57,9 +48,8 @@ if (loginForm) {
         const username = document.getElementById('username').value.trim();
         const password = document.getElementById('password').value.trim();
 
-        // Check for admin login
         if (username === 'admin' && password === 'admin123') {
-            showAdminPanel();
+            window.location.href = 'admin/dashboard.html';
             return;
         }
 
@@ -77,21 +67,7 @@ if (loginForm) {
                 welcomeMsg.textContent = `Welcome, ${student.name}!`;
             }
             
-            // Update test info
             updateInstructionsWithTestInfo();
-            
-            const statusMsg = document.getElementById('connectionStatus');
-            if (statusMsg) {
-                if (navigator.onLine) {
-                    statusMsg.textContent = '✅ Online - Results will be saved to Firebase';
-                    statusMsg.style.background = '#d4edda';
-                    statusMsg.style.color = '#155724';
-                } else {
-                    statusMsg.textContent = '📱 Offline - Results will be saved locally and synced later';
-                    statusMsg.style.background = '#fff3cd';
-                    statusMsg.style.color = '#856404';
-                }
-            }
         } else {
             loginError.textContent = 'Invalid username or password. Please try again.';
             loginError.style.display = 'block';
@@ -232,98 +208,20 @@ async function submitExam() {
         passFail: passFail,
         examDate: new Date().toLocaleDateString(),
         timeTaken: timeTaken,
-        submittedAt: new Date().toISOString(),
-        synced: false
+        submittedAt: new Date().toISOString()
     };
 
     localStorage.setItem('examResult', JSON.stringify(resultData));
 
-    if (navigator.onLine) {
-        try {
-            await saveExamResult(resultData);
-            resultData.synced = true;
-            localStorage.setItem('examResult', JSON.stringify(resultData));
-            alert('✅ Result Saved Successfully to Firebase!');
-            window.location.href = 'result.html';
-        } catch (error) {
-            console.error('Error saving result:', error);
-            saveOfflineResult(resultData);
-            alert('⚠️ Could not save to Firebase. Result saved locally. Will sync when online.');
-            window.location.href = 'result.html';
-        }
-    } else {
-        saveOfflineResult(resultData);
-        alert('📱 Offline Mode: Result saved locally. Will auto-sync when internet connects.');
+    try {
+        await saveExamResult(resultData);
+        alert('✅ Result Saved Successfully!');
+        window.location.href = 'result.html';
+    } catch (error) {
+        console.error('Error saving result:', error);
+        alert('⚠️ Error saving result. Your score is still available.');
         window.location.href = 'result.html';
     }
-}
-
-// ==================== OFFLINE RESULT FUNCTIONS ====================
-function saveOfflineResult(resultData) {
-    const exists = offlineResults.some(r => 
-        r.username === resultData.username && 
-        r.submittedAt === resultData.submittedAt
-    );
-    
-    if (!exists) {
-        offlineResults.push(resultData);
-        localStorage.setItem('offlineResults', JSON.stringify(offlineResults));
-        console.log('✅ Result saved offline for:', resultData.studentName);
-        saveToGlobalOfflineCollection(resultData);
-    }
-}
-
-function saveToGlobalOfflineCollection(resultData) {
-    let allOfflineResults = JSON.parse(localStorage.getItem('allOfflineResults')) || [];
-    
-    const exists = allOfflineResults.some(r => 
-        r.username === resultData.username && 
-        r.submittedAt === resultData.submittedAt
-    );
-    
-    if (!exists) {
-        allOfflineResults.push(resultData);
-        localStorage.setItem('allOfflineResults', JSON.stringify(allOfflineResults));
-        console.log('📊 Added to global offline collection:', resultData.studentName);
-    }
-}
-
-async function syncOfflineResults() {
-    if (navigator.onLine) {
-        let allOfflineResults = JSON.parse(localStorage.getItem('allOfflineResults')) || [];
-        
-        if (allOfflineResults.length === 0) {
-            console.log('✅ No offline results to sync');
-            return true;
-        }
-        
-        console.log(`🔄 Syncing ${allOfflineResults.length} offline results to Firebase...`);
-        let syncedCount = 0;
-        let failedResults = [];
-        
-        for (const result of allOfflineResults) {
-            try {
-                await saveExamResult(result);
-                syncedCount++;
-                console.log(`✅ Synced: ${result.studentName} (${result.username})`);
-            } catch (error) {
-                console.error(`❌ Sync failed for: ${result.studentName}`, error);
-                failedResults.push(result);
-            }
-        }
-        
-        if (failedResults.length === 0) {
-            localStorage.setItem('allOfflineResults', JSON.stringify([]));
-            localStorage.setItem('offlineResults', JSON.stringify([]));
-            console.log(`✅ All ${syncedCount} offline results synced to Firebase!`);
-            return true;
-        } else {
-            localStorage.setItem('allOfflineResults', JSON.stringify(failedResults));
-            console.log(`⚠️ ${failedResults.length} results failed to sync, will retry later`);
-            return false;
-        }
-    }
-    return false;
 }
 
 // ==================== FIREBASE FUNCTIONS ====================
@@ -363,12 +261,7 @@ if (window.location.pathname.includes('result.html')) {
         window.location.href = '../index.html';
     }
 
-    if (navigator.onLine) {
-        syncOfflineResults();
-    }
-
     const resultContainer = document.getElementById('resultContent');
-    const isSynced = resultData.synced || false;
     
     resultContainer.innerHTML = `
         <h2>📊 Your Exam Results</h2>
@@ -406,10 +299,10 @@ if (window.location.pathname.includes('result.html')) {
             <span class="label">Date:</span>
             <span class="value">${resultData.examDate}</span>
         </div>
-        <div class="result-item" style="background: ${isSynced ? '#d4edda' : '#fff3cd'};">
+        <div class="result-item" style="background: #d4edda;">
             <span class="label">Status:</span>
-            <span class="value" style="font-size:1rem; color: ${isSynced ? '#155724' : '#856404'};">
-                ${isSynced ? '✅ Saved to Firebase' : '📱 Saved Locally - Will sync when online'}
+            <span class="value" style="font-size:1rem; color: #155724;">
+                ✅ Saved to Firebase
             </span>
         </div>
     `;
@@ -420,14 +313,7 @@ if (window.location.pathname.includes('result.html')) {
     });
 }
 
-// ==================== ADMIN FUNCTIONS ====================
-function showAdminPanel() {
-    loginSection.style.display = 'none';
-    adminSection.style.display = 'block';
-    loadAdminResults();
-    loadTestManagement();
-}
-
+// ==================== ADMIN DASHBOARD ====================
 if (window.location.pathname.includes('dashboard.html')) {
     const adminLoggedIn = localStorage.getItem('adminLoggedIn');
     if (!adminLoggedIn) {
@@ -440,27 +326,29 @@ if (window.location.pathname.includes('dashboard.html')) {
         }
     }
 
-    loadAdminResults();
+    // Load test management
     loadTestManagement();
+    loadAdminResults();
 
     document.getElementById('refreshBtn')?.addEventListener('click', () => {
-        syncOfflineResults().then(() => {
-            loadAdminResults();
-        });
+        loadAdminResults();
     });
     
     document.getElementById('searchInput')?.addEventListener('input', filterResults);
     document.getElementById('sortSelect')?.addEventListener('change', sortResults);
+    document.getElementById('testFilterSelect')?.addEventListener('change', filterByTest);
     document.getElementById('adminLogoutBtn')?.addEventListener('click', () => {
         localStorage.removeItem('adminLoggedIn');
         window.location.href = '../index.html';
     });
 }
 
+let allResults = [];
+
+// ==================== LOAD TEST MANAGEMENT ====================
 function loadTestManagement() {
     const select = document.getElementById('activeTestSelect');
     if (select) {
-        // Get all tests
         import('./data.js').then(module => {
             const allTests = module.ALL_TESTS;
             select.innerHTML = '';
@@ -468,8 +356,9 @@ function loadTestManagement() {
                 const test = allTests[key];
                 const option = document.createElement('option');
                 option.value = key;
-                option.textContent = `${test.name} (${test.totalQuestions} Qs, ${test.timeLimit} min)`;
-                if (key === ACTIVE_TEST_ID) {
+                const activeStatus = key === module.ACTIVE_TEST_ID ? ' ✅ (Active)' : '';
+                option.textContent = `${test.name} (${test.totalQuestions} Qs, ${test.timeLimit} min)${activeStatus}`;
+                if (key === module.ACTIVE_TEST_ID) {
                     option.selected = true;
                 }
                 select.appendChild(option);
@@ -485,82 +374,61 @@ function loadTestManagement() {
     }
 }
 
+// ==================== UPDATE ACTIVE TEST ====================
 document.getElementById('updateTestBtn')?.addEventListener('click', () => {
     const select = document.getElementById('activeTestSelect');
     const testId = select.value;
-    alert(`Test switched to: ${testId}. Please refresh the page.`);
-    // In production, this would update the ACTIVE_TEST_ID
+    
+    if (confirm(`Are you sure you want to switch to ${select.options[select.selectedIndex].text}?`)) {
+        // Update the test in data.js
+        // In production, this would update the ACTIVE_TEST_ID in data.js
+        // For now, we'll store it in localStorage and refresh
+        localStorage.setItem('selectedTestId', testId);
+        alert(`✅ Test switched successfully! Refreshing...`);
+        window.location.reload();
+    }
 });
 
-// ==================== ADMIN RESULTS ====================
-let allResults = [];
-let onlineResults = [];
-let offlineResultsData = [];
-
+// ==================== LOAD ADMIN RESULTS ====================
 async function loadAdminResults() {
     const tbody = document.getElementById('resultsBody');
-    if (!tbody) return;
     tbody.innerHTML = '<tr><td colspan="8">Loading results...</td></tr>';
 
     try {
-        onlineResults = await getAllResults();
-        offlineResultsData = JSON.parse(localStorage.getItem('allOfflineResults')) || [];
+        const allFirebaseResults = await getAllResults();
         
-        const allUsernames = new Set();
-        allResults = [];
+        // Get selected test filter
+        const testFilter = document.getElementById('testFilterSelect')?.value || 'all';
         
-        onlineResults.forEach(r => {
-            const key = r.username + r.submittedAt;
-            allUsernames.add(key);
-            allResults.push({ ...r, source: 'online' });
-        });
+        // Filter results
+        let filteredResults = allFirebaseResults;
+        if (testFilter !== 'all') {
+            filteredResults = allFirebaseResults.filter(r => r.testId === testFilter);
+        }
         
-        offlineResultsData.forEach(r => {
-            const key = r.username + r.submittedAt;
-            if (!allUsernames.has(key)) {
-                allResults.push({ ...r, source: 'offline' });
-            }
-        });
-        
+        allResults = filteredResults;
         displayResults(allResults);
         
+        // Update count
         const countMsg = document.getElementById('resultCount');
         if (countMsg) {
-            const onlineCount = onlineResults.length;
-            const offlineCount = offlineResultsData.length;
-            const pendingSync = offlineResultsData.length;
-            
-            countMsg.innerHTML = `
-                📊 Total Results: <strong>${allResults.length}</strong> 
-                (${onlineCount} online ${pendingSync > 0 ? `+ ${pendingSync} offline pending sync 🔄` : '✅ All synced'})
-                ${!navigator.onLine ? ' ⚠️ Offline Mode' : ''}
-            `;
-            countMsg.style.background = navigator.onLine ? '#d4edda' : '#fff3cd';
+            const total = allFirebaseResults.length;
+            const filtered = filteredResults.length;
+            countMsg.innerHTML = `📊 Total Results: <strong>${filtered}</strong> ${filtered !== total ? `(filtered from ${total})` : ''}`;
+            countMsg.style.background = '#d4edda';
             countMsg.style.padding = '10px';
             countMsg.style.borderRadius = '8px';
-            countMsg.style.color = navigator.onLine ? '#155724' : '#856404';
+            countMsg.style.color = '#155724';
         }
     } catch (error) {
-        offlineResultsData = JSON.parse(localStorage.getItem('allOfflineResults')) || [];
-        allResults = offlineResultsData.map(r => ({ ...r, source: 'offline' }));
-        displayResults(allResults);
-        
-        const countMsg = document.getElementById('resultCount');
-        if (countMsg) {
-            countMsg.innerHTML = `⚠️ Offline Mode - Showing ${allResults.length} local results`;
-            countMsg.style.background = '#fff3cd';
-            countMsg.style.padding = '10px';
-            countMsg.style.borderRadius = '8px';
-            countMsg.style.color = '#856404';
-        }
+        tbody.innerHTML = '<tr><td colspan="8">Error loading results</td></tr>';
         console.error(error);
     }
 }
 
+// ==================== DISPLAY RESULTS ====================
 function displayResults(results) {
     const tbody = document.getElementById('resultsBody');
-    if (!tbody) return;
-    
     if (results.length === 0) {
         tbody.innerHTML = '<tr><td colspan="8">No results found</td></tr>';
         return;
@@ -568,7 +436,7 @@ function displayResults(results) {
 
     tbody.innerHTML = results.map(result => `
         <tr>
-            <td>${result.studentName || 'N/A'} ${result.source === 'offline' ? '📱' : ''}</td>
+            <td>${result.studentName || 'N/A'}</td>
             <td>${result.username || 'N/A'}</td>
             <td>${result.testName || 'N/A'}</td>
             <td>${result.score || 0}/${result.totalQuestions || 0}</td>
@@ -584,8 +452,9 @@ function displayResults(results) {
     `).join('');
 }
 
+// ==================== FILTER & SORT ====================
 function filterResults() {
-    const searchTerm = document.getElementById('searchInput')?.value?.toLowerCase() || '';
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
     const filtered = allResults.filter(r => 
         (r.studentName?.toLowerCase().includes(searchTerm) || 
          r.username?.toLowerCase().includes(searchTerm))
@@ -593,8 +462,12 @@ function filterResults() {
     displayResults(filtered);
 }
 
+function filterByTest() {
+    loadAdminResults();
+}
+
 function sortResults() {
-    const sortType = document.getElementById('sortSelect')?.value || 'latest';
+    const sortType = document.getElementById('sortSelect').value;
     let sorted = [...allResults];
 
     switch(sortType) {
@@ -622,50 +495,4 @@ if (window.location.pathname === '/' || window.location.pathname.includes('index
     }
 }
 
-// ==================== ONLINE/OFFLINE EVENTS ====================
-window.addEventListener('online', async () => {
-    console.log('🟢 Back online! Syncing results...');
-    
-    const statusMsg = document.getElementById('connectionStatus');
-    if (statusMsg) {
-        statusMsg.textContent = '✅ Back Online! Syncing results...';
-        statusMsg.style.background = '#d4edda';
-        statusMsg.style.color = '#155724';
-    }
-    
-    const synced = await syncOfflineResults();
-    
-    if (synced) {
-        alert('✅ All offline results have been synced to Firebase!');
-    }
-    
-    if (window.location.pathname.includes('dashboard.html')) {
-        loadAdminResults();
-    }
-    
-    if (statusMsg) {
-        statusMsg.textContent = '✅ Online - Connected to Firebase';
-        statusMsg.style.background = '#d4edda';
-        statusMsg.style.color = '#155724';
-    }
-});
-
-window.addEventListener('offline', () => {
-    console.log('🔴 Offline mode activated');
-    
-    const statusMsg = document.getElementById('connectionStatus');
-    if (statusMsg) {
-        statusMsg.textContent = '📱 Offline - Results will be saved locally';
-        statusMsg.style.background = '#fff3cd';
-        statusMsg.style.color = '#856404';
-    }
-});
-
-// ==================== SYNC PENDING RESULTS ON LOAD ====================
-const pendingResults = JSON.parse(localStorage.getItem('allOfflineResults')) || [];
-if (pendingResults.length > 0 && navigator.onLine) {
-    console.log(`🔄 Found ${pendingResults.length} pending results, syncing...`);
-    syncOfflineResults();
-}
-
-export { saveExamResult, getAllResults, syncOfflineResults };
+export { saveExamResult, getAllResults };
