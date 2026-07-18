@@ -1,6 +1,15 @@
 import { db } from './firebase.js';
 import { collection, addDoc, getDocs, query, orderBy, serverTimestamp } from 'firebase/firestore';
-import { EXAM_STUDENTS, EXAM_QUESTIONS, CURRENT_TEST, ACTIVE_TEST_ID, COLLEGE_INFO } from './data.js';
+import { 
+    EXAM_STUDENTS, 
+    EXAM_QUESTIONS, 
+    CURRENT_TEST, 
+    ACTIVE_TEST_ID, 
+    ALL_TESTS,
+    setActiveTestId,
+    getActiveTestId,
+    COLLEGE_INFO 
+} from './data.js';
 
 // ==================== STATE MANAGEMENT ====================
 let currentUser = null;
@@ -23,22 +32,26 @@ const startExamBtn = document.getElementById('startExamBtn');
 function updateInstructionsWithTestInfo() {
     const testInfo = document.getElementById('testInfo');
     if (testInfo) {
+        const activeTest = getActiveTestId();
+        const test = ALL_TESTS[activeTest];
         testInfo.innerHTML = `
             <strong>🏥 ${COLLEGE_INFO.name}</strong><br>
-            <strong>📝 Test:</strong> ${CURRENT_TEST.name} 
-            | <strong>Questions:</strong> ${CURRENT_TEST.totalQuestions} 
-            | <strong>Time:</strong> ${CURRENT_TEST.timeLimit} minutes
+            <strong>📝 Test:</strong> ${test.name} 
+            | <strong>Questions:</strong> ${test.totalQuestions} 
+            | <strong>Time:</strong> ${test.timeLimit} minutes
         `;
     }
     
     const totalQuestionsDisplay = document.getElementById('totalQuestionsDisplay');
     if (totalQuestionsDisplay) {
-        totalQuestionsDisplay.textContent = CURRENT_TEST.totalQuestions;
+        const activeTest = getActiveTestId();
+        totalQuestionsDisplay.textContent = ALL_TESTS[activeTest].totalQuestions;
     }
     
     const timeLimitDisplay = document.getElementById('timeLimitDisplay');
     if (timeLimitDisplay) {
-        timeLimitDisplay.textContent = CURRENT_TEST.timeLimit;
+        const activeTest = getActiveTestId();
+        timeLimitDisplay.textContent = ALL_TESTS[activeTest].timeLimit;
     }
 }
 
@@ -79,8 +92,9 @@ if (loginForm) {
 // ==================== START EXAM ====================
 if (startExamBtn) {
     startExamBtn.addEventListener('click', () => {
+        const activeTest = getActiveTestId();
         localStorage.setItem('examStarted', 'true');
-        localStorage.setItem('currentTestId', ACTIVE_TEST_ID);
+        localStorage.setItem('currentTestId', activeTest);
         window.location.href = 'student/test.html';
     });
 }
@@ -92,14 +106,28 @@ if (window.location.pathname.includes('test.html')) {
         window.location.href = '../index.html';
     }
 
+    // Get the active test from localStorage
+    const testId = localStorage.getItem('currentTestId') || getActiveTestId();
+    const test = ALL_TESTS[testId];
+    
+    if (!test) {
+        alert('Test not found!');
+        window.location.href = '../index.html';
+    }
+
     currentUser = userData;
     document.getElementById('studentNameDisplay').textContent = currentUser.name;
-    document.getElementById('totalQNum').textContent = EXAM_QUESTIONS.length;
+    document.getElementById('totalQNum').textContent = test.questions.length;
     
     const testNameDisplay = document.getElementById('testNameDisplay');
     if (testNameDisplay) {
-        testNameDisplay.textContent = CURRENT_TEST.name;
+        testNameDisplay.textContent = test.name;
     }
+
+    // Use the test questions
+    const questions = test.questions;
+    userAnswers = new Array(questions.length).fill(null);
+    timeLeft = test.timeLimit * 60;
 
     displayQuestion(0);
     startTimer();
@@ -110,12 +138,16 @@ if (window.location.pathname.includes('test.html')) {
 }
 
 function displayQuestion(index) {
-    if (index < 0 || index >= EXAM_QUESTIONS.length) return;
+    const testId = localStorage.getItem('currentTestId') || getActiveTestId();
+    const test = ALL_TESTS[testId];
+    const questions = test.questions;
+    
+    if (index < 0 || index >= questions.length) return;
 
-    const question = EXAM_QUESTIONS[index];
+    const question = questions[index];
     document.getElementById('currentQNum').textContent = index + 1;
     document.getElementById('questionText').textContent = question.question;
-    document.getElementById('progressFill').style.width = `${((index + 1) / EXAM_QUESTIONS.length) * 100}%`;
+    document.getElementById('progressFill').style.width = `${((index + 1) / questions.length) * 100}%`;
 
     const optionsContainer = document.getElementById('optionsContainer');
     optionsContainer.innerHTML = '';
@@ -145,14 +177,18 @@ function selectOption(questionIndex, optionKey) {
 
 function navigateQuestion(direction) {
     const newIndex = currentQuestionIndex + direction;
-    if (newIndex >= 0 && newIndex < EXAM_QUESTIONS.length) {
+    const testId = localStorage.getItem('currentTestId') || getActiveTestId();
+    const test = ALL_TESTS[testId];
+    if (newIndex >= 0 && newIndex < test.questions.length) {
         displayQuestion(newIndex);
     }
 }
 
 function updateButtons() {
+    const testId = localStorage.getItem('currentTestId') || getActiveTestId();
+    const test = ALL_TESTS[testId];
     document.getElementById('prevBtn').disabled = currentQuestionIndex === 0;
-    document.getElementById('nextBtn').disabled = currentQuestionIndex === EXAM_QUESTIONS.length - 1;
+    document.getElementById('nextBtn').disabled = currentQuestionIndex === test.questions.length - 1;
 }
 
 function startTimer() {
@@ -177,6 +213,10 @@ function startTimer() {
 async function submitExam() {
     if (examSubmitted) return;
     
+    const testId = localStorage.getItem('currentTestId') || getActiveTestId();
+    const test = ALL_TESTS[testId];
+    const questions = test.questions;
+    
     const unanswered = userAnswers.filter(a => a === null).length;
     if (unanswered > 0) {
         if (!confirm(`You have ${unanswered} unanswered questions. Are you sure you want to submit?`)) {
@@ -190,48 +230,32 @@ async function submitExam() {
     const timeTaken = Math.floor((examEndTime - examStartTime) / 1000);
 
     let correct = 0;
-    EXAM_QUESTIONS.forEach((q, index) => {
+    questions.forEach((q, index) => {
         if (userAnswers[index] === q.correct) correct++;
     });
 
-    const total = EXAM_QUESTIONS.length;
+    const total = questions.length;
     const percentage = ((correct / total) * 100).toFixed(2);
     const passFail = percentage >= 50 ? 'Pass' : 'Fail';
 
-    // ==================== RESULT DATA WITH COLLEGE INFO ====================
     const resultData = {
-        // Student Info
         studentName: currentUser.name,
         username: currentUser.username,
-        
-        // Test Info
-        testId: ACTIVE_TEST_ID,
-        testName: CURRENT_TEST.name,
-        
-        // Score Info
+        testId: testId,
+        testName: test.name,
         score: correct,
         totalQuestions: total,
         percentage: parseFloat(percentage),
         passFail: passFail,
-        
-        // Time Info
-        timeTaken: timeTaken,
         examDate: new Date().toLocaleDateString(),
+        timeTaken: timeTaken,
         submittedAt: new Date().toISOString(),
-        
-        // ====== NEW: College Info ======
         college: COLLEGE_INFO.name,
         collegeShortName: COLLEGE_INFO.shortName,
         location: COLLEGE_INFO.location,
         session: COLLEGE_INFO.currentSession,
-        
-        // ====== NEW: Firebase Project ======
         firebaseProject: COLLEGE_INFO.firebaseProject,
-        
-        // ====== NEW: Test Version ======
         testVersion: 'v2.0',
-        
-        // ====== NEW: Platform Info ======
         platform: 'web',
         source: 'exam-system'
     };
@@ -240,7 +264,7 @@ async function submitExam() {
 
     try {
         await saveExamResult(resultData);
-        alert('✅ Result Saved Successfully to New Database!');
+        alert('✅ Result Saved Successfully!');
         window.location.href = 'result.html';
     } catch (error) {
         console.error('Error saving result:', error);
@@ -256,8 +280,7 @@ async function saveExamResult(resultData) {
             ...resultData,
             submittedAt: serverTimestamp()
         });
-        console.log('✅ Result saved to NEW Firebase with ID:', docRef.id);
-        console.log('🏥 College:', resultData.college);
+        console.log('✅ Result saved with ID:', docRef.id);
         console.log('📝 Test:', resultData.testName);
         return docRef.id;
     } catch (error) {
@@ -332,7 +355,7 @@ if (window.location.pathname.includes('result.html')) {
         <div class="result-item" style="background: #d4edda;">
             <span class="label">Status:</span>
             <span class="value" style="font-size:1rem; color: #155724;">
-                ✅ Saved to New Database
+                ✅ Saved to Database
             </span>
         </div>
     `;
@@ -374,46 +397,53 @@ if (window.location.pathname.includes('dashboard.html')) {
 
 let allResults = [];
 
+// ==================== LOAD TEST MANAGEMENT ====================
 function loadTestManagement() {
     const select = document.getElementById('activeTestSelect');
     if (select) {
-        import('./data.js').then(module => {
-            const allTests = module.ALL_TESTS;
-            const activeTestId = module.ACTIVE_TEST_ID;
-            select.innerHTML = '';
-            Object.keys(allTests).forEach(key => {
-                const test = allTests[key];
-                const option = document.createElement('option');
-                option.value = key;
-                const activeStatus = key === activeTestId ? ' ✅ (Active)' : '';
-                option.textContent = `${test.name} (${test.totalQuestions} Qs, ${test.timeLimit} min)${activeStatus}`;
-                if (key === activeTestId) {
-                    option.selected = true;
-                }
-                select.appendChild(option);
-            });
+        const currentActive = getActiveTestId();
+        select.innerHTML = '';
+        Object.keys(ALL_TESTS).forEach(key => {
+            const test = ALL_TESTS[key];
+            const option = document.createElement('option');
+            option.value = key;
+            const activeStatus = key === currentActive ? ' ✅ (Active)' : '';
+            option.textContent = `${test.name} (${test.totalQuestions} Qs, ${test.timeLimit} min)${activeStatus}`;
+            if (key === currentActive) {
+                option.selected = true;
+            }
+            select.appendChild(option);
         });
     }
     
     const statusEl = document.getElementById('testStatus');
     if (statusEl) {
-        statusEl.textContent = `✅ ${CURRENT_TEST.name} Active`;
+        const currentActive = getActiveTestId();
+        const test = ALL_TESTS[currentActive];
+        statusEl.textContent = `✅ ${test.name} Active`;
         statusEl.style.background = '#d4edda';
         statusEl.style.color = '#155724';
     }
 }
 
+// ==================== UPDATE ACTIVE TEST ====================
 document.getElementById('updateTestBtn')?.addEventListener('click', () => {
     const select = document.getElementById('activeTestSelect');
     const testId = select.value;
+    const testName = select.options[select.selectedIndex].text;
     
-    if (confirm(`Are you sure you want to switch to ${select.options[select.selectedIndex].text}?`)) {
-        localStorage.setItem('selectedTestId', testId);
-        alert(`✅ Test switched successfully! Refreshing...`);
-        window.location.reload();
+    if (confirm(`Are you sure you want to switch to "${testName}"?`)) {
+        const success = setActiveTestId(testId);
+        if (success) {
+            alert(`✅ Test switched to "${testName}" successfully!`);
+            window.location.reload();
+        } else {
+            alert('❌ Error switching test. Please try again.');
+        }
     }
 });
 
+// ==================== LOAD ADMIN RESULTS ====================
 async function loadAdminResults() {
     const tbody = document.getElementById('resultsBody');
     tbody.innerHTML = '<tr><td colspan="8">Loading results...</td></tr>';
@@ -421,7 +451,7 @@ async function loadAdminResults() {
     try {
         const allFirebaseResults = await getAllResults();
         
-        console.log('📊 Results from NEW Firebase:', allFirebaseResults.length);
+        console.log('📊 Results from Firebase:', allFirebaseResults.length);
         
         const testFilter = document.getElementById('testFilterSelect')?.value || 'all';
         
