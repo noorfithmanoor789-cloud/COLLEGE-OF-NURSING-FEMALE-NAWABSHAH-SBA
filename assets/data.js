@@ -55,9 +55,290 @@ export const EXAM_STUDENTS = [
 ];
 
 // ============================================================
-// TEST 1: Pathophysiology (50 Questions)
+// TEST 1: Cellular Trauma & Injury (25 Questions)
 // ============================================================
 const TEST1_QUESTIONS = [
+    {
+        id: 1,
+        question: "Which of the following BEST defines trauma?",
+        options: {
+            A: "Disease affecting cell function",
+            B: "Injury from external force",
+            C: "Response to infection",
+            D: "Genetic cell mutation"
+        },
+        correct: "B"
+    },
+    {
+        id: 2,
+        question: "A patient with chest bruising but no skin penetration after an accident has which injury type?",
+        options: {
+            A: "Penetrating trauma",
+            B: "Blast trauma",
+            C: "Thermal trauma",
+            D: "Blunt trauma"
+        },
+        correct: "D"
+    },
+    {
+        id: 3,
+        question: "A crushing injury from a construction fall involves which energy form?",
+        options: {
+            A: "Thermal energy",
+            B: "Chemical energy",
+            C: "Mechanical energy",
+            D: "Electrical energy"
+        },
+        correct: "C"
+    },
+    {
+        id: 4,
+        question: "A cell that can fully recover if stress is removed is in which state?",
+        options: {
+            A: "Necrosis phase",
+            B: "Apoptosis phase",
+            C: "Reversible injury",
+            D: "Irreversible injury"
+        },
+        correct: "C"
+    },
+    {
+        id: 5,
+        question: "The \"point of no return\" in cell injury refers to:",
+        options: {
+            A: "Start of ATP production",
+            B: "Irreversible cell damage",
+            C: "Beginning of inflammation",
+            D: "Completion of DNA repair"
+        },
+        correct: "B"
+    },
+    {
+        id: 6,
+        question: "The most frequent cause of cell injury is:",
+        options: {
+            A: "Free radical damage",
+            B: "Chemical exposure",
+            C: "Physical trauma",
+            D: "Oxygen deficiency"
+        },
+        correct: "D"
+    },
+    {
+        id: 7,
+        question: "During hypoxic injury, which event happens FIRST?",
+        options: {
+            A: "Mitochondria swell",
+            B: "ATP gets depleted",
+            C: "Calcium enters cell",
+            D: "Membrane ruptures"
+        },
+        correct: "B"
+    },
+    {
+        id: 8,
+        question: "Free radicals damage cells mainly by:",
+        options: {
+            A: "Activating DNA repair",
+            B: "Promoting water uptake",
+            C: "Attacking membranes and DNA",
+            D: "Boosting ATP synthesis"
+        },
+        correct: "C"
+    },
+    {
+        id: 9,
+        question: "Which is an example of chemical-induced cell injury?",
+        options: {
+            A: "Cardiac ischemia",
+            B: "Liver toxin damage",
+            C: "Frostbite injury",
+            D: "Blunt force injury"
+        },
+        correct: "B"
+    },
+    {
+        id: 10,
+        question: "Acetaminophen overdose causes injury through which mechanism?",
+        options: {
+            A: "Hypoxic damage",
+            B: "Free radical injury",
+            C: "Chemical toxicity",
+            D: "Nutritional deficit"
+        },
+        correct: "C"
+    },
+    {
+        id: 11,
+        question: "Which statement BEST describes necrosis?",
+        options: {
+            A: "Energy-dependent cell death",
+            B: "Accidental premature cell death",
+            C: "Normal cellular turnover",
+            D: "Genetically programmed death"
+        },
+        correct: "B"
+    },
+    {
+        id: 12,
+        question: "The process of necrosis starts with:",
+        options: {
+            A: "DNA fragmentation",
+            B: "Inflammatory response",
+            C: "ATP depletion",
+            D: "Nuclear dissolution"
+        },
+        correct: "C"
+    },
+    {
+        id: 13,
+        question: "Calcium influx during necrosis results in:",
+        options: {
+            A: "Enzyme activation",
+            B: "ATP increase",
+            C: "Membrane repair",
+            D: "Cell shrinkage"
+        },
+        correct: "A"
+    },
+    {
+        id: 14,
+        question: "Karyolysis is defined as:",
+        options: {
+            A: "Nuclear fragmentation",
+            B: "DNA dissolution",
+            C: "Cellular swelling",
+            D: "Membrane rupture"
+        },
+        correct: "B"
+    },
+    {
+        id: 15,
+        question: "Caseous necrosis in tuberculosis shows:",
+        options: {
+            A: "Enzymatic digestion",
+            B: "Cheese-like appearance",
+            C: "Fat saponification",
+            D: "Ischemic changes"
+        },
+        correct: "B"
+    },
+    {
+        id: 16,
+        question: "Fat necrosis is commonly associated with:",
+        options: {
+            A: "Heart attack",
+            B: "Pancreatitis",
+            C: "Stroke",
+            D: "Tuberculosis"
+        },
+        correct: "B"
+    },
+    {
+        id: 17,
+        question: "\"Ghost cell\" appearance is seen in:",
+        options: {
+            A: "Liquefactive necrosis",
+            B: "Caseous necrosis",
+            C: "Coagulative necrosis",
+            D: "Fat necrosis"
+        },
+        correct: "C"
+    },
+    {
+        id: 18,
+        question: "Liquefactive necrosis typically occurs in:",
+        options: {
+            A: "Heart muscle",
+            B: "Lung tissue",
+            C: "Brain tissue",
+            D: "Pancreas"
+        },
+        correct: "C"
+    },
+    {
+        id: 19,
+        question: "Which statement about apoptosis is TRUE?",
+        options: {
+            A: "It is uncontrolled death",
+            B: "It causes inflammation",
+            C: "It requires energy",
+            D: "It causes cell bursting"
+        },
+        correct: "C"
+    },
+    {
+        id: 20,
+        question: "Apoptosis differs from necrosis because it:",
+        options: {
+            A: "Triggers inflammation",
+            B: "Causes cell lysis",
+            C: "Needs no energy",
+            D: "Avoids inflammation"
+        },
+        correct: "D"
+    },
+    {
+        id: 21,
+        question: "The enzymes that execute apoptosis are called:",
+        options: {
+            A: "Lipases",
+            B: "Proteases",
+            C: "Caspases",
+            D: "Kinases"
+        },
+        correct: "C"
+    },
+    {
+        id: 22,
+        question: "Killer T-cells trigger apoptosis via:",
+        options: {
+            A: "Intrinsic pathway",
+            B: "Death receptor pathway",
+            C: "Necrotic pathway",
+            D: "Mitochondrial pathway"
+        },
+        correct: "B"
+    },
+    {
+        id: 23,
+        question: "Cytochrome C is released from mitochondria in:",
+        options: {
+            A: "Necrosis",
+            B: "Extrinsic apoptosis",
+            C: "Intrinsic apoptosis",
+            D: "Inflammation"
+        },
+        correct: "C"
+    },
+    {
+        id: 24,
+        question: "A heart attack patient with elevated enzymes shows:",
+        options: {
+            A: "Apoptosis",
+            B: "Coagulative necrosis",
+            C: "Liquefactive necrosis",
+            D: "Fat necrosis"
+        },
+        correct: "B"
+    },
+    {
+        id: 25,
+        question: "Normal skin cell shedding occurs through:",
+        options: {
+            A: "Necrosis",
+            B: "Apoptosis",
+            C: "Coagulative necrosis",
+            D: "Liquefactive necrosis"
+        },
+        correct: "B"
+    }
+];
+
+// ============================================================
+// TEST 2: Pathophysiology (50 Questions)
+// ============================================================
+const TEST2_QUESTIONS = [
     {
         id: 1,
         question: "A 55-year-old construction worker with a 30-year history of uncontrolled hypertension shows profound left ventricular enlargement on an echocardiogram. Which cellular process describes this adaptation?",
@@ -661,9 +942,9 @@ const TEST1_QUESTIONS = [
 ];
 
 // ============================================================
-// TEST 2: Immunological Disorders (30 Questions)
+// TEST 3: Immunological Disorders (30 Questions)
 // ============================================================
-const TEST2_QUESTIONS = [
+const TEST3_QUESTIONS = [
     {
         id: 1,
         question: "What is an abnormal immune response characterized by?",
@@ -1032,30 +1313,40 @@ const TEST2_QUESTIONS = [
 export const ALL_TESTS = {
     test1: {
         id: 'test1',
-        name: 'Pathophysiology Examination',
-        description: '50 MCQs on Pathophysiology',
-        totalQuestions: 50,
-        timeLimit: 50,
+        name: 'Cellular Trauma & Injury',
+        description: '25 MCQs on Cellular Trauma and Injury',
+        totalQuestions: 25,
+        timeLimit: 30,
         passingScore: 50,
         active: false,
         questions: TEST1_QUESTIONS
     },
     test2: {
         id: 'test2',
+        name: 'Pathophysiology',
+        description: '50 MCQs on Pathophysiology',
+        totalQuestions: 50,
+        timeLimit: 50,
+        passingScore: 50,
+        active: false,
+        questions: TEST2_QUESTIONS
+    },
+    test3: {
+        id: 'test3',
         name: 'Immunological Disorders',
         description: '30 MCQs on Immunological Disorders',
         totalQuestions: 30,
         timeLimit: 30,
         passingScore: 50,
-        active: true,
-        questions: TEST2_QUESTIONS
+        active: true, // Currently Active
+        questions: TEST3_QUESTIONS
     }
 };
 
 // ============================================================
 // CURRENT ACTIVE TEST
 // ============================================================
-export const ACTIVE_TEST_ID = 'test2';
+export const ACTIVE_TEST_ID = 'test3'; // Change to 'test1', 'test2', or 'test3'
 
 // ============================================================
 // EXPORT - Current Active Test Questions
