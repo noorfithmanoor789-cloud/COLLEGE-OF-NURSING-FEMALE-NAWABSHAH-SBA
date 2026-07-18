@@ -1,6 +1,6 @@
 import { db } from './firebase.js';
 import { collection, addDoc, getDocs, query, orderBy, serverTimestamp } from 'firebase/firestore';
-import { EXAM_STUDENTS, EXAM_QUESTIONS, CURRENT_TEST, ACTIVE_TEST_ID } from './data.js';
+import { EXAM_STUDENTS, EXAM_QUESTIONS, CURRENT_TEST, ACTIVE_TEST_ID, COLLEGE_INFO } from './data.js';
 
 // ==================== STATE MANAGEMENT ====================
 let currentUser = null;
@@ -24,6 +24,7 @@ function updateInstructionsWithTestInfo() {
     const testInfo = document.getElementById('testInfo');
     if (testInfo) {
         testInfo.innerHTML = `
+            <strong>🏥 ${COLLEGE_INFO.name}</strong><br>
             <strong>📝 Test:</strong> ${CURRENT_TEST.name} 
             | <strong>Questions:</strong> ${CURRENT_TEST.totalQuestions} 
             | <strong>Time:</strong> ${CURRENT_TEST.timeLimit} minutes
@@ -197,25 +198,49 @@ async function submitExam() {
     const percentage = ((correct / total) * 100).toFixed(2);
     const passFail = percentage >= 50 ? 'Pass' : 'Fail';
 
+    // ==================== RESULT DATA WITH COLLEGE INFO ====================
     const resultData = {
+        // Student Info
         studentName: currentUser.name,
         username: currentUser.username,
+        
+        // Test Info
         testId: ACTIVE_TEST_ID,
         testName: CURRENT_TEST.name,
+        
+        // Score Info
         score: correct,
         totalQuestions: total,
         percentage: parseFloat(percentage),
         passFail: passFail,
-        examDate: new Date().toLocaleDateString(),
+        
+        // Time Info
         timeTaken: timeTaken,
-        submittedAt: new Date().toISOString()
+        examDate: new Date().toLocaleDateString(),
+        submittedAt: new Date().toISOString(),
+        
+        // ====== NEW: College Info ======
+        college: COLLEGE_INFO.name,
+        collegeShortName: COLLEGE_INFO.shortName,
+        location: COLLEGE_INFO.location,
+        session: COLLEGE_INFO.currentSession,
+        
+        // ====== NEW: Firebase Project ======
+        firebaseProject: COLLEGE_INFO.firebaseProject,
+        
+        // ====== NEW: Test Version ======
+        testVersion: 'v2.0',
+        
+        // ====== NEW: Platform Info ======
+        platform: 'web',
+        source: 'exam-system'
     };
 
     localStorage.setItem('examResult', JSON.stringify(resultData));
 
     try {
         await saveExamResult(resultData);
-        alert('✅ Result Saved Successfully!');
+        alert('✅ Result Saved Successfully to New Database!');
         window.location.href = 'result.html';
     } catch (error) {
         console.error('Error saving result:', error);
@@ -231,10 +256,12 @@ async function saveExamResult(resultData) {
             ...resultData,
             submittedAt: serverTimestamp()
         });
-        console.log('Result saved with ID:', docRef.id);
+        console.log('✅ Result saved to NEW Firebase with ID:', docRef.id);
+        console.log('🏥 College:', resultData.college);
+        console.log('📝 Test:', resultData.testName);
         return docRef.id;
     } catch (error) {
-        console.error('Firebase save error:', error);
+        console.error('❌ Firebase save error:', error);
         throw error;
     }
 }
@@ -265,6 +292,9 @@ if (window.location.pathname.includes('result.html')) {
     
     resultContainer.innerHTML = `
         <h2>📊 Your Exam Results</h2>
+        <div style="background:#e8f4fd; padding:12px; border-radius:10px; margin-bottom:15px;">
+            <p style="margin:0; font-weight:bold; color:#1a2a6c;">🏥 ${resultData.college || 'College of Nursing'}</p>
+        </div>
         <div class="result-item">
             <span class="label">Student Name:</span>
             <span class="value">${resultData.studentName}</span>
@@ -302,7 +332,7 @@ if (window.location.pathname.includes('result.html')) {
         <div class="result-item" style="background: #d4edda;">
             <span class="label">Status:</span>
             <span class="value" style="font-size:1rem; color: #155724;">
-                ✅ Saved to Firebase
+                ✅ Saved to New Database
             </span>
         </div>
     `;
@@ -326,7 +356,6 @@ if (window.location.pathname.includes('dashboard.html')) {
         }
     }
 
-    // Load test management
     loadTestManagement();
     loadAdminResults();
 
@@ -345,20 +374,20 @@ if (window.location.pathname.includes('dashboard.html')) {
 
 let allResults = [];
 
-// ==================== LOAD TEST MANAGEMENT ====================
 function loadTestManagement() {
     const select = document.getElementById('activeTestSelect');
     if (select) {
         import('./data.js').then(module => {
             const allTests = module.ALL_TESTS;
+            const activeTestId = module.ACTIVE_TEST_ID;
             select.innerHTML = '';
             Object.keys(allTests).forEach(key => {
                 const test = allTests[key];
                 const option = document.createElement('option');
                 option.value = key;
-                const activeStatus = key === module.ACTIVE_TEST_ID ? ' ✅ (Active)' : '';
+                const activeStatus = key === activeTestId ? ' ✅ (Active)' : '';
                 option.textContent = `${test.name} (${test.totalQuestions} Qs, ${test.timeLimit} min)${activeStatus}`;
-                if (key === module.ACTIVE_TEST_ID) {
+                if (key === activeTestId) {
                     option.selected = true;
                 }
                 select.appendChild(option);
@@ -374,22 +403,17 @@ function loadTestManagement() {
     }
 }
 
-// ==================== UPDATE ACTIVE TEST ====================
 document.getElementById('updateTestBtn')?.addEventListener('click', () => {
     const select = document.getElementById('activeTestSelect');
     const testId = select.value;
     
     if (confirm(`Are you sure you want to switch to ${select.options[select.selectedIndex].text}?`)) {
-        // Update the test in data.js
-        // In production, this would update the ACTIVE_TEST_ID in data.js
-        // For now, we'll store it in localStorage and refresh
         localStorage.setItem('selectedTestId', testId);
         alert(`✅ Test switched successfully! Refreshing...`);
         window.location.reload();
     }
 });
 
-// ==================== LOAD ADMIN RESULTS ====================
 async function loadAdminResults() {
     const tbody = document.getElementById('resultsBody');
     tbody.innerHTML = '<tr><td colspan="8">Loading results...</td></tr>';
@@ -397,10 +421,10 @@ async function loadAdminResults() {
     try {
         const allFirebaseResults = await getAllResults();
         
-        // Get selected test filter
+        console.log('📊 Results from NEW Firebase:', allFirebaseResults.length);
+        
         const testFilter = document.getElementById('testFilterSelect')?.value || 'all';
         
-        // Filter results
         let filteredResults = allFirebaseResults;
         if (testFilter !== 'all') {
             filteredResults = allFirebaseResults.filter(r => r.testId === testFilter);
@@ -409,7 +433,6 @@ async function loadAdminResults() {
         allResults = filteredResults;
         displayResults(allResults);
         
-        // Update count
         const countMsg = document.getElementById('resultCount');
         if (countMsg) {
             const total = allFirebaseResults.length;
@@ -426,7 +449,6 @@ async function loadAdminResults() {
     }
 }
 
-// ==================== DISPLAY RESULTS ====================
 function displayResults(results) {
     const tbody = document.getElementById('resultsBody');
     if (results.length === 0) {
@@ -452,7 +474,6 @@ function displayResults(results) {
     `).join('');
 }
 
-// ==================== FILTER & SORT ====================
 function filterResults() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
     const filtered = allResults.filter(r => 
@@ -485,7 +506,6 @@ function sortResults() {
     displayResults(sorted);
 }
 
-// ==================== AUTO-REDIRECT ====================
 if (window.location.pathname === '/' || window.location.pathname.includes('index.html')) {
     const userData = JSON.parse(localStorage.getItem('examUser'));
     const examStarted = localStorage.getItem('examStarted');
