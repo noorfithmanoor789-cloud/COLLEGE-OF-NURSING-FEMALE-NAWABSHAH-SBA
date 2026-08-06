@@ -1319,6 +1319,232 @@ const TEST3_QUESTIONS = [
 ];
 
 // ============================================================
+// 🆕 TEST 4: Nasal Anatomy - Structural Landmarks (20 Questions)
+// ============================================================
+const TEST4_QUESTIONS = [
+    {
+        id: 1,
+        question: "Structural landmarks of the nose are primarily used for:",
+        options: {
+            A: "Measuring blood pressure",
+            B: "Physical examination and clinical assessment",
+            C: "Hearing assessment",
+            D: "Eye examination"
+        },
+        correct: "B"
+    },
+    {
+        id: 2,
+        question: "Which landmark forms the root of the nose?",
+        options: {
+            A: "Apex",
+            B: "Columella",
+            C: "Radix",
+            D: "Rhinion"
+        },
+        correct: "C"
+    },
+    {
+        id: 3,
+        question: "The dorsum is also known as the:",
+        options: {
+            A: "Nasal tip",
+            B: "Nasal bridge",
+            C: "Nasal wing",
+            D: "Nasal cavity"
+        },
+        correct: "B"
+    },
+    {
+        id: 4,
+        question: "The rhinion is the junction between the:",
+        options: {
+            A: "Septum and columella",
+            B: "Nasal bones and upper lateral cartilages",
+            C: "Ala and apex",
+            D: "Turbinates and meatuses"
+        },
+        correct: "B"
+    },
+    {
+        id: 5,
+        question: "Which landmark is the most anterior projecting part of the nose?",
+        options: {
+            A: "Radix",
+            B: "Dorsum",
+            C: "Apex",
+            D: "Septum"
+        },
+        correct: "C"
+    },
+    {
+        id: 6,
+        question: "The ala nasi primarily forms the:",
+        options: {
+            A: "Nasal bridge",
+            B: "Nasal wings",
+            C: "Nasal septum",
+            D: "Nasal cavity"
+        },
+        correct: "B"
+    },
+    {
+        id: 7,
+        question: "The columella separates the:",
+        options: {
+            A: "Two turbinates",
+            B: "Two nasal cavities",
+            C: "Two nostrils",
+            D: "Two sinuses"
+        },
+        correct: "C"
+    },
+    {
+        id: 8,
+        question: "The external openings of the nose are called:",
+        options: {
+            A: "Vestibules",
+            B: "Nares",
+            C: "Meatuses",
+            D: "Conchae"
+        },
+        correct: "B"
+    },
+    {
+        id: 9,
+        question: "Which structure divides the nasal cavity into right and left halves?",
+        options: {
+            A: "Ala nasi",
+            B: "Septum",
+            C: "Dorsum",
+            D: "Rhinion"
+        },
+        correct: "B"
+    },
+    {
+        id: 10,
+        question: "The nasal vestibule is located:",
+        options: {
+            A: "Inside the frontal sinus",
+            B: "At the entrance of the nasal cavity",
+            C: "Behind the septum",
+            D: "Inside the maxillary sinus"
+        },
+        correct: "B"
+    },
+    {
+        id: 11,
+        question: "Which turbinate is usually the largest and most visible during examination?",
+        options: {
+            A: "Superior turbinate",
+            B: "Middle turbinate",
+            C: "Inferior turbinate",
+            D: "Sphenoid turbinate"
+        },
+        correct: "C"
+    },
+    {
+        id: 12,
+        question: "The meatuses primarily function as:",
+        options: {
+            A: "Air sacs",
+            B: "Sinus drainage pathways",
+            C: "Bone support",
+            D: "Blood vessels"
+        },
+        correct: "B"
+    },
+    {
+        id: 13,
+        question: "Normal nasal mucosa appears:",
+        options: {
+            A: "Pale and dry",
+            B: "Red and swollen",
+            C: "Pink and moist",
+            D: "Blue and dry"
+        },
+        correct: "C"
+    },
+    {
+        id: 14,
+        question: "During nasal assessment, airway patency is checked by asking the patient to:",
+        options: {
+            A: "Hold their breath",
+            B: "Breathe through one nostril at a time",
+            C: "Open the mouth widely",
+            D: "Swallow water"
+        },
+        correct: "B"
+    },
+    {
+        id: 15,
+        question: "Nasal flaring is commonly associated with:",
+        options: {
+            A: "Hearing loss",
+            B: "Increased work of breathing",
+            C: "Vision problems",
+            D: "Tooth infection"
+        },
+        correct: "B"
+    },
+    {
+        id: 16,
+        question: "Which instrument is commonly used to examine the internal nasal cavity?",
+        options: {
+            A: "Otoscope",
+            B: "Ophthalmoscope",
+            C: "Nasal speculum",
+            D: "Stethoscope"
+        },
+        correct: "C"
+    },
+    {
+        id: 17,
+        question: "Which of the following is an internal structural landmark?",
+        options: {
+            A: "Radix",
+            B: "Columella",
+            C: "Inferior turbinate",
+            D: "Dorsum"
+        },
+        correct: "C"
+    },
+    {
+        id: 18,
+        question: "Which structure filters large dust particles entering the nose?",
+        options: {
+            A: "Nasal vestibule",
+            B: "Apex",
+            C: "Rhinion",
+            D: "Dorsum"
+        },
+        correct: "A"
+    },
+    {
+        id: 19,
+        question: "Which landmark is commonly assessed for septal deviation?",
+        options: {
+            A: "Ala nasi",
+            B: "Nasal septum",
+            C: "Radix",
+            D: "Apex"
+        },
+        correct: "B"
+    },
+    {
+        id: 20,
+        question: "The primary purpose of identifying nasal structural landmarks is to:",
+        options: {
+            A: "Measure blood glucose",
+            B: "Assess normal anatomy and detect abnormalities",
+            C: "Examine hearing",
+            D: "Assess cardiac function"
+        },
+        correct: "B"
+    }
+];
+
+// ============================================================
 // ALL TESTS
 // ============================================================
 export const ALL_TESTS = {
@@ -1348,6 +1574,15 @@ export const ALL_TESTS = {
         timeLimit: 30,
         passingScore: 50,
         questions: TEST3_QUESTIONS
+    },
+    test4: {
+        id: 'test4',
+        name: 'Nasal Anatomy - Structural Landmarks',
+        description: '20 MCQs on Nasal Anatomy',
+        totalQuestions: 20,
+        timeLimit: 20,
+        passingScore: 50,
+        questions: TEST4_QUESTIONS
     }
 };
 
@@ -1366,9 +1601,9 @@ export const getActiveTestId = () => {
     } catch (error) {
         console.warn('Error reading from localStorage:', error);
     }
-    // Default: Test 1 (Cellular Trauma)
-    console.log('✅ Using default test: test1');
-    return 'test1';
+    // Default: Test 4 (Nasal Anatomy)
+    console.log('✅ Using default test: test4');
+    return 'test4';
 };
 
 // Set Active Test ID in localStorage
