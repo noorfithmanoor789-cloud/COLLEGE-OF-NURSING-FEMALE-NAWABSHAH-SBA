@@ -10,9 +10,10 @@ export const COLLEGE_INFO = {
 };
 
 // ============================================================
-// STUDENTS LIST
+// STUDENTS LIST (51 to 116)
 // ============================================================
 export const EXAM_STUDENTS = [
+    // ====== STUDENTS 51-100 ======
     { name: 'AFHSAN', username: 'student51', password: '51' },
     { name: 'AL SHIFA', username: 'student52', password: '52' },
     { name: 'ALMAS HUSSAIN', username: 'student53', password: '53' },
@@ -62,8 +63,10 @@ export const EXAM_STUDENTS = [
     { name: 'TOOBA', username: 'student97', password: '97' },
     { name: 'UROOJ', username: 'student98', password: '98' },
     { name: 'UROOSA', username: 'student99', password: '99' },
-    { name: 'UZMA', username: 'student100', password: '100' }
-   { name: 'M. FAIZAN', username: 'student101', password: '101' },
+    { name: 'UZMA', username: 'student100', password: '100' },
+
+    // ====== 🆕 STUDENTS 101-116 ======
+    { name: 'M. FAIZAN', username: 'student101', password: '101' },
     { name: 'M. AKRAM', username: 'student102', password: '102' },
     { name: 'GUL HASSAN', username: 'student103', password: '103' },
     { name: 'CHANDAN KUMAR', username: 'student104', password: '104' },
@@ -2407,7 +2410,7 @@ const TEST5_QUESTIONS = [
 ];
 
 // ============================================================
-// 🆕 TEST 6: Anatomy & Physiology II (80 Questions)
+// TEST 6: Anatomy & Physiology II (80 Questions)
 // ============================================================
 const TEST6_QUESTIONS = [
     {
