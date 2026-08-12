@@ -2435,7 +2435,7 @@ export const ALL_TESTS = {
         name: 'Fundamentals of Nursing-II',
         description: '70 MCQs on Fundamentals of Nursing',
         totalQuestions: 70,
-        timeLimit: 60,
+        timeLimit: 70,
         passingScore: 50,
         questions: TEST5_QUESTIONS
     }
