@@ -63,7 +63,7 @@ export const EXAM_STUDENTS = [
     { name: 'UROOJ', username: 'student98', password: '98' },
     { name: 'UROOSA', username: 'student99', password: '99' },
     { name: 'UZMA', username: 'student100', password: '100' }
-      { name: 'M. FAIZAN', username: 'student101', password: '101' },
+   { name: 'M. FAIZAN', username: 'student101', password: '101' },
     { name: 'M. AKRAM', username: 'student102', password: '102' },
     { name: 'GUL HASSAN', username: 'student103', password: '103' },
     { name: 'CHANDAN KUMAR', username: 'student104', password: '104' },
