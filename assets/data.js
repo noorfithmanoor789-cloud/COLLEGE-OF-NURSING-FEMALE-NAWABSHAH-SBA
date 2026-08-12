@@ -347,606 +347,606 @@ const TEST1_QUESTIONS = [
 ];
 
 // ============================================================
-// TEST 2: Pathophysiology (50 Questions - Short Version)
+// TEST 2: Pathophysiology (50 Questions)
 // ============================================================
 const TEST2_QUESTIONS = [
     {
         id: 1,
-        question: "What is the study of disease processes in the body?",
+        question: "A 55-year-old construction worker with a 30-year history of uncontrolled hypertension shows profound left ventricular enlargement on an echocardiogram. Which cellular process describes this adaptation?",
         options: {
-            A: "Anatomy",
-            B: "Pathophysiology",
-            C: "Physiology",
-            D: "Biology",
-            E: "Chemistry"
+            A: "Hyperplasia",
+            B: "Hypertrophy",
+            C: "Metaplasia",
+            D: "Atrophy",
+            E: "Dysplasia"
         },
         correct: "B"
     },
     {
         id: 2,
-        question: "Which term describes the cause of a disease?",
+        question: "A 28-year-old pregnant female undergoes an ultrasound showing an enlarged uterus due to an increased absolute number of smooth muscle cells. What type of adaptive response is this?",
         options: {
-            A: "Pathogenesis",
-            B: "Etiology",
-            C: "Prognosis",
-            D: "Diagnosis",
-            E: "Syndrome"
+            A: "Pathologic Hypertrophy",
+            B: "Physiological Hypertrophy",
+            C: "Physiological Hyperplasia",
+            D: "Pathologic Metaplasia",
+            E: "Physiological Atrophy"
         },
-        correct: "B"
+        correct: "C"
     },
     {
         id: 3,
-        question: "What is the difference between signs and symptoms?",
+        question: "A 45-year-old male's left leg has been immobilized in a fiberglass cast for 8 weeks following a tibia fracture. Upon cast removal, the calf circumference is significantly smaller than the right. What is the cellular basis?",
         options: {
-            A: "Signs are subjective, symptoms are objective",
-            B: "Signs are objective, symptoms are subjective",
-            C: "Both are objective",
-            D: "Both are subjective",
-            E: "There is no difference"
+            A: "Apoptotic deletion of myocytes",
+            B: "Metaplasia of skeletal muscle into adipose tissue",
+            C: "Decrease in cell size and number via atrophy",
+            D: "Ischemic necrosis of the gastrocnemius",
+            E: "Hypoplastic remodeling"
         },
-        correct: "B"
+        correct: "C"
     },
     {
         id: 4,
-        question: "What is the normal range for human body temperature?",
+        question: "A biopsy of the bronchus from a 62-year-old chronic cigarette smoker reveals that normal delicate ciliated columnar cells have been replaced by rugged stratified squamous cells. This is:",
         options: {
-            A: "35.0-36.0°C",
-            B: "36.5-37.5°C",
-            C: "37.5-38.5°C",
-            D: "38.5-39.5°C",
-            E: "39.5-40.5°C"
+            A: "Irreversible malignant transformation",
+            B: "Reversible cellular metaplasia",
+            C: "Physiological hyperplasia",
+            D: "Ischemic atrophy",
+            E: "Liquefactive necrosis"
         },
         correct: "B"
     },
     {
         id: 5,
-        question: "What is the normal resting heart rate for an adult?",
+        question: "A patient undergoes an autopsy where a massive coronary occlusion is identified. The myocardial tissue downstream shows extensive swelling, loss of ATP, and membrane rupture. What initiated the cell swelling?",
         options: {
-            A: "40-60 bpm",
-            B: "60-100 bpm",
-            C: "100-120 bpm",
-            D: "120-140 bpm",
-            E: "140-160 bpm"
+            A: "Upregulation of the sodium-potassium pump",
+            B: "Failure of ATP-dependent sodium pumps due to hypoxia",
+            C: "Sudden absolute activation of apoptosis",
+            D: "Intracellular efflux of sodium ions",
+            E: "Intracellular condensation and fragmentation"
         },
         correct: "B"
     },
     {
         id: 6,
-        question: "What is the normal blood pressure range?",
+        question: "During an experiment, myocardial cells are exposed to prolonged radiation, generating high levels of Reactive Oxygen Species (ROS). The cells experience lipid peroxidation. What are these damaging molecules?",
         options: {
-            A: "90/60 mmHg",
-            B: "120/80 mmHg",
-            C: "140/90 mmHg",
-            D: "160/100 mmHg",
-            E: "180/110 mmHg"
+            A: "Stable endonucleases",
+            B: "Free radicals with unpaired electrons",
+            C: "Anti-apoptotic proteins",
+            D: "Extracellular calcium ions",
+            E: "Lysosomal active enzymes"
         },
         correct: "B"
     },
     {
         id: 7,
-        question: "What is the normal respiratory rate for an adult?",
+        question: "A toxicological screening shows that a heavy metal toxin causes an influx of calcium into the cell cytoplasm. This influx serves as a 'master switch' that directly activates which destructive enzyme group?",
         options: {
-            A: "8-12 breaths/min",
-            B: "12-20 breaths/min",
-            C: "20-24 breaths/min",
-            D: "24-28 breaths/min",
-            E: "28-32 breaths/min"
+            A: "Phospholipases, proteases, and endonucleases",
+            B: "Polymerases and synthetases",
+            C: "Catalases and superoxide dismutases",
+            D: "Caspases involved only in hypertrophy",
+            E: "ATP synthase"
         },
-        correct: "B"
+        correct: "A"
     },
     {
         id: 8,
-        question: "What is the function of white blood cells?",
+        question: "A 60-year-old male suffers a severe acute myocardial infarction. Evaluation of the necrotic tissue demonstrates broken, leaky plasma membranes and severe secondary local inflammation. This process is:",
         options: {
-            A: "Carry oxygen",
-            B: "Fight infection",
-            C: "Clot blood",
-            D: "Transport nutrients",
-            E: "Produce hormones"
+            A: "Exclusively physiologic",
+            B: "Programmed genetic apoptosis",
+            C: "Invariably pathologic necrosis",
+            D: "Reversible cellular swelling",
+            E: "Metaplastic adaptation"
         },
-        correct: "B"
+        correct: "C"
     },
     {
         id: 9,
-        question: "What is the function of platelets?",
+        question: "Examination of a human embryo reveals the neat removal of webbed skin tissue between the developing fingers. The cells are reduced in size with intact membranes and no local inflammation. This is:",
         options: {
-            A: "Carry oxygen",
-            B: "Fight infection",
-            C: "Blood clotting",
-            D: "Transport nutrients",
-            E: "Produce antibodies"
+            A: "Accidental necrotic death",
+            B: "Pathologic metaplasia",
+            C: "Physiologic apoptosis",
+            D: "Severe cellular ischemic injury",
+            E: "Chronic adaptation hyperplasia"
         },
         correct: "C"
     },
     {
         id: 10,
-        question: "What is the largest organ in the human body?",
+        question: "An investigator is explaining how a particular disease starts at the molecular level, detailing the structural and functional changes in cells and organs. What specific science is being described?",
         options: {
-            A: "Liver",
-            B: "Brain",
-            C: "Skin",
-            D: "Heart",
-            E: "Lungs"
+            A: "Normal Human Physiology",
+            B: "Pure Medical Treatment",
+            C: "Pathology",
+            D: "Epidemiology only",
+            E: "Clinical Outcome Science"
         },
         correct: "C"
     },
     {
         id: 11,
-        question: "Which organ is responsible for filtering blood?",
+        question: "A nurse explains to a student why understanding how a disease affects overall body function and clinical symptoms is vital. This dynamic functional study represents:",
         options: {
-            A: "Liver",
-            B: "Kidney",
-            C: "Heart",
-            D: "Lungs",
-            E: "Pancreas"
+            A: "Pathophysiology",
+            B: "Normal Physiology",
+            C: "Gross Anatomy",
+            D: "Structural Pathology",
+            E: "Historical Epidemiology"
         },
-        correct: "B"
+        correct: "A"
     },
     {
         id: 12,
-        question: "Which organ produces bile?",
+        question: "A medical historian notes that the first person to construct theories of disease causation based entirely on direct clinical patient observation was:",
         options: {
-            A: "Pancreas",
-            B: "Gallbladder",
-            C: "Liver",
-            D: "Stomach",
-            E: "Spleen"
+            A: "Claude Bernard",
+            B: "Rudolf Virchow",
+            C: "Hippocrates",
+            D: "Ivan Pavlov",
+            E: "Hans Selye"
         },
         correct: "C"
     },
     {
         id: 13,
-        question: "What is the function of the heart?",
+        question: "A researcher introduces the concept of experimental medicine to study diseases in a laboratory environment. Which historical figure pioneered this approach?",
         options: {
-            A: "Filter blood",
-            B: "Pump blood",
-            C: "Produce hormones",
-            D: "Digest food",
-            E: "Store nutrients"
+            A: "Claude Bernard",
+            B: "Rudolf Virchow",
+            C: "A.F. Hecker",
+            D: "Galliot",
+            E: "Hippocrates"
         },
-        correct: "B"
+        correct: "A"
     },
     {
         id: 14,
-        question: "Which part of the brain controls breathing?",
+        question: "A pathologist uses the specific medical term 'pathological physiology' in a lecture. Who originally introduced this term to medical terminology?",
         options: {
-            A: "Cerebrum",
-            B: "Cerebellum",
-            C: "Medulla oblongata",
-            D: "Hypothalamus",
-            E: "Thalamus"
+            A: "Hans Selye",
+            B: "Rudolf Virchow",
+            C: "Ivan Pavlov",
+            D: "Hippocrates",
+            E: "Claude Bernard"
         },
-        correct: "C"
+        correct: "B"
     },
     {
         id: 15,
-        question: "What is the function of red blood cells?",
+        question: "You are reading an old classical medical text entitled 'Manual in General Pathology and Pathological Physiology'. Who is the author of this historical text?",
         options: {
-            A: "Fight infection",
-            B: "Carry oxygen",
-            C: "Clot blood",
-            D: "Produce antibodies",
-            E: "Transport hormones"
+            A: "A.F. Hecker",
+            B: "Galliot",
+            C: "Ivan Pavlov",
+            D: "Rudolf Virchow",
+            E: "Claude Bernard"
         },
-        correct: "B"
+        correct: "A"
     },
     {
         id: 16,
-        question: "What is the pH of blood?",
+        question: "A student looks up the author of the foundational textbook titled 'Text book in pathophysiology'. Who is recognized as the author of this specific work?",
         options: {
-            A: "7.0-7.2",
-            B: "7.35-7.45",
-            C: "7.5-7.6",
-            D: "6.8-7.0",
-            E: "8.0-8.2"
+            A: "Galliot",
+            B: "A.F. Hecker",
+            C: "Hans Selye",
+            D: "Hippocrates",
+            E: "Ivan Pavlov"
         },
-        correct: "B"
+        correct: "E"
     },
     {
         id: 17,
-        question: "Which electrolyte is most abundant in extracellular fluid?",
+        question: "A patient presents with stress-induced gastric ulcers. The physician notes that the modern concepts of systemic stress theory were originally developed by:",
         options: {
-            A: "Potassium",
-            B: "Sodium",
-            C: "Calcium",
-            D: "Magnesium",
-            E: "Phosphate"
+            A: "Ivan Pavlov",
+            B: "Rudolf Virchow",
+            C: "Claude Bernard",
+            D: "Hans Selye",
+            E: "Galliot"
         },
-        correct: "B"
+        correct: "D"
     },
     {
         id: 18,
-        question: "Which electrolyte is most abundant in intracellular fluid?",
+        question: "A research paper links neurological responses to body adaptation using the famous 'conditioned reflection theory'. Which scientist established this theory?",
         options: {
-            A: "Sodium",
-            B: "Potassium",
-            C: "Calcium",
-            D: "Magnesium",
-            E: "Chloride"
+            A: "A.F. Hecker",
+            B: "Ivan Pavlov",
+            C: "Hans Selye",
+            D: "Hippocrates",
+            E: "Rudolf Virchow"
         },
         correct: "B"
     },
     {
         id: 19,
-        question: "What is the normal fasting blood glucose level?",
+        question: "In a community of 1,000 residents, a survey reveals that 50 individuals already have diagnosed type 2 diabetes and 10 new cases are diagnosed today. What is the total prevalence?",
         options: {
-            A: "50-70 mg/dL",
-            B: "70-100 mg/dL",
-            C: "100-120 mg/dL",
-            D: "120-140 mg/dL",
-            E: "140-160 mg/dL"
+            A: "1%",
+            B: "5%",
+            C: "6%",
+            D: "0.5%",
+            E: "10%"
         },
-        correct: "B"
+        correct: "C"
     },
     {
         id: 20,
-        question: "What is the function of the hypothalamus?",
+        question: "A clinician states: 'Mycobacterium tuberculosis is the causative biological agent responsible for the development of tuberculosis.' This statement describes the disease's:",
         options: {
-            A: "Control movement",
-            B: "Regulate body temperature",
-            C: "Store memories",
-            D: "Process vision",
-            E: "Control hearing"
+            A: "Pathogenesis",
+            B: "Etiology",
+            C: "Prevalence",
+            D: "Clinical Manifestation",
+            E: "Prognostic Outcome"
         },
         correct: "B"
     },
     {
         id: 21,
-        question: "Which hormone regulates blood sugar?",
+        question: "A student reads a detailed, step-by-step description of how a virus enters a cell, shuts down ATP synthesis, and progresses to cause multi-organ damage. This biological mechanism is:",
         options: {
-            A: "Thyroxine",
-            B: "Insulin",
-            C: "Adrenaline",
-            D: "Estrogen",
-            E: "Progesterone"
+            A: "Etiology",
+            B: "Prevalence",
+            C: "Pathogenesis",
+            D: "Clinical Outcome",
+            E: "Diagnostic criteria"
         },
-        correct: "B"
+        correct: "C"
     },
     {
         id: 22,
-        question: "What is the function of the pancreas?",
+        question: "A patient complains of severe deep chest pain and profound fatigue, which are subjective feelings. The nurse measures a blood pressure of 180/100 mmHg and observes a red skin rash. Which are signs?",
         options: {
-            A: "Filter blood",
-            B: "Produce digestive enzymes",
-            C: "Store bile",
-            D: "Produce red blood cells",
-            E: "Regulate heart rate"
+            A: "Chest pain and fatigue",
+            B: "High blood pressure and rash",
+            C: "Chest pain and rash",
+            D: "Fatigue and high blood pressure",
+            E: "All four parameters are signs"
         },
         correct: "B"
     },
     {
         id: 23,
-        question: "What is the function of the gallbladder?",
+        question: "After surviving a severe case of acute renal failure, a patient recovers full, normal baseline kidney function with zero lingering disability. This final result is the:",
         options: {
-            A: "Produce bile",
-            B: "Store bile",
-            C: "Filter blood",
-            D: "Produce insulin",
-            E: "Digest proteins"
+            A: "Etiology",
+            B: "Subclinical Stage",
+            C: "Pathogenesis",
+            D: "Outcome",
+            E: "Susceptibility phase"
         },
-        correct: "B"
+        correct: "D"
     },
     {
         id: 24,
-        question: "What is the function of the spleen?",
+        question: "A patient is exposed to a respiratory virus. The virus actively replicates inside the respiratory epithelium, but the patient currently feels fine and has no symptoms. What stage is this?",
         options: {
-            A: "Filter blood",
-            B: "Produce bile",
-            C: "Store glucose",
-            D: "Produce hormones",
-            E: "Digest food"
-        },
-        correct: "A"
-    },
-    {
-        id: 25,
-        question: "What is the normal hemoglobin level for adult males?",
-        options: {
-            A: "10-12 g/dL",
-            B: "13-17 g/dL",
-            C: "15-18 g/dL",
-            D: "18-20 g/dL",
-            E: "20-22 g/dL"
+            A: "Stage of Susceptibility",
+            B: "Stage of Subclinical Disease",
+            C: "Onset of Symptoms Stage",
+            D: "Stage of Clinical Disease",
+            E: "Outcome Stage"
         },
         correct: "B"
     },
     {
-        id: 26,
-        question: "What is the normal hemoglobin level for adult females?",
+        id: 25,
+        question: "A nurse studies general pathologic processes such as inflammation, fever, systemic hypothermia, and damage to genetic information. What branch of pathophysiology is this?",
         options: {
-            A: "8-10 g/dL",
-            B: "10-12 g/dL",
-            C: "12-16 g/dL",
-            D: "16-18 g/dL",
-            E: "18-20 g/dL"
+            A: "Special Pathophysiology",
+            B: "Molecular Pathophysiology",
+            C: "General Pathophysiology",
+            D: "Cellular Pathophysiology",
+            E: "Clinical Pathophysiology"
         },
         correct: "C"
     },
     {
-        id: 27,
-        question: "Which vitamin is produced by the skin when exposed to sunlight?",
+        id: 26,
+        question: "A patient presents with iron deficiency anemia and chronic hypertension. The study of these specific system-based organ diseases belongs to:",
         options: {
-            A: "Vitamin A",
-            B: "Vitamin D",
-            C: "Vitamin C",
-            D: "Vitamin B12",
-            E: "Vitamin E"
+            A: "General Pathophysiology",
+            B: "Special Pathophysiology",
+            C: "Experimental Pathophysiology",
+            D: "Forensic Pathology",
+            E: "Molecular Genetics"
         },
         correct: "B"
     },
     {
-        id: 28,
-        question: "Which vitamin is essential for blood clotting?",
+        id: 27,
+        question: "A researcher studies how specific alterations in DNA, RNA, and protein signaling pathways lead to cell malfunction. This specific field is called:",
         options: {
-            A: "Vitamin A",
-            B: "Vitamin D",
-            C: "Vitamin K",
-            D: "Vitamin C",
-            E: "Vitamin B12"
+            A: "Anatomical Pathology",
+            B: "Special Pathophysiology",
+            C: "Molecular Pathophysiology",
+            D: "Forensic Medicine",
+            E: "General Pathology"
+        },
+        correct: "C"
+    },
+    {
+        id: 28,
+        question: "A grand rounds presentation connects why a patient's underlying heart failure causes their clinical edema and shortness of breath. This approach represents:",
+        options: {
+            A: "Experimental Pathophysiology",
+            B: "Occupational Pathophysiology",
+            C: "Clinical Pathophysiology",
+            D: "Forensic Pathology",
+            E: "Basic Anatomy"
         },
         correct: "C"
     },
     {
         id: 29,
-        question: "Which vitamin is essential for collagen synthesis?",
+        question: "An investigator induces diabetes mellitus in laboratory rats to study long-term insulin deficiency. What type of research methodology is this?",
         options: {
-            A: "Vitamin A",
-            B: "Vitamin D",
-            C: "Vitamin C",
-            D: "Vitamin K",
-            E: "Vitamin B12"
+            A: "pure clinical observation",
+            B: "Experimental Pathophysiology",
+            C: "Occupational Pathophysiology",
+            D: "Anatomical Pathology",
+            E: "Forensic autopsy"
+        },
+        correct: "B"
+    },
+    {
+        id: 30,
+        question: "A 48-year-old factory worker develops chronic pulmonary fibrosis from long-term exposure to industrial chemical dust at his workplace. This is categorized under:",
+        options: {
+            A: "Adaptation Pathophysiology",
+            B: "General Pathophysiology",
+            C: "Occupational Pathophysiology",
+            D: "Forensic Pathology",
+            E: "Molecular Genetics"
         },
         correct: "C"
     },
     {
-        id: 30,
-        question: "What is the function of the thyroid gland?",
-        options: {
-            A: "Regulate metabolism",
-            B: "Control blood sugar",
-            C: "Regulate calcium",
-            D: "Produce adrenaline",
-            E: "Control growth"
-        },
-        correct: "A"
-    },
-    {
         id: 31,
-        question: "Which gland produces adrenaline?",
+        question: "A physician explains how the body's compensatory arterial thickening under stress eventually turns harmful and drives chronic severe hypertension. This illustrates:",
         options: {
-            A: "Thyroid",
-            B: "Adrenal",
-            C: "Pituitary",
-            D: "Pancreas",
-            E: "Parathyroid"
+            A: "Experimental Pathophysiology",
+            B: "Adaptation Pathophysiology",
+            C: "Forensic Pathology",
+            D: "Subclinical immunity",
+            E: "Microscopic pathology"
         },
         correct: "B"
     },
     {
         id: 32,
-        question: "What is the function of the pituitary gland?",
+        question: "A surgical biopsy of a tumor is sent to a lab where specialists evaluate the gross and microscopic structural disease changes of the tissue. Which field is this?",
         options: {
-            A: "Regulate metabolism",
-            B: "Master gland - controls other glands",
-            C: "Regulate blood sugar",
-            D: "Produce adrenaline",
-            E: "Regulate calcium"
+            A: "Clinical Pathology",
+            B: "Anatomical Pathology",
+            C: "Forensic Pathology",
+            D: "Molecular Pathophysiology",
+            E: "Immunopathology"
         },
         correct: "B"
     },
     {
         id: 33,
-        question: "What is the normal white blood cell count?",
+        question: "A physician orders a comprehensive metabolic panel, complete blood count, and urinalysis to help diagnose a metabolic disease. These laboratory analyses represent:",
         options: {
-            A: "1,000-3,000/µL",
-            B: "4,000-11,000/µL",
-            C: "10,000-15,000/µL",
-            D: "15,000-20,000/µL",
-            E: "20,000-25,000/µL"
+            A: "Anatomical Pathology",
+            B: "Clinical Pathology",
+            C: "Forensic Pathology",
+            D: "Adaptation Pathophysiology",
+            E: "General Pathophysiology"
         },
         correct: "B"
     },
     {
         id: 34,
-        question: "What is the normal platelet count?",
+        question: "A medical examiner performs a post-mortem autopsy on a crime victim to determine the official cause of death for legal purposes. This is the domain of:",
         options: {
-            A: "50,000-100,000/µL",
-            B: "100,000-150,000/µL",
-            C: "150,000-400,000/µL",
-            D: "400,000-500,000/µL",
-            E: "500,000-600,000/µL"
+            A: "Clinical Pathology",
+            B: "General Pathology",
+            C: "Forensic Pathology",
+            D: "Molecular Pathophysiology",
+            E: "Experimental Medicine"
         },
         correct: "C"
     },
     {
         id: 35,
-        question: "What is the function of the lymph nodes?",
+        question: "A child is diagnosed with cystic fibrosis, a condition caused entirely by an inherited genetic defect on a specific chromosome. This study falls under:",
         options: {
-            A: "Filter blood",
-            B: "Filter lymph fluid",
-            C: "Produce hormones",
-            D: "Store nutrients",
-            E: "Regulate temperature"
+            A: "Forensic Pathology",
+            B: "Genetic Pathology",
+            C: "Anatomical Pathology",
+            D: "Occupational Pathophysiology",
+            E: "General Pathophysiology"
         },
         correct: "B"
     },
     {
         id: 36,
-        question: "What is the function of the thymus gland?",
+        question: "A patient presents with severe anaphylactic shock following a penicillin injection, highlighting a severe overreaction of the body's immune system. This falls under:",
         options: {
-            A: "Filter blood",
-            B: "Produce T-cells",
-            C: "Store bile",
-            D: "Produce insulin",
-            E: "Regulate calcium"
+            A: "Hematology",
+            B: "Microbiology",
+            C: "Immunopathology",
+            D: "Forensic Pathology",
+            E: "Structural Atrophy"
         },
-        correct: "B"
+        correct: "C"
     },
     {
         id: 37,
-        question: "What is the function of the bone marrow?",
+        question: "Blood cultures from a septic patient grow Gram-negative rod bacteria, pinpointing the exact microorganism causing the severe disease state. This field is:",
         options: {
-            A: "Produce hormones",
-            B: "Produce blood cells",
-            C: "Store minerals",
-            D: "Filter blood",
-            E: "Regulate temperature"
+            A: "Hematology",
+            B: "Microbiology",
+            C: "Genetic Pathology",
+            D: "Anatomical Pathology",
+            E: "Occupational Pathophysiology"
         },
         correct: "B"
     },
     {
         id: 38,
-        question: "What is the normal cardiac output?",
+        question: "A micro-pathogen enters a cell, damages it, and immediately disrupts normal cell metabolism, resulting in cell dysfunction. This chain of events defines the pathogen's:",
         options: {
-            A: "2-3 L/min",
-            B: "4-6 L/min",
-            C: "5-8 L/min",
-            D: "8-10 L/min",
-            E: "10-12 L/min"
+            A: "Prevalence",
+            B: "Mechanism of Action",
+            C: "Outcome Stage",
+            D: "Diagnostic etiology",
+            E: "History of Medicine"
         },
-        correct: "C"
+        correct: "B"
     },
     {
         id: 39,
-        question: "What is the function of the alveoli?",
+        question: "A bacterial strain is noted for its high capacity to survive and grow rapidly within multiple cells, producing highly severe clinical conditions. This capacity is called:",
         options: {
-            A: "Filter blood",
-            B: "Gas exchange",
-            C: "Produce mucus",
-            D: "Store air",
-            E: "Regulate temperature"
+            A: "Immunogenicity",
+            B: "Infectivity",
+            C: "Complete Recovery",
+            D: "Atrophy rate",
+            E: "Prevalence index"
         },
         correct: "B"
     },
     {
         id: 40,
-        question: "What is the function of the nephron?",
+        question: "The absolute ability of a specific microorganism to cause disease depends heavily on its speed of growth and the total amount of direct tissue damage it inflicts. This describes:",
         options: {
-            A: "Filter blood in kidney",
-            B: "Produce hormones",
-            C: "Store urine",
-            D: "Regulate pH",
-            E: "Transport nutrients"
+            A: "Pathogenicity",
+            B: "Immunogenicity",
+            C: "Prevalence",
+            D: "Homeostasis",
+            E: "Metaplasia"
         },
         correct: "A"
     },
     {
         id: 41,
-        question: "What is the normal serum sodium level?",
+        question: "An advanced novel viral vaccine is designed specifically to exhibit a high capacity to stimulate the host's immune system to mount a strong protective response. This is:",
         options: {
-            A: "125-135 mEq/L",
-            B: "135-145 mEq/L",
-            C: "145-155 mEq/L",
-            D: "155-165 mEq/L",
-            E: "165-175 mEq/L"
+            A: "Infectivity",
+            B: "Pathogenicity",
+            C: "Immunogenicity",
+            D: "Virulence failure",
+            E: "Necrotic stimulus"
         },
-        correct: "B"
+        correct: "C"
     },
     {
         id: 42,
-        question: "What is the normal serum potassium level?",
+        question: "A public health textbook describes the natural history of a disease. This term refers specifically to how a disease develops inside the body from the beginning to the end:",
         options: {
-            A: "2.5-3.5 mEq/L",
-            B: "3.5-5.0 mEq/L",
-            C: "5.0-6.5 mEq/L",
-            D: "6.5-8.0 mEq/L",
-            E: "8.0-9.5 mEq/L"
+            A: "With aggressive medical treatments",
+            B: "Without any medical treatment",
+            C: "Only in animal laboratory models",
+            D: "In the subclinical stage only",
+            E: "After the outcome stage finishes"
         },
         correct: "B"
     },
     {
         id: 43,
-        question: "What is the normal serum calcium level?",
+        question: "An individual has a weak immune system and poor hygiene, putting them at high risk for exposure to an environmental pathogen, though they are currently healthy. This describes:",
         options: {
-            A: "6.0-7.5 mg/dL",
-            B: "7.5-8.5 mg/dL",
-            C: "8.5-10.5 mg/dL",
-            D: "10.5-12.5 mg/dL",
-            E: "12.5-14.5 mg/dL"
+            A: "Stage of Susceptibility",
+            B: "Stage of Clinical Disease",
+            C: "Outcome Stage",
+            D: "Metaplasia Phase",
+            E: "Ischemic death"
+        },
+        correct: "A"
+    },
+    {
+        id: 44,
+        question: "A patient displays clear clinical symptoms of acute flu, such as a high fever and a severe cough. This stage is the usual time of diagnosis and represents:",
+        options: {
+            A: "Stage of Susceptibility",
+            B: "Stage of Subclinical Disease",
+            C: "Stage of Clinical Disease",
+            D: "Pre-exposure phase",
+            E: "Apoptotic phase"
         },
         correct: "C"
     },
     {
-        id: 44,
-        question: "What is the function of the cerebellum?",
-        options: {
-            A: "Control movement and balance",
-            B: "Control breathing",
-            C: "Store memories",
-            D: "Process emotions",
-            E: "Control vision"
-        },
-        correct: "A"
-    },
-    {
         id: 45,
-        question: "What is the function of the hypothalamus?",
+        question: "A patient with severe osteoarthritis is left with a permanent physical disability that impairs walking, altering their baseline functional status. This represents which stage?",
         options: {
-            A: "Regulate body temperature",
-            B: "Control movement",
-            C: "Store memories",
-            D: "Process vision",
-            E: "Control hearing"
+            A: "Stage of Susceptibility",
+            B: "Stage of Subclinical Disease",
+            C: "Exposure Stage",
+            D: "Outcome Stage",
+            E: "Hyperplastic stage"
         },
-        correct: "A"
+        correct: "D"
     },
     {
         id: 46,
-        question: "What is the function of the pituitary gland?",
+        question: "A cell experiences mild stress, prompting it to alter its internal features to attract local phagocytes. The cell shrinks neatly, fragments, and is eaten by macrophages without inflammation. This is:",
         options: {
-            A: "Regulate metabolism",
-            B: "Control growth",
-            C: "Regulate blood sugar",
-            D: "Produce adrenaline",
-            E: "Regulate calcium"
+            A: "Accidental Necrosis",
+            B: "Programmed Apoptosis",
+            C: "Pathologic Metaplasia",
+            D: "Maladaptive Hypertrophy",
+            E: "Ischemia-induced Swelling"
         },
         correct: "B"
     },
     {
         id: 47,
-        question: "What is the function of the parathyroid gland?",
+        question: "A 35-year-old female experiences regular monthly proliferation and an increase in the number of uterine lining cells during her normal menstrual cycle. This cellular process is:",
         options: {
-            A: "Regulate metabolism",
-            B: "Regulate calcium levels",
-            C: "Control growth",
-            D: "Produce adrenaline",
-            E: "Control blood sugar"
+            A: "Pathologic Hyperplasia",
+            B: "Physiological Hyperplasia",
+            C: "Physiological Hypertrophy",
+            D: "Reversible Metaplasia",
+            E: "Pathologic Atrophy"
         },
         correct: "B"
     },
     {
         id: 48,
-        question: "What is the normal CO2 level in arterial blood?",
+        question: "A patient is diagnosed with severe coronary artery disease. A complete absolute loss of blood supply to the localized myocardium occurs, cutting off both oxygen and nutrients. This specific condition is:",
         options: {
-            A: "25-30 mmHg",
-            B: "30-35 mmHg",
-            C: "35-45 mmHg",
-            D: "45-55 mmHg",
-            E: "55-65 mmHg"
+            A: "Isolated Hypoxia",
+            B: "Ischemia",
+            C: "Hyperplasia",
+            D: "Pure Free Radical Damage",
+            E: "Apoptosis"
         },
-        correct: "C"
+        correct: "B"
     },
     {
         id: 49,
-        question: "What is the normal O2 level in arterial blood?",
+        question: "Inside a hypoxic cell, the absolute loss of oxygen causes the mitochondria to completely stop producing adenosine triphosphate (ATP). The immediate secondary consequence is:",
         options: {
-            A: "60-70 mmHg",
-            B: "70-80 mmHg",
-            C: "80-100 mmHg",
-            D: "100-120 mmHg",
-            E: "120-140 mmHg"
+            A: "Cell shrinkage and membrane condensation",
+            B: "Failure of cell membrane ion pumps, causing sodium and water influx and cell swelling",
+            C: "Immediate complete switch to aerobic respiration",
+            D: "Activation of anti-apoptotic genes",
+            E: "Extracellular efflux of all cellular calcium"
         },
-        correct: "C"
+        correct: "B"
     },
     {
         id: 50,
-        question: "What is the function of the vagus nerve?",
+        question: "A cell undergoes lipid peroxidation, where unstable molecules steal electrons directly from the cell membranes, causing fragmentation of DNA. This type of damage is driven by:",
         options: {
-            A: "Control eye movement",
-            B: "Regulate heart rate",
-            C: "Control movement",
-            D: "Process vision",
-            E: "Control hearing"
+            A: "Influx of stable water molecules",
+            B: "Free radical damage (oxidative stress)",
+            C: "Pure physiological apoptosis signals",
+            D: "Reversible cellular hypertrophy",
+            E: "Upregulation of mitochondrial ATP synthase"
         },
         correct: "B"
     }
@@ -1545,7 +1545,7 @@ const TEST4_QUESTIONS = [
 ];
 
 // ============================================================
-// 🆕 TEST 5: Fundamentals of Nursing-II (70 Questions)
+// TEST 5: Fundamentals of Nursing-II (70 Questions)
 // ============================================================
 const TEST5_QUESTIONS = [
     {
@@ -2391,6 +2391,972 @@ const TEST5_QUESTIONS = [
 ];
 
 // ============================================================
+// 🆕 TEST 6: Anatomy & Physiology II (80 Questions)
+// ============================================================
+const TEST6_QUESTIONS = [
+    {
+        id: 1,
+        question: "Which structure is responsible for warming, filtering, and humidifying inspired air?",
+        options: {
+            A: "Alveoli",
+            B: "Nasal cavity",
+            C: "Larynx",
+            D: "Bronchi",
+            E: "Trachea"
+        },
+        correct: "B"
+    },
+    {
+        id: 2,
+        question: "The primary site of gas exchange in the lungs is the:",
+        options: {
+            A: "Bronchioles",
+            B: "Trachea",
+            C: "Pleural cavity",
+            D: "Bronchi",
+            E: "Alveoli"
+        },
+        correct: "E"
+    },
+    {
+        id: 3,
+        question: "Which correctly describes the epiglottis?",
+        options: {
+            A: "It is a cartilage ring supporting the trachea",
+            B: "It produces mucus to trap dust particles",
+            C: "It is a flap of elastic cartilage that covers the larynx during swallowing",
+            D: "It is part of the lower respiratory tract",
+            E: "It contains the vocal cords"
+        },
+        correct: "C"
+    },
+    {
+        id: 4,
+        question: "Tidal volume (TV) is defined as:",
+        options: {
+            A: "The volume of air inhaled or exhaled in one normal breath",
+            B: "The extra air that can be forcefully exhaled after normal exhalation",
+            C: "The amount of air remaining in the lungs after maximal expiration",
+            D: "The total lung capacity minus residual volume",
+            E: "The maximum volume of air exhaled after maximum inhalation"
+        },
+        correct: "A"
+    },
+    {
+        id: 5,
+        question: "Residual volume (RV) is the volume of air that:",
+        options: {
+            A: "Is exhaled during normal breathing",
+            B: "Is exchanged during normal breathing",
+            C: "Can be inhaled beyond a normal breath",
+            D: "Remains in the lungs after maximal expiration",
+            E: "Is inspired during maximal inhalation"
+        },
+        correct: "D"
+    },
+    {
+        id: 6,
+        question: "The process by which oxygen moves from the alveoli into pulmonary capillaries is called:",
+        options: {
+            A: "Facilitated transport",
+            B: "Filtration",
+            C: "Active transport",
+            D: "Diffusion",
+            E: "Osmosis"
+        },
+        correct: "D"
+    },
+    {
+        id: 7,
+        question: "The functional residual capacity (FRC) is the sum of:",
+        options: {
+            A: "Vital capacity + Residual volume",
+            B: "Tidal volume + Residual volume",
+            C: "Tidal volume + Inspiratory reserve volume",
+            D: "Expiratory reserve volume + Residual volume",
+            E: "Inspiratory reserve volume + Tidal volume + Expiratory reserve volume"
+        },
+        correct: "D"
+    },
+    {
+        id: 8,
+        question: "The upper respiratory tract includes all of the following EXCEPT:",
+        options: {
+            A: "Pharynx",
+            B: "Nasal cavity",
+            C: "Trachea",
+            D: "Nose",
+            E: "Larynx"
+        },
+        correct: "C"
+    },
+    {
+        id: 9,
+        question: "Which gas has a higher partial pressure in the alveoli compared to pulmonary capillary blood?",
+        options: {
+            A: "O2",
+            B: "H2O vapor",
+            C: "Nitrogen dioxide",
+            D: "N2",
+            E: "CO2"
+        },
+        correct: "A"
+    },
+    {
+        id: 10,
+        question: "Vital capacity is calculated as:",
+        options: {
+            A: "FRC + IRV",
+            B: "TV + IRV + ERV",
+            C: "TV + RV",
+            D: "IRV + ERV",
+            E: "TLC - TV"
+        },
+        correct: "B"
+    },
+    {
+        id: 11,
+        question: "Surfactant in the alveoli functions primarily to:",
+        options: {
+            A: "Increase surface tension",
+            B: "Facilitate CO2 diffusion",
+            C: "Destroy pathogens",
+            D: "Prevent alveolar collapse by reducing surface tension",
+            E: "Increase alveolar dead space"
+        },
+        correct: "D"
+    },
+    {
+        id: 12,
+        question: "Which cells produce pulmonary surfactant?",
+        options: {
+            A: "Endothelial cells",
+            B: "Macrophages",
+            C: "Goblet cells",
+            D: "Type I pneumocytes",
+            E: "Type II pneumocytes"
+        },
+        correct: "E"
+    },
+    {
+        id: 13,
+        question: "The lower respiratory tract begins at the:",
+        options: {
+            A: "Nose",
+            B: "Oral cavity",
+            C: "Larynx",
+            D: "Nasopharynx",
+            E: "Trachea"
+        },
+        correct: "E"
+    },
+    {
+        id: 14,
+        question: "Inspiratory reserve volume (IRV) is the extra air that can be:",
+        options: {
+            A: "Inhaled after normal inhalation",
+            B: "Inspired during quiet breathing",
+            C: "Exhaled after maximal inhalation",
+            D: "Retained in the lungs at all times",
+            E: "Exhaled after normal exhalation"
+        },
+        correct: "A"
+    },
+    {
+        id: 15,
+        question: "Which statement about oxygen transport in blood is correct?",
+        options: {
+            A: "Most O2 is transported dissolved in plasma",
+            B: "O2 binds to albumin for transport",
+            C: "O2 is transported only in the plasma",
+            D: "O2 is mainly transported bound to hemoglobin in red blood cells",
+            E: "O2 is transported as bicarbonate ions"
+        },
+        correct: "D"
+    },
+    {
+        id: 16,
+        question: "Carbon dioxide is primarily transported in the blood as:",
+        options: {
+            A: "Carbamino compounds on hemoglobin",
+            B: "Carbonic acid",
+            C: "Bicarbonate ions (HCO3-)",
+            D: "Dissolved CO2 in plasma",
+            E: "Bound to albumin"
+        },
+        correct: "C"
+    },
+    {
+        id: 17,
+        question: "The functional unit of the kidney is the:",
+        options: {
+            A: "Glomerulus",
+            B: "Nephron",
+            C: "Collecting duct",
+            D: "Renal pyramid",
+            E: "Loop of Henle"
+        },
+        correct: "B"
+    },
+    {
+        id: 18,
+        question: "The glomerular filtration rate (GFR) in a normal adult is approximately:",
+        options: {
+            A: "300 mL/min",
+            B: "50 mL/min",
+            C: "75 mL/min",
+            D: "125 mL/min",
+            E: "200 mL/min"
+        },
+        correct: "D"
+    },
+    {
+        id: 19,
+        question: "Which of the following is NOT a function of the kidneys?",
+        options: {
+            A: "Regulation of blood pressure",
+            B: "Regulation of acid-base balance",
+            C: "Erythropoietin production",
+            D: "Regulation of water and electrolyte balance",
+            E: "Regulation of blood glucose via insulin secretion"
+        },
+        correct: "E"
+    },
+    {
+        id: 20,
+        question: "The process of micturition (urination) involves:",
+        options: {
+            A: "Relaxation of the detrusor muscle and contraction of sphincters",
+            B: "Only voluntary control",
+            C: "Contraction of both detrusor and sphincters simultaneously",
+            D: "Contraction of the detrusor muscle and relaxation of urethral sphincters",
+            E: "Passive emptying of the bladder"
+        },
+        correct: "D"
+    },
+    {
+        id: 21,
+        question: "The renal cortex contains which of the following structures?",
+        options: {
+            A: "Renal pyramids only",
+            B: "Collecting ducts",
+            C: "Loop of Henle",
+            D: "Renal pelvis",
+            E: "Glomeruli and proximal/distal convoluted tubules"
+        },
+        correct: "E"
+    },
+    {
+        id: 22,
+        question: "Antidiuretic hormone (ADH) acts on which part of the nephron?",
+        options: {
+            A: "Loop of Henle descending limb",
+            B: "Glomerulus",
+            C: "Bowman's capsule",
+            D: "Collecting duct and distal convoluted tubule",
+            E: "Proximal convoluted tubule"
+        },
+        correct: "D"
+    },
+    {
+        id: 23,
+        question: "The juxtaglomerular apparatus (JGA) secretes which substance in response to low blood pressure?",
+        options: {
+            A: "Erythropoietin",
+            B: "Renin",
+            C: "Aldosterone",
+            D: "Angiotensin II",
+            E: "ADH"
+        },
+        correct: "B"
+    },
+    {
+        id: 24,
+        question: "Aldosterone acts primarily to:",
+        options: {
+            A: "Inhibit renin secretion",
+            B: "Increase sodium reabsorption and potassium excretion",
+            C: "Decrease blood pressure",
+            D: "Increase water excretion",
+            E: "Decrease sodium reabsorption"
+        },
+        correct: "B"
+    },
+    {
+        id: 25,
+        question: "Which filtration barrier in the glomerulus prevents large proteins from entering the filtrate?",
+        options: {
+            A: "Tubular basement membrane",
+            B: "Macula densa cells",
+            C: "Glomerular basement membrane and podocytes",
+            D: "Mesangial cells",
+            E: "Juxtaglomerular cells"
+        },
+        correct: "C"
+    },
+    {
+        id: 26,
+        question: "The majority of glucose reabsorption occurs in the:",
+        options: {
+            A: "Bowman's capsule",
+            B: "Collecting duct",
+            C: "Distal convoluted tubule",
+            D: "Proximal convoluted tubule",
+            E: "Loop of Henle"
+        },
+        correct: "D"
+    },
+    {
+        id: 27,
+        question: "The countercurrent multiplier mechanism in the kidney occurs in the:",
+        options: {
+            A: "Distal convoluted tubule",
+            B: "Glomerulus",
+            C: "Loop of Henle",
+            D: "Collecting duct",
+            E: "Proximal convoluted tubule"
+        },
+        correct: "C"
+    },
+    {
+        id: 28,
+        question: "Normal urine output in a healthy adult is approximately:",
+        options: {
+            A: "1000-2000 mL/day",
+            B: "500 mL/day",
+            C: "3500 mL/day",
+            D: "250-500 mL/day",
+            E: "2500-3000 mL/day"
+        },
+        correct: "A"
+    },
+    {
+        id: 29,
+        question: "The ureters connect the kidneys to the:",
+        options: {
+            A: "Urethra",
+            B: "Renal pelvis externally",
+            C: "Urinary bladder",
+            D: "Prostate",
+            E: "Rectum"
+        },
+        correct: "C"
+    },
+    {
+        id: 30,
+        question: "Which hormone stimulates red blood cell production and is secreted by the kidneys?",
+        options: {
+            A: "Calcitriol",
+            B: "Aldosterone",
+            C: "ADH",
+            D: "Erythropoietin",
+            E: "Renin"
+        },
+        correct: "D"
+    },
+    {
+        id: 31,
+        question: "Oliguria is defined as urine output of:",
+        options: {
+            A: "Less than 500 mL/day",
+            B: "Less than 100 mL/day",
+            C: "Greater than 3000 mL/day",
+            D: "400-800 mL/day",
+            E: "1000-2000 mL/day"
+        },
+        correct: "A"
+    },
+    {
+        id: 32,
+        question: "The renal medulla is composed mainly of:",
+        options: {
+            A: "Loops of Henle and collecting ducts arranged in pyramids",
+            B: "Proximal convoluted tubules",
+            C: "Renal corpuscles",
+            D: "Bowman's capsules",
+            E: "Glomeruli"
+        },
+        correct: "A"
+    },
+    {
+        id: 33,
+        question: "The basic structural and functional unit of the nervous system is the:",
+        options: {
+            A: "Neuroglia",
+            B: "Neuron",
+            C: "Schwann cell",
+            D: "Synapse",
+            E: "Axon"
+        },
+        correct: "B"
+    },
+    {
+        id: 34,
+        question: "The myelin sheath in the peripheral nervous system is formed by:",
+        options: {
+            A: "Astrocytes",
+            B: "Microglia",
+            C: "Oligodendrocytes",
+            D: "Ependymal cells",
+            E: "Schwann cells"
+        },
+        correct: "E"
+    },
+    {
+        id: 35,
+        question: "The central nervous system (CNS) consists of:",
+        options: {
+            A: "Cranial nerves and peripheral nerves",
+            B: "Brain and spinal cord",
+            C: "Spinal cord and peripheral ganglia",
+            D: "Sympathetic and parasympathetic nervous systems",
+            E: "Brain and spinal nerves"
+        },
+        correct: "B"
+    },
+    {
+        id: 36,
+        question: "Which meninx is the outermost covering of the brain?",
+        options: {
+            A: "Arachnoid mater",
+            B: "Dura mater",
+            C: "Falx cerebri",
+            D: "Pia mater",
+            E: "Periosteum"
+        },
+        correct: "B"
+    },
+    {
+        id: 37,
+        question: "Cerebrospinal fluid (CSF) is produced by the:",
+        options: {
+            A: "Choroid plexus of the ventricles",
+            B: "Ependymal cells of the spinal cord",
+            C: "Dura mater",
+            D: "Blood-brain barrier",
+            E: "Arachnoid villi"
+        },
+        correct: "A"
+    },
+    {
+        id: 38,
+        question: "A reflex arc consists of which components in correct order?",
+        options: {
+            A: "Effector → Motor neuron → Integration center → Sensory neuron → Receptor",
+            B: "Integration center → Receptor → Sensory neuron → Motor neuron → Effector",
+            C: "Receptor → Sensory neuron → Integration center → Motor neuron → Effector",
+            D: "Receptor → Motor neuron → Synapse → Sensory neuron → Effector",
+            E: "Receptor → Integration center → Sensory neuron → Motor neuron → Effector"
+        },
+        correct: "C"
+    },
+    {
+        id: 39,
+        question: "Which of the following is NOT a type of neuroglia?",
+        options: {
+            A: "Astrocyte",
+            B: "Ependymal cell",
+            C: "Dendrite",
+            D: "Oligodendrocyte",
+            E: "Microglia"
+        },
+        correct: "C"
+    },
+    {
+        id: 40,
+        question: "The autonomic nervous system controls:",
+        options: {
+            A: "Conscious sensory perception",
+            B: "Higher cortical functions",
+            C: "Involuntary functions of smooth muscle, cardiac muscle, and glands",
+            D: "Reflex arcs only",
+            E: "Voluntary skeletal muscle movements"
+        },
+        correct: "C"
+    },
+    {
+        id: 41,
+        question: "The sympathetic nervous system arises from which part of the spinal cord?",
+        options: {
+            A: "Craniosacral regions",
+            B: "All spinal cord levels",
+            C: "Sacral region only",
+            D: "Thoracolumbar regions (T1-L2)",
+            E: "Cervical region only"
+        },
+        correct: "D"
+    },
+    {
+        id: 42,
+        question: "The blood-brain barrier (BBB) is primarily formed by:",
+        options: {
+            A: "Tight junctions between capillary endothelial cells aided by astrocytes",
+            B: "Microglia",
+            C: "Oligodendrocytes",
+            D: "Ependymal cells",
+            E: "The dura mater"
+        },
+        correct: "A"
+    },
+    {
+        id: 43,
+        question: "How many pairs of cranial nerves exist in humans?",
+        options: {
+            A: "10",
+            B: "31",
+            C: "14",
+            D: "8",
+            E: "12"
+        },
+        correct: "E"
+    },
+    {
+        id: 44,
+        question: "The cerebellum is primarily responsible for:",
+        options: {
+            A: "Coordination, balance, and fine motor control",
+            B: "Memory formation",
+            C: "Regulation of heart rate",
+            D: "Language and speech",
+            E: "Processing of visual information"
+        },
+        correct: "A"
+    },
+    {
+        id: 45,
+        question: "How many pairs of spinal nerves are there in the human body?",
+        options: {
+            A: "28",
+            B: "33",
+            C: "31",
+            D: "12",
+            E: "24"
+        },
+        correct: "C"
+    },
+    {
+        id: 46,
+        question: "CSF is reabsorbed into the blood via the:",
+        options: {
+            A: "Arachnoid granulations (villi) into the dural venous sinuses",
+            B: "Choroid plexus",
+            C: "Blood-brain barrier",
+            D: "Lateral ventricles",
+            E: "Ependymal cells"
+        },
+        correct: "A"
+    },
+    {
+        id: 47,
+        question: "The space between the arachnoid mater and pia mater is called the:",
+        options: {
+            A: "Epidural space",
+            B: "Subarachnoid space",
+            C: "Dural sinus",
+            D: "Subdural space",
+            E: "Perivascular space"
+        },
+        correct: "B"
+    },
+    {
+        id: 48,
+        question: "The fourth ventricle of the brain communicates with the third ventricle via the:",
+        options: {
+            A: "Foramen of Luschka",
+            B: "Foramen of Magendie",
+            C: "Cerebral aqueduct of Sylvius",
+            D: "Central canal",
+            E: "Foramen of Monro"
+        },
+        correct: "C"
+    },
+    {
+        id: 49,
+        question: "The photoreceptors responsible for color vision in the retina are:",
+        options: {
+            A: "Cones",
+            B: "Amacrine cells",
+            C: "Rods",
+            D: "Bipolar cells",
+            E: "Ganglion cells"
+        },
+        correct: "A"
+    },
+    {
+        id: 50,
+        question: "The organ of Corti is located in the:",
+        options: {
+            A: "Ossicles",
+            B: "Tympanic membrane",
+            C: "Vestibule",
+            D: "Cochlea",
+            E: "Semicircular canals"
+        },
+        correct: "D"
+    },
+    {
+        id: 51,
+        question: "The three ossicles of the middle ear, in order from tympanic membrane to oval window, are:",
+        options: {
+            A: "Incus, malleus, stapes",
+            B: "Stapes, incus, malleus",
+            C: "Malleus, incus, stapes",
+            D: "Malleus, stapes, incus",
+            E: "Stapes, malleus, incus"
+        },
+        correct: "C"
+    },
+    {
+        id: 52,
+        question: "After crossing at the optic chiasm, the visual pathway travels via the:",
+        options: {
+            A: "Optic tract to the lateral geniculate nucleus, then to the visual cortex",
+            B: "Optic radiation to the frontal lobe",
+            C: "Optic nerve to the parietal lobe",
+            D: "Optic nerve to the occipital lobe directly",
+            E: "Optic tract to the superior colliculus only"
+        },
+        correct: "A"
+    },
+    {
+        id: 53,
+        question: "Balance and equilibrium are primarily controlled by which inner ear structure?",
+        options: {
+            A: "Semicircular canals and vestibule",
+            B: "Tympanic membrane",
+            C: "Eustachian tube",
+            D: "Ossicles",
+            E: "Cochlea"
+        },
+        correct: "A"
+    },
+    {
+        id: 54,
+        question: "The macula of the retina contains the highest concentration of:",
+        options: {
+            A: "Pigment epithelium",
+            B: "Rods",
+            C: "Bipolar cells",
+            D: "Cones, especially at the fovea centralis",
+            E: "Ganglion cells"
+        },
+        correct: "D"
+    },
+    {
+        id: 55,
+        question: "The Eustachian (auditory) tube connects the middle ear to the:",
+        options: {
+            A: "Outer ear canal",
+            B: "Oropharynx",
+            C: "Nasopharynx",
+            D: "Inner ear",
+            E: "Tympanic membrane"
+        },
+        correct: "C"
+    },
+    {
+        id: 56,
+        question: "At the optic chiasm, fibers from which part of the retina cross to the opposite side?",
+        options: {
+            A: "All fibers cross",
+            B: "Inferior quadrant only",
+            C: "Superior quadrant only",
+            D: "Temporal (lateral) half",
+            E: "Nasal (medial) half"
+        },
+        correct: "E"
+    },
+    {
+        id: 57,
+        question: "The auditory cortex, which processes sound, is located in the:",
+        options: {
+            A: "Frontal lobe",
+            B: "Occipital lobe",
+            C: "Temporal lobe",
+            D: "Cerebellum",
+            E: "Parietal lobe"
+        },
+        correct: "C"
+    },
+    {
+        id: 58,
+        question: "The cornea of the eye is responsible for approximately what percentage of total light refraction?",
+        options: {
+            A: "40%",
+            B: "90%",
+            C: "70%",
+            D: "50%",
+            E: "20%"
+        },
+        correct: "C"
+    },
+    {
+        id: 59,
+        question: "The anterior pituitary gland is also called the:",
+        options: {
+            A: "Neurohypophysis",
+            B: "Adenohypophysis",
+            C: "Infundibulum",
+            D: "Posterior lobe",
+            E: "Pars nervosa"
+        },
+        correct: "B"
+    },
+    {
+        id: 60,
+        question: "Which hormone is secreted by the posterior pituitary?",
+        options: {
+            A: "Thyroid-stimulating hormone (TSH)",
+            B: "Prolactin",
+            C: "Antidiuretic hormone (ADH) and Oxytocin",
+            D: "Growth hormone (GH)",
+            E: "Adrenocorticotropic hormone (ACTH)"
+        },
+        correct: "C"
+    },
+    {
+        id: 61,
+        question: "Thyroxine (T4) and triiodothyronine (T3) are synthesized from:",
+        options: {
+            A: "Cholesterol",
+            B: "Tryptophan",
+            C: "Glucose",
+            D: "Arachidonic acid",
+            E: "Tyrosine and iodine"
+        },
+        correct: "E"
+    },
+    {
+        id: 62,
+        question: "Parathyroid hormone (PTH) acts to:",
+        options: {
+            A: "Increase renal phosphate reabsorption",
+            B: "Lower blood calcium levels",
+            C: "Increase blood calcium levels and decrease phosphate",
+            D: "Stimulate thyroid hormone production",
+            E: "Decrease bone resorption"
+        },
+        correct: "C"
+    },
+    {
+        id: 63,
+        question: "The adrenal cortex secretes which class of hormones?",
+        options: {
+            A: "Catecholamines only",
+            B: "Glucocorticoids, mineralocorticoids, and androgens",
+            C: "Thyroid hormones",
+            D: "Epinephrine and norepinephrine",
+            E: "Insulin and glucagon"
+        },
+        correct: "B"
+    },
+    {
+        id: 64,
+        question: "Insulin is produced by which cells of the pancreatic islets of Langerhans?",
+        options: {
+            A: "Delta cells",
+            B: "Beta cells",
+            C: "PP cells",
+            D: "Alpha cells",
+            E: "Epsilon cells"
+        },
+        correct: "B"
+    },
+    {
+        id: 65,
+        question: "The pineal gland secretes which hormone involved in regulating sleep-wake cycles?",
+        options: {
+            A: "Growth hormone",
+            B: "Melatonin",
+            C: "Serotonin",
+            D: "Cortisol",
+            E: "Dopamine"
+        },
+        correct: "B"
+    },
+    {
+        id: 66,
+        question: "Which of the following is a steroid hormone?",
+        options: {
+            A: "Growth hormone",
+            B: "Epinephrine",
+            C: "TSH",
+            D: "Cortisol",
+            E: "Insulin"
+        },
+        correct: "D"
+    },
+    {
+        id: 67,
+        question: "The zona glomerulosa of the adrenal cortex produces:",
+        options: {
+            A: "Aldosterone",
+            B: "DHEA",
+            C: "Cortisol",
+            D: "Androgens",
+            E: "Epinephrine"
+        },
+        correct: "A"
+    },
+    {
+        id: 68,
+        question: "Glucagon secreted by alpha cells of the pancreas acts to:",
+        options: {
+            A: "Inhibit glucose absorption in the intestine",
+            B: "Promote fatty acid synthesis",
+            C: "Decrease amino acid uptake by cells",
+            D: "Lower blood glucose by promoting glycogen synthesis",
+            E: "Increase blood glucose by stimulating glycogenolysis and gluconeogenesis"
+        },
+        correct: "E"
+    },
+    {
+        id: 69,
+        question: "Which hormone from the anterior pituitary stimulates growth of bone and muscle?",
+        options: {
+            A: "ACTH",
+            B: "Growth hormone (GH)",
+            C: "LH",
+            D: "FSH",
+            E: "TSH"
+        },
+        correct: "B"
+    },
+    {
+        id: 70,
+        question: "The testes produce which primary hormone under the influence of LH?",
+        options: {
+            A: "Inhibin",
+            B: "Estrogen",
+            C: "Progesterone",
+            D: "Testosterone",
+            E: "FSH"
+        },
+        correct: "D"
+    },
+    {
+        id: 71,
+        question: "Calcitonin, which opposes the effects of PTH, is secreted by the:",
+        options: {
+            A: "Pancreatic islets",
+            B: "Anterior pituitary",
+            C: "Parafollicular (C) cells of the thyroid gland",
+            D: "Adrenal cortex",
+            E: "Parathyroid gland"
+        },
+        correct: "C"
+    },
+    {
+        id: 72,
+        question: "Which of the following is a peptide hormone?",
+        options: {
+            A: "Estradiol",
+            B: "Insulin",
+            C: "Aldosterone",
+            D: "Testosterone",
+            E: "Cortisol"
+        },
+        correct: "B"
+    },
+    {
+        id: 73,
+        question: "The zona fasciculata of the adrenal cortex primarily produces:",
+        options: {
+            A: "Aldosterone",
+            B: "Epinephrine",
+            C: "DHEA",
+            D: "Cortisol",
+            E: "Testosterone"
+        },
+        correct: "D"
+    },
+    {
+        id: 74,
+        question: "The ovaries in females produce mainly which hormones?",
+        options: {
+            A: "Oxytocin and ADH",
+            B: "Testosterone and DHEA",
+            C: "Cortisol and aldosterone",
+            D: "LH and FSH",
+            E: "Estrogen and progesterone"
+        },
+        correct: "E"
+    },
+    {
+        id: 75,
+        question: "The process of sperm production in males is called:",
+        options: {
+            A: "Oogenesis",
+            B: "Meiosis only",
+            C: "Folliculogenesis",
+            D: "Spermatogenesis",
+            E: "Gametogenesis only"
+        },
+        correct: "D"
+    },
+    {
+        id: 76,
+        question: "Spermatogenesis occurs in which structure of the testes?",
+        options: {
+            A: "Seminiferous tubules",
+            B: "Vas deferens",
+            C: "Rete testis",
+            D: "Interstitial cells",
+            E: "Epididymis"
+        },
+        correct: "A"
+    },
+    {
+        id: 77,
+        question: "The menstrual cycle is typically how many days in length?",
+        options: {
+            A: "14 days",
+            B: "28 days",
+            C: "35 days",
+            D: "21 days",
+            E: "7 days"
+        },
+        correct: "B"
+    },
+    {
+        id: 78,
+        question: "Ovulation occurs on approximately which day of a 28-day menstrual cycle?",
+        options: {
+            A: "Day 10",
+            B: "Day 21",
+            C: "Day 5",
+            D: "Day 28",
+            E: "Day 14"
+        },
+        correct: "E"
+    },
+    {
+        id: 79,
+        question: "The corpus luteum forms after ovulation and primarily secretes:",
+        options: {
+            A: "Progesterone and estrogen",
+            B: "hCG only",
+            C: "Testosterone",
+            D: "LH and FSH",
+            E: "Estrogen only"
+        },
+        correct: "A"
+    },
+    {
+        id: 80,
+        question: "The primary male reproductive organ(s) responsible for sperm and testosterone production is/are the:",
+        options: {
+            A: "Prostate gland",
+            B: "Seminal vesicles",
+            C: "Vas deferens",
+            D: "Epididymis",
+            E: "Testes"
+        },
+        correct: "E"
+    }
+];
+
+// ============================================================
 // ALL TESTS
 // ============================================================
 export const ALL_TESTS = {
@@ -2438,14 +3404,21 @@ export const ALL_TESTS = {
         timeLimit: 70,
         passingScore: 50,
         questions: TEST5_QUESTIONS
+    },
+    test6: {
+        id: 'test6',
+        name: 'Anatomy & Physiology II',
+        description: '80 MCQs on Anatomy & Physiology',
+        totalQuestions: 80,
+        timeLimit: 80,
+        passingScore: 50,
+        questions: TEST6_QUESTIONS
     }
 };
 
 // ============================================================
-// 🔥🔥🔥 TEST SWITCHING FUNCTIONS 🔥🔥🔥
+// TEST SWITCHING FUNCTIONS
 // ============================================================
-
-// Get Active Test ID from localStorage
 export const getActiveTestId = () => {
     try {
         const savedTestId = localStorage.getItem('activeTestId');
@@ -2456,12 +3429,11 @@ export const getActiveTestId = () => {
     } catch (error) {
         console.warn('Error reading from localStorage:', error);
     }
-    // Default: Test 5 (Fundamentals of Nursing-II)
-    console.log('✅ Using default test: test5');
-    return 'test5';
+    // Default: Test 6 (Anatomy & Physiology II)
+    console.log('✅ Using default test: test6');
+    return 'test6';
 };
 
-// Set Active Test ID in localStorage
 export const setActiveTestId = (testId) => {
     try {
         if (ALL_TESTS[testId]) {
