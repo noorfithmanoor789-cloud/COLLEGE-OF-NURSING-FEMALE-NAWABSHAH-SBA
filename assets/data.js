@@ -63,6 +63,22 @@ export const EXAM_STUDENTS = [
     { name: 'UROOJ', username: 'student98', password: '98' },
     { name: 'UROOSA', username: 'student99', password: '99' },
     { name: 'UZMA', username: 'student100', password: '100' }
+      { name: 'M. FAIZAN', username: 'student101', password: '101' },
+    { name: 'M. AKRAM', username: 'student102', password: '102' },
+    { name: 'GUL HASSAN', username: 'student103', password: '103' },
+    { name: 'CHANDAN KUMAR', username: 'student104', password: '104' },
+    { name: 'HEERO', username: 'student105', password: '105' },
+    { name: 'SARMAD', username: 'student106', password: '106' },
+    { name: 'SALMA', username: 'student107', password: '107' },
+    { name: 'GUL BATOOL', username: 'student108', password: '108' },
+    { name: 'MUTAHIR HUSSAIN', username: 'student109', password: '109' },
+    { name: 'MAHEEN AKHTER', username: 'student110', password: '110' },
+    { name: 'HIRTIK LAAL', username: 'student111', password: '111' },
+    { name: 'M. NOMAN', username: 'student112', password: '112' },
+    { name: 'JUNAID', username: 'student113', password: '113' },
+    { name: 'HARESH KUMAR', username: 'student114', password: '114' },
+    { name: 'M. UMER', username: 'student115', password: '115' },
+    { name: 'BHAGCHAND', username: 'student116', password: '116' }
 ];
 
 // ============================================================
