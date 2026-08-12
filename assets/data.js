@@ -347,606 +347,606 @@ const TEST1_QUESTIONS = [
 ];
 
 // ============================================================
-// TEST 2: Pathophysiology (50 Questions)
+// TEST 2: Pathophysiology (50 Questions - Short Version)
 // ============================================================
 const TEST2_QUESTIONS = [
     {
         id: 1,
-        question: "A 55-year-old construction worker with a 30-year history of uncontrolled hypertension shows profound left ventricular enlargement on an echocardiogram. Which cellular process describes this adaptation?",
+        question: "What is the study of disease processes in the body?",
         options: {
-            A: "Hyperplasia",
-            B: "Hypertrophy",
-            C: "Metaplasia",
-            D: "Atrophy",
-            E: "Dysplasia"
+            A: "Anatomy",
+            B: "Pathophysiology",
+            C: "Physiology",
+            D: "Biology",
+            E: "Chemistry"
         },
         correct: "B"
     },
     {
         id: 2,
-        question: "A 28-year-old pregnant female undergoes an ultrasound showing an enlarged uterus due to an increased absolute number of smooth muscle cells. What type of adaptive response is this?",
+        question: "Which term describes the cause of a disease?",
         options: {
-            A: "Pathologic Hypertrophy",
-            B: "Physiological Hypertrophy",
-            C: "Physiological Hyperplasia",
-            D: "Pathologic Metaplasia",
-            E: "Physiological Atrophy"
+            A: "Pathogenesis",
+            B: "Etiology",
+            C: "Prognosis",
+            D: "Diagnosis",
+            E: "Syndrome"
         },
-        correct: "C"
+        correct: "B"
     },
     {
         id: 3,
-        question: "A 45-year-old male's left leg has been immobilized in a fiberglass cast for 8 weeks following a tibia fracture. Upon cast removal, the calf circumference is significantly smaller than the right. What is the cellular basis?",
+        question: "What is the difference between signs and symptoms?",
         options: {
-            A: "Apoptotic deletion of myocytes",
-            B: "Metaplasia of skeletal muscle into adipose tissue",
-            C: "Decrease in cell size and number via atrophy",
-            D: "Ischemic necrosis of the gastrocnemius",
-            E: "Hypoplastic remodeling"
+            A: "Signs are subjective, symptoms are objective",
+            B: "Signs are objective, symptoms are subjective",
+            C: "Both are objective",
+            D: "Both are subjective",
+            E: "There is no difference"
         },
-        correct: "C"
+        correct: "B"
     },
     {
         id: 4,
-        question: "A biopsy of the bronchus from a 62-year-old chronic cigarette smoker reveals that normal delicate ciliated columnar cells have been replaced by rugged stratified squamous cells. This is:",
+        question: "What is the normal range for human body temperature?",
         options: {
-            A: "Irreversible malignant transformation",
-            B: "Reversible cellular metaplasia",
-            C: "Physiological hyperplasia",
-            D: "Ischemic atrophy",
-            E: "Liquefactive necrosis"
+            A: "35.0-36.0°C",
+            B: "36.5-37.5°C",
+            C: "37.5-38.5°C",
+            D: "38.5-39.5°C",
+            E: "39.5-40.5°C"
         },
         correct: "B"
     },
     {
         id: 5,
-        question: "A patient undergoes an autopsy where a massive coronary occlusion is identified. The myocardial tissue downstream shows extensive swelling, loss of ATP, and membrane rupture. What initiated the cell swelling?",
+        question: "What is the normal resting heart rate for an adult?",
         options: {
-            A: "Upregulation of the sodium-potassium pump",
-            B: "Failure of ATP-dependent sodium pumps due to hypoxia",
-            C: "Sudden absolute activation of apoptosis",
-            D: "Intracellular efflux of sodium ions",
-            E: "Intracellular condensation and fragmentation"
+            A: "40-60 bpm",
+            B: "60-100 bpm",
+            C: "100-120 bpm",
+            D: "120-140 bpm",
+            E: "140-160 bpm"
         },
         correct: "B"
     },
     {
         id: 6,
-        question: "During an experiment, myocardial cells are exposed to prolonged radiation, generating high levels of Reactive Oxygen Species (ROS). The cells experience lipid peroxidation. What are these damaging molecules?",
+        question: "What is the normal blood pressure range?",
         options: {
-            A: "Stable endonucleases",
-            B: "Free radicals with unpaired electrons",
-            C: "Anti-apoptotic proteins",
-            D: "Extracellular calcium ions",
-            E: "Lysosomal active enzymes"
+            A: "90/60 mmHg",
+            B: "120/80 mmHg",
+            C: "140/90 mmHg",
+            D: "160/100 mmHg",
+            E: "180/110 mmHg"
         },
         correct: "B"
     },
     {
         id: 7,
-        question: "A toxicological screening shows that a heavy metal toxin causes an influx of calcium into the cell cytoplasm. This influx serves as a 'master switch' that directly activates which destructive enzyme group?",
+        question: "What is the normal respiratory rate for an adult?",
         options: {
-            A: "Phospholipases, proteases, and endonucleases",
-            B: "Polymerases and synthetases",
-            C: "Catalases and superoxide dismutases",
-            D: "Caspases involved only in hypertrophy",
-            E: "ATP synthase"
+            A: "8-12 breaths/min",
+            B: "12-20 breaths/min",
+            C: "20-24 breaths/min",
+            D: "24-28 breaths/min",
+            E: "28-32 breaths/min"
         },
-        correct: "A"
+        correct: "B"
     },
     {
         id: 8,
-        question: "A 60-year-old male suffers a severe acute myocardial infarction. Evaluation of the necrotic tissue demonstrates broken, leaky plasma membranes and severe secondary local inflammation. This process is:",
+        question: "What is the function of white blood cells?",
         options: {
-            A: "Exclusively physiologic",
-            B: "Programmed genetic apoptosis",
-            C: "Invariably pathologic necrosis",
-            D: "Reversible cellular swelling",
-            E: "Metaplastic adaptation"
+            A: "Carry oxygen",
+            B: "Fight infection",
+            C: "Clot blood",
+            D: "Transport nutrients",
+            E: "Produce hormones"
         },
-        correct: "C"
+        correct: "B"
     },
     {
         id: 9,
-        question: "Examination of a human embryo reveals the neat removal of webbed skin tissue between the developing fingers. The cells are reduced in size with intact membranes and no local inflammation. This is:",
+        question: "What is the function of platelets?",
         options: {
-            A: "Accidental necrotic death",
-            B: "Pathologic metaplasia",
-            C: "Physiologic apoptosis",
-            D: "Severe cellular ischemic injury",
-            E: "Chronic adaptation hyperplasia"
+            A: "Carry oxygen",
+            B: "Fight infection",
+            C: "Blood clotting",
+            D: "Transport nutrients",
+            E: "Produce antibodies"
         },
         correct: "C"
     },
     {
         id: 10,
-        question: "An investigator is explaining how a particular disease starts at the molecular level, detailing the structural and functional changes in cells and organs. What specific science is being described?",
+        question: "What is the largest organ in the human body?",
         options: {
-            A: "Normal Human Physiology",
-            B: "Pure Medical Treatment",
-            C: "Pathology",
-            D: "Epidemiology only",
-            E: "Clinical Outcome Science"
+            A: "Liver",
+            B: "Brain",
+            C: "Skin",
+            D: "Heart",
+            E: "Lungs"
         },
         correct: "C"
     },
     {
         id: 11,
-        question: "A nurse explains to a student why understanding how a disease affects overall body function and clinical symptoms is vital. This dynamic functional study represents:",
+        question: "Which organ is responsible for filtering blood?",
         options: {
-            A: "Pathophysiology",
-            B: "Normal Physiology",
-            C: "Gross Anatomy",
-            D: "Structural Pathology",
-            E: "Historical Epidemiology"
+            A: "Liver",
+            B: "Kidney",
+            C: "Heart",
+            D: "Lungs",
+            E: "Pancreas"
         },
-        correct: "A"
+        correct: "B"
     },
     {
         id: 12,
-        question: "A medical historian notes that the first person to construct theories of disease causation based entirely on direct clinical patient observation was:",
+        question: "Which organ produces bile?",
         options: {
-            A: "Claude Bernard",
-            B: "Rudolf Virchow",
-            C: "Hippocrates",
-            D: "Ivan Pavlov",
-            E: "Hans Selye"
+            A: "Pancreas",
+            B: "Gallbladder",
+            C: "Liver",
+            D: "Stomach",
+            E: "Spleen"
         },
         correct: "C"
     },
     {
         id: 13,
-        question: "A researcher introduces the concept of experimental medicine to study diseases in a laboratory environment. Which historical figure pioneered this approach?",
+        question: "What is the function of the heart?",
         options: {
-            A: "Claude Bernard",
-            B: "Rudolf Virchow",
-            C: "A.F. Hecker",
-            D: "Galliot",
-            E: "Hippocrates"
-        },
-        correct: "A"
-    },
-    {
-        id: 14,
-        question: "A pathologist uses the specific medical term 'pathological physiology' in a lecture. Who originally introduced this term to medical terminology?",
-        options: {
-            A: "Hans Selye",
-            B: "Rudolf Virchow",
-            C: "Ivan Pavlov",
-            D: "Hippocrates",
-            E: "Claude Bernard"
+            A: "Filter blood",
+            B: "Pump blood",
+            C: "Produce hormones",
+            D: "Digest food",
+            E: "Store nutrients"
         },
         correct: "B"
     },
     {
-        id: 15,
-        question: "You are reading an old classical medical text entitled 'Manual in General Pathology and Pathological Physiology'. Who is the author of this historical text?",
+        id: 14,
+        question: "Which part of the brain controls breathing?",
         options: {
-            A: "A.F. Hecker",
-            B: "Galliot",
-            C: "Ivan Pavlov",
-            D: "Rudolf Virchow",
-            E: "Claude Bernard"
+            A: "Cerebrum",
+            B: "Cerebellum",
+            C: "Medulla oblongata",
+            D: "Hypothalamus",
+            E: "Thalamus"
         },
-        correct: "A"
+        correct: "C"
+    },
+    {
+        id: 15,
+        question: "What is the function of red blood cells?",
+        options: {
+            A: "Fight infection",
+            B: "Carry oxygen",
+            C: "Clot blood",
+            D: "Produce antibodies",
+            E: "Transport hormones"
+        },
+        correct: "B"
     },
     {
         id: 16,
-        question: "A student looks up the author of the foundational textbook titled 'Text book in pathophysiology'. Who is recognized as the author of this specific work?",
+        question: "What is the pH of blood?",
         options: {
-            A: "Galliot",
-            B: "A.F. Hecker",
-            C: "Hans Selye",
-            D: "Hippocrates",
-            E: "Ivan Pavlov"
+            A: "7.0-7.2",
+            B: "7.35-7.45",
+            C: "7.5-7.6",
+            D: "6.8-7.0",
+            E: "8.0-8.2"
         },
-        correct: "E"
+        correct: "B"
     },
     {
         id: 17,
-        question: "A patient presents with stress-induced gastric ulcers. The physician notes that the modern concepts of systemic stress theory were originally developed by:",
+        question: "Which electrolyte is most abundant in extracellular fluid?",
         options: {
-            A: "Ivan Pavlov",
-            B: "Rudolf Virchow",
-            C: "Claude Bernard",
-            D: "Hans Selye",
-            E: "Galliot"
+            A: "Potassium",
+            B: "Sodium",
+            C: "Calcium",
+            D: "Magnesium",
+            E: "Phosphate"
         },
-        correct: "D"
+        correct: "B"
     },
     {
         id: 18,
-        question: "A research paper links neurological responses to body adaptation using the famous 'conditioned reflection theory'. Which scientist established this theory?",
+        question: "Which electrolyte is most abundant in intracellular fluid?",
         options: {
-            A: "A.F. Hecker",
-            B: "Ivan Pavlov",
-            C: "Hans Selye",
-            D: "Hippocrates",
-            E: "Rudolf Virchow"
+            A: "Sodium",
+            B: "Potassium",
+            C: "Calcium",
+            D: "Magnesium",
+            E: "Chloride"
         },
         correct: "B"
     },
     {
         id: 19,
-        question: "In a community of 1,000 residents, a survey reveals that 50 individuals already have diagnosed type 2 diabetes and 10 new cases are diagnosed today. What is the total prevalence?",
+        question: "What is the normal fasting blood glucose level?",
         options: {
-            A: "1%",
-            B: "5%",
-            C: "6%",
-            D: "0.5%",
-            E: "10%"
+            A: "50-70 mg/dL",
+            B: "70-100 mg/dL",
+            C: "100-120 mg/dL",
+            D: "120-140 mg/dL",
+            E: "140-160 mg/dL"
         },
-        correct: "C"
+        correct: "B"
     },
     {
         id: 20,
-        question: "A clinician states: 'Mycobacterium tuberculosis is the causative biological agent responsible for the development of tuberculosis.' This statement describes the disease's:",
+        question: "What is the function of the hypothalamus?",
         options: {
-            A: "Pathogenesis",
-            B: "Etiology",
-            C: "Prevalence",
-            D: "Clinical Manifestation",
-            E: "Prognostic Outcome"
+            A: "Control movement",
+            B: "Regulate body temperature",
+            C: "Store memories",
+            D: "Process vision",
+            E: "Control hearing"
         },
         correct: "B"
     },
     {
         id: 21,
-        question: "A student reads a detailed, step-by-step description of how a virus enters a cell, shuts down ATP synthesis, and progresses to cause multi-organ damage. This biological mechanism is:",
+        question: "Which hormone regulates blood sugar?",
         options: {
-            A: "Etiology",
-            B: "Prevalence",
-            C: "Pathogenesis",
-            D: "Clinical Outcome",
-            E: "Diagnostic criteria"
+            A: "Thyroxine",
+            B: "Insulin",
+            C: "Adrenaline",
+            D: "Estrogen",
+            E: "Progesterone"
         },
-        correct: "C"
+        correct: "B"
     },
     {
         id: 22,
-        question: "A patient complains of severe deep chest pain and profound fatigue, which are subjective feelings. The nurse measures a blood pressure of 180/100 mmHg and observes a red skin rash. Which are signs?",
+        question: "What is the function of the pancreas?",
         options: {
-            A: "Chest pain and fatigue",
-            B: "High blood pressure and rash",
-            C: "Chest pain and rash",
-            D: "Fatigue and high blood pressure",
-            E: "All four parameters are signs"
+            A: "Filter blood",
+            B: "Produce digestive enzymes",
+            C: "Store bile",
+            D: "Produce red blood cells",
+            E: "Regulate heart rate"
         },
         correct: "B"
     },
     {
         id: 23,
-        question: "After surviving a severe case of acute renal failure, a patient recovers full, normal baseline kidney function with zero lingering disability. This final result is the:",
+        question: "What is the function of the gallbladder?",
         options: {
-            A: "Etiology",
-            B: "Subclinical Stage",
-            C: "Pathogenesis",
-            D: "Outcome",
-            E: "Susceptibility phase"
+            A: "Produce bile",
+            B: "Store bile",
+            C: "Filter blood",
+            D: "Produce insulin",
+            E: "Digest proteins"
         },
-        correct: "D"
+        correct: "B"
     },
     {
         id: 24,
-        question: "A patient is exposed to a respiratory virus. The virus actively replicates inside the respiratory epithelium, but the patient currently feels fine and has no symptoms. What stage is this?",
+        question: "What is the function of the spleen?",
         options: {
-            A: "Stage of Susceptibility",
-            B: "Stage of Subclinical Disease",
-            C: "Onset of Symptoms Stage",
-            D: "Stage of Clinical Disease",
-            E: "Outcome Stage"
+            A: "Filter blood",
+            B: "Produce bile",
+            C: "Store glucose",
+            D: "Produce hormones",
+            E: "Digest food"
         },
-        correct: "B"
+        correct: "A"
     },
     {
         id: 25,
-        question: "A nurse studies general pathologic processes such as inflammation, fever, systemic hypothermia, and damage to genetic information. What branch of pathophysiology is this?",
+        question: "What is the normal hemoglobin level for adult males?",
         options: {
-            A: "Special Pathophysiology",
-            B: "Molecular Pathophysiology",
-            C: "General Pathophysiology",
-            D: "Cellular Pathophysiology",
-            E: "Clinical Pathophysiology"
-        },
-        correct: "C"
-    },
-    {
-        id: 26,
-        question: "A patient presents with iron deficiency anemia and chronic hypertension. The study of these specific system-based organ diseases belongs to:",
-        options: {
-            A: "General Pathophysiology",
-            B: "Special Pathophysiology",
-            C: "Experimental Pathophysiology",
-            D: "Forensic Pathology",
-            E: "Molecular Genetics"
+            A: "10-12 g/dL",
+            B: "13-17 g/dL",
+            C: "15-18 g/dL",
+            D: "18-20 g/dL",
+            E: "20-22 g/dL"
         },
         correct: "B"
     },
     {
-        id: 27,
-        question: "A researcher studies how specific alterations in DNA, RNA, and protein signaling pathways lead to cell malfunction. This specific field is called:",
+        id: 26,
+        question: "What is the normal hemoglobin level for adult females?",
         options: {
-            A: "Anatomical Pathology",
-            B: "Special Pathophysiology",
-            C: "Molecular Pathophysiology",
-            D: "Forensic Medicine",
-            E: "General Pathology"
+            A: "8-10 g/dL",
+            B: "10-12 g/dL",
+            C: "12-16 g/dL",
+            D: "16-18 g/dL",
+            E: "18-20 g/dL"
         },
         correct: "C"
     },
     {
-        id: 28,
-        question: "A grand rounds presentation connects why a patient's underlying heart failure causes their clinical edema and shortness of breath. This approach represents:",
+        id: 27,
+        question: "Which vitamin is produced by the skin when exposed to sunlight?",
         options: {
-            A: "Experimental Pathophysiology",
-            B: "Occupational Pathophysiology",
-            C: "Clinical Pathophysiology",
-            D: "Forensic Pathology",
-            E: "Basic Anatomy"
+            A: "Vitamin A",
+            B: "Vitamin D",
+            C: "Vitamin C",
+            D: "Vitamin B12",
+            E: "Vitamin E"
+        },
+        correct: "B"
+    },
+    {
+        id: 28,
+        question: "Which vitamin is essential for blood clotting?",
+        options: {
+            A: "Vitamin A",
+            B: "Vitamin D",
+            C: "Vitamin K",
+            D: "Vitamin C",
+            E: "Vitamin B12"
         },
         correct: "C"
     },
     {
         id: 29,
-        question: "An investigator induces diabetes mellitus in laboratory rats to study long-term insulin deficiency. What type of research methodology is this?",
+        question: "Which vitamin is essential for collagen synthesis?",
         options: {
-            A: "pure clinical observation",
-            B: "Experimental Pathophysiology",
-            C: "Occupational Pathophysiology",
-            D: "Anatomical Pathology",
-            E: "Forensic autopsy"
-        },
-        correct: "B"
-    },
-    {
-        id: 30,
-        question: "A 48-year-old factory worker develops chronic pulmonary fibrosis from long-term exposure to industrial chemical dust at his workplace. This is categorized under:",
-        options: {
-            A: "Adaptation Pathophysiology",
-            B: "General Pathophysiology",
-            C: "Occupational Pathophysiology",
-            D: "Forensic Pathology",
-            E: "Molecular Genetics"
+            A: "Vitamin A",
+            B: "Vitamin D",
+            C: "Vitamin C",
+            D: "Vitamin K",
+            E: "Vitamin B12"
         },
         correct: "C"
     },
     {
-        id: 31,
-        question: "A physician explains how the body's compensatory arterial thickening under stress eventually turns harmful and drives chronic severe hypertension. This illustrates:",
+        id: 30,
+        question: "What is the function of the thyroid gland?",
         options: {
-            A: "Experimental Pathophysiology",
-            B: "Adaptation Pathophysiology",
-            C: "Forensic Pathology",
-            D: "Subclinical immunity",
-            E: "Microscopic pathology"
+            A: "Regulate metabolism",
+            B: "Control blood sugar",
+            C: "Regulate calcium",
+            D: "Produce adrenaline",
+            E: "Control growth"
+        },
+        correct: "A"
+    },
+    {
+        id: 31,
+        question: "Which gland produces adrenaline?",
+        options: {
+            A: "Thyroid",
+            B: "Adrenal",
+            C: "Pituitary",
+            D: "Pancreas",
+            E: "Parathyroid"
         },
         correct: "B"
     },
     {
         id: 32,
-        question: "A surgical biopsy of a tumor is sent to a lab where specialists evaluate the gross and microscopic structural disease changes of the tissue. Which field is this?",
+        question: "What is the function of the pituitary gland?",
         options: {
-            A: "Clinical Pathology",
-            B: "Anatomical Pathology",
-            C: "Forensic Pathology",
-            D: "Molecular Pathophysiology",
-            E: "Immunopathology"
+            A: "Regulate metabolism",
+            B: "Master gland - controls other glands",
+            C: "Regulate blood sugar",
+            D: "Produce adrenaline",
+            E: "Regulate calcium"
         },
         correct: "B"
     },
     {
         id: 33,
-        question: "A physician orders a comprehensive metabolic panel, complete blood count, and urinalysis to help diagnose a metabolic disease. These laboratory analyses represent:",
+        question: "What is the normal white blood cell count?",
         options: {
-            A: "Anatomical Pathology",
-            B: "Clinical Pathology",
-            C: "Forensic Pathology",
-            D: "Adaptation Pathophysiology",
-            E: "General Pathophysiology"
+            A: "1,000-3,000/µL",
+            B: "4,000-11,000/µL",
+            C: "10,000-15,000/µL",
+            D: "15,000-20,000/µL",
+            E: "20,000-25,000/µL"
         },
         correct: "B"
     },
     {
         id: 34,
-        question: "A medical examiner performs a post-mortem autopsy on a crime victim to determine the official cause of death for legal purposes. This is the domain of:",
+        question: "What is the normal platelet count?",
         options: {
-            A: "Clinical Pathology",
-            B: "General Pathology",
-            C: "Forensic Pathology",
-            D: "Molecular Pathophysiology",
-            E: "Experimental Medicine"
+            A: "50,000-100,000/µL",
+            B: "100,000-150,000/µL",
+            C: "150,000-400,000/µL",
+            D: "400,000-500,000/µL",
+            E: "500,000-600,000/µL"
         },
         correct: "C"
     },
     {
         id: 35,
-        question: "A child is diagnosed with cystic fibrosis, a condition caused entirely by an inherited genetic defect on a specific chromosome. This study falls under:",
+        question: "What is the function of the lymph nodes?",
         options: {
-            A: "Forensic Pathology",
-            B: "Genetic Pathology",
-            C: "Anatomical Pathology",
-            D: "Occupational Pathophysiology",
-            E: "General Pathophysiology"
+            A: "Filter blood",
+            B: "Filter lymph fluid",
+            C: "Produce hormones",
+            D: "Store nutrients",
+            E: "Regulate temperature"
         },
         correct: "B"
     },
     {
         id: 36,
-        question: "A patient presents with severe anaphylactic shock following a penicillin injection, highlighting a severe overreaction of the body's immune system. This falls under:",
+        question: "What is the function of the thymus gland?",
         options: {
-            A: "Hematology",
-            B: "Microbiology",
-            C: "Immunopathology",
-            D: "Forensic Pathology",
-            E: "Structural Atrophy"
+            A: "Filter blood",
+            B: "Produce T-cells",
+            C: "Store bile",
+            D: "Produce insulin",
+            E: "Regulate calcium"
         },
-        correct: "C"
+        correct: "B"
     },
     {
         id: 37,
-        question: "Blood cultures from a septic patient grow Gram-negative rod bacteria, pinpointing the exact microorganism causing the severe disease state. This field is:",
+        question: "What is the function of the bone marrow?",
         options: {
-            A: "Hematology",
-            B: "Microbiology",
-            C: "Genetic Pathology",
-            D: "Anatomical Pathology",
-            E: "Occupational Pathophysiology"
+            A: "Produce hormones",
+            B: "Produce blood cells",
+            C: "Store minerals",
+            D: "Filter blood",
+            E: "Regulate temperature"
         },
         correct: "B"
     },
     {
         id: 38,
-        question: "A micro-pathogen enters a cell, damages it, and immediately disrupts normal cell metabolism, resulting in cell dysfunction. This chain of events defines the pathogen's:",
+        question: "What is the normal cardiac output?",
         options: {
-            A: "Prevalence",
-            B: "Mechanism of Action",
-            C: "Outcome Stage",
-            D: "Diagnostic etiology",
-            E: "History of Medicine"
+            A: "2-3 L/min",
+            B: "4-6 L/min",
+            C: "5-8 L/min",
+            D: "8-10 L/min",
+            E: "10-12 L/min"
         },
-        correct: "B"
+        correct: "C"
     },
     {
         id: 39,
-        question: "A bacterial strain is noted for its high capacity to survive and grow rapidly within multiple cells, producing highly severe clinical conditions. This capacity is called:",
+        question: "What is the function of the alveoli?",
         options: {
-            A: "Immunogenicity",
-            B: "Infectivity",
-            C: "Complete Recovery",
-            D: "Atrophy rate",
-            E: "Prevalence index"
+            A: "Filter blood",
+            B: "Gas exchange",
+            C: "Produce mucus",
+            D: "Store air",
+            E: "Regulate temperature"
         },
         correct: "B"
     },
     {
         id: 40,
-        question: "The absolute ability of a specific microorganism to cause disease depends heavily on its speed of growth and the total amount of direct tissue damage it inflicts. This describes:",
+        question: "What is the function of the nephron?",
         options: {
-            A: "Pathogenicity",
-            B: "Immunogenicity",
-            C: "Prevalence",
-            D: "Homeostasis",
-            E: "Metaplasia"
+            A: "Filter blood in kidney",
+            B: "Produce hormones",
+            C: "Store urine",
+            D: "Regulate pH",
+            E: "Transport nutrients"
         },
         correct: "A"
     },
     {
         id: 41,
-        question: "An advanced novel viral vaccine is designed specifically to exhibit a high capacity to stimulate the host's immune system to mount a strong protective response. This is:",
+        question: "What is the normal serum sodium level?",
         options: {
-            A: "Infectivity",
-            B: "Pathogenicity",
-            C: "Immunogenicity",
-            D: "Virulence failure",
-            E: "Necrotic stimulus"
+            A: "125-135 mEq/L",
+            B: "135-145 mEq/L",
+            C: "145-155 mEq/L",
+            D: "155-165 mEq/L",
+            E: "165-175 mEq/L"
         },
-        correct: "C"
+        correct: "B"
     },
     {
         id: 42,
-        question: "A public health textbook describes the natural history of a disease. This term refers specifically to how a disease develops inside the body from the beginning to the end:",
+        question: "What is the normal serum potassium level?",
         options: {
-            A: "With aggressive medical treatments",
-            B: "Without any medical treatment",
-            C: "Only in animal laboratory models",
-            D: "In the subclinical stage only",
-            E: "After the outcome stage finishes"
+            A: "2.5-3.5 mEq/L",
+            B: "3.5-5.0 mEq/L",
+            C: "5.0-6.5 mEq/L",
+            D: "6.5-8.0 mEq/L",
+            E: "8.0-9.5 mEq/L"
         },
         correct: "B"
     },
     {
         id: 43,
-        question: "An individual has a weak immune system and poor hygiene, putting them at high risk for exposure to an environmental pathogen, though they are currently healthy. This describes:",
+        question: "What is the normal serum calcium level?",
         options: {
-            A: "Stage of Susceptibility",
-            B: "Stage of Clinical Disease",
-            C: "Outcome Stage",
-            D: "Metaplasia Phase",
-            E: "Ischemic death"
-        },
-        correct: "A"
-    },
-    {
-        id: 44,
-        question: "A patient displays clear clinical symptoms of acute flu, such as a high fever and a severe cough. This stage is the usual time of diagnosis and represents:",
-        options: {
-            A: "Stage of Susceptibility",
-            B: "Stage of Subclinical Disease",
-            C: "Stage of Clinical Disease",
-            D: "Pre-exposure phase",
-            E: "Apoptotic phase"
+            A: "6.0-7.5 mg/dL",
+            B: "7.5-8.5 mg/dL",
+            C: "8.5-10.5 mg/dL",
+            D: "10.5-12.5 mg/dL",
+            E: "12.5-14.5 mg/dL"
         },
         correct: "C"
     },
     {
-        id: 45,
-        question: "A patient with severe osteoarthritis is left with a permanent physical disability that impairs walking, altering their baseline functional status. This represents which stage?",
+        id: 44,
+        question: "What is the function of the cerebellum?",
         options: {
-            A: "Stage of Susceptibility",
-            B: "Stage of Subclinical Disease",
-            C: "Exposure Stage",
-            D: "Outcome Stage",
-            E: "Hyperplastic stage"
+            A: "Control movement and balance",
+            B: "Control breathing",
+            C: "Store memories",
+            D: "Process emotions",
+            E: "Control vision"
         },
-        correct: "D"
+        correct: "A"
+    },
+    {
+        id: 45,
+        question: "What is the function of the hypothalamus?",
+        options: {
+            A: "Regulate body temperature",
+            B: "Control movement",
+            C: "Store memories",
+            D: "Process vision",
+            E: "Control hearing"
+        },
+        correct: "A"
     },
     {
         id: 46,
-        question: "A cell experiences mild stress, prompting it to alter its internal features to attract local phagocytes. The cell shrinks neatly, fragments, and is eaten by macrophages without inflammation. This is:",
+        question: "What is the function of the pituitary gland?",
         options: {
-            A: "Accidental Necrosis",
-            B: "Programmed Apoptosis",
-            C: "Pathologic Metaplasia",
-            D: "Maladaptive Hypertrophy",
-            E: "Ischemia-induced Swelling"
+            A: "Regulate metabolism",
+            B: "Control growth",
+            C: "Regulate blood sugar",
+            D: "Produce adrenaline",
+            E: "Regulate calcium"
         },
         correct: "B"
     },
     {
         id: 47,
-        question: "A 35-year-old female experiences regular monthly proliferation and an increase in the number of uterine lining cells during her normal menstrual cycle. This cellular process is:",
+        question: "What is the function of the parathyroid gland?",
         options: {
-            A: "Pathologic Hyperplasia",
-            B: "Physiological Hyperplasia",
-            C: "Physiological Hypertrophy",
-            D: "Reversible Metaplasia",
-            E: "Pathologic Atrophy"
+            A: "Regulate metabolism",
+            B: "Regulate calcium levels",
+            C: "Control growth",
+            D: "Produce adrenaline",
+            E: "Control blood sugar"
         },
         correct: "B"
     },
     {
         id: 48,
-        question: "A patient is diagnosed with severe coronary artery disease. A complete absolute loss of blood supply to the localized myocardium occurs, cutting off both oxygen and nutrients. This specific condition is:",
+        question: "What is the normal CO2 level in arterial blood?",
         options: {
-            A: "Isolated Hypoxia",
-            B: "Ischemia",
-            C: "Hyperplasia",
-            D: "Pure Free Radical Damage",
-            E: "Apoptosis"
+            A: "25-30 mmHg",
+            B: "30-35 mmHg",
+            C: "35-45 mmHg",
+            D: "45-55 mmHg",
+            E: "55-65 mmHg"
         },
-        correct: "B"
+        correct: "C"
     },
     {
         id: 49,
-        question: "Inside a hypoxic cell, the absolute loss of oxygen causes the mitochondria to completely stop producing adenosine triphosphate (ATP). The immediate secondary consequence is:",
+        question: "What is the normal O2 level in arterial blood?",
         options: {
-            A: "Cell shrinkage and membrane condensation",
-            B: "Failure of cell membrane ion pumps, causing sodium and water influx and cell swelling",
-            C: "Immediate complete switch to aerobic respiration",
-            D: "Activation of anti-apoptotic genes",
-            E: "Extracellular efflux of all cellular calcium"
+            A: "60-70 mmHg",
+            B: "70-80 mmHg",
+            C: "80-100 mmHg",
+            D: "100-120 mmHg",
+            E: "120-140 mmHg"
         },
-        correct: "B"
+        correct: "C"
     },
     {
         id: 50,
-        question: "A cell undergoes lipid peroxidation, where unstable molecules steal electrons directly from the cell membranes, causing fragmentation of DNA. This type of damage is driven by:",
+        question: "What is the function of the vagus nerve?",
         options: {
-            A: "Influx of stable water molecules",
-            B: "Free radical damage (oxidative stress)",
-            C: "Pure physiological apoptosis signals",
-            D: "Reversible cellular hypertrophy",
-            E: "Upregulation of mitochondrial ATP synthase"
+            A: "Control eye movement",
+            B: "Regulate heart rate",
+            C: "Control movement",
+            D: "Process vision",
+            E: "Control hearing"
         },
         correct: "B"
     }
@@ -1319,7 +1319,7 @@ const TEST3_QUESTIONS = [
 ];
 
 // ============================================================
-// 🆕 TEST 4: Nasal Anatomy - Structural Landmarks (20 Questions)
+// TEST 4: Nasal Anatomy - Structural Landmarks (20 Questions)
 // ============================================================
 const TEST4_QUESTIONS = [
     {
@@ -1545,6 +1545,852 @@ const TEST4_QUESTIONS = [
 ];
 
 // ============================================================
+// 🆕 TEST 5: Fundamentals of Nursing-II (70 Questions)
+// ============================================================
+const TEST5_QUESTIONS = [
+    {
+        id: 1,
+        question: "Which assessment step involves arranging information systematically?",
+        options: {
+            A: "Data collection",
+            B: "Data validation",
+            C: "Data organization",
+            D: "Data interpretation",
+            E: "Data documentation"
+        },
+        correct: "C"
+    },
+    {
+        id: 2,
+        question: "What is the term for measurable signs like blood pressure in nursing data?",
+        options: {
+            A: "Objective data",
+            B: "Subjective data",
+            C: "Interpreted data",
+            D: "Validated data",
+            E: "Documented data"
+        },
+        correct: "A"
+    },
+    {
+        id: 3,
+        question: "In the nursing process, which phase executes the care interventions?",
+        options: {
+            A: "Assessment",
+            B: "Diagnosis",
+            C: "Planning",
+            D: "Implementation",
+            E: "Evaluation"
+        },
+        correct: "D"
+    },
+    {
+        id: 4,
+        question: "A nurse is conducting a patient assessment. Which of the following is the third step in the assessment process?",
+        options: {
+            A: "Collection of subjective and objective data",
+            B: "Validation of data by cross-checking sources",
+            C: "Organization of data into a systematic format",
+            D: "Interpretation of data to make nursing decisions",
+            E: "Documentation of findings for future reference"
+        },
+        correct: "C"
+    },
+    {
+        id: 5,
+        question: "When gathering information about a patient's health status to form a nursing care plan, which type of data refers to the patient's personal experience of pain?",
+        options: {
+            A: "Objective data",
+            B: "Subjective data",
+            C: "Validated data",
+            D: "Interpreted data",
+            E: "Documented data"
+        },
+        correct: "B"
+    },
+    {
+        id: 6,
+        question: "In the nursing process, after the diagnosis phase, which step involves setting goals and choosing interventions for the patient?",
+        options: {
+            A: "Assessment",
+            B: "Implementation",
+            C: "Evaluation",
+            D: "Planning",
+            E: "Documentation"
+        },
+        correct: "D"
+    },
+    {
+        id: 7,
+        question: "The WHO defines health as:",
+        options: {
+            A: "No disease",
+            B: "Physical fitness",
+            C: "Complete physical, mental, and social well-being",
+            D: "Mental health only",
+            E: "Pain-free state"
+        },
+        correct: "C"
+    },
+    {
+        id: 8,
+        question: "Holistic nursing focuses on:",
+        options: {
+            A: "Disease treatment only",
+            B: "Physical care alone",
+            C: "Care of the whole person",
+            D: "Medication administration",
+            E: "Technological interventions"
+        },
+        correct: "C"
+    },
+    {
+        id: 9,
+        question: "Individuality in nursing implies:",
+        options: {
+            A: "Patients are the same",
+            B: "Each patient is unique",
+            C: "Disease is the only concern",
+            D: "Doctor-driven decisions",
+            E: "Uniform care plans"
+        },
+        correct: "B"
+    },
+    {
+        id: 10,
+        question: "The relationship between holism and individuality is that they:",
+        options: {
+            A: "Conflict with each other",
+            B: "Are unrelated",
+            C: "Are synonymous",
+            D: "Complement each other for personalized whole-person care",
+            E: "Exclude one another"
+        },
+        correct: "D"
+    },
+    {
+        id: 11,
+        question: "Homeostasis best defines as:",
+        options: {
+            A: "Treating disease",
+            B: "Maintaining body balance",
+            C: "Giving injections",
+            D: "Managing mental health",
+            E: "Preventing infections"
+        },
+        correct: "B"
+    },
+    {
+        id: 12,
+        question: "Which is an example of homeostasis?",
+        options: {
+            A: "Performing surgery",
+            B: "Regulating blood sugar",
+            C: "Administering an injection",
+            D: "Applying a dressing",
+            E: "Monitoring heart rate"
+        },
+        correct: "B"
+    },
+    {
+        id: 13,
+        question: "Which is a feature of homeostasis?",
+        options: {
+            A: "Uses only positive feedback",
+            B: "Makes the body unstable",
+            C: "Is self-regulating",
+            D: "Involves only one system",
+            E: "Depends on external drugs"
+        },
+        correct: "C"
+    },
+    {
+        id: 14,
+        question: "What does health promotion mean?",
+        options: {
+            A: "Treating disease",
+            B: "Improving overall health",
+            C: "Only giving medicine",
+            D: "Providing hospital care only",
+            E: "Focusing on disease prevention alone"
+        },
+        correct: "B"
+    },
+    {
+        id: 15,
+        question: "The following best exemplifies health protection refers to measures that prevent disease or injury by shielding individuals from health threats:",
+        options: {
+            A: "Regular aerobic exercise",
+            B: "Maintaining a balanced diet",
+            C: "Receiving vaccination",
+            D: "Practicing stress management",
+            E: "Performing routine health screenings"
+        },
+        correct: "C"
+    },
+    {
+        id: 16,
+        question: "What is the primary role of a nurse in health promotion?",
+        options: {
+            A: "Only treat existing disease",
+            B: "Focus solely on medication administration",
+            C: "Educate and support patients",
+            D: "Ignore preventive measures",
+            E: "Merely follow doctor's orders without initiative"
+        },
+        correct: "C"
+    },
+    {
+        id: 17,
+        question: "What is the ideal infant nutrition for first 6 months?",
+        options: {
+            A: "Cow's milk",
+            B: "Formula milk",
+            C: "Breast milk",
+            D: "Solid foods",
+            E: "Goat's milk"
+        },
+        correct: "C"
+    },
+    {
+        id: 18,
+        question: "Which nutrient is crucial for childhood growth?",
+        options: {
+            A: "Fats",
+            B: "Proteins",
+            C: "Carbohydrates",
+            D: "Vitamins",
+            E: "Minerals"
+        },
+        correct: "B"
+    },
+    {
+        id: 19,
+        question: "Which mineral demand spikes during adolescence?",
+        options: {
+            A: "Iron",
+            B: "Sodium",
+            C: "Potassium",
+            D: "Calcium",
+            E: "Zinc"
+        },
+        correct: "D"
+    },
+    {
+        id: 20,
+        question: "What is the adult nutrition goal?",
+        options: {
+            A: "Support rapid growth",
+            B: "Maintain health and prevent disease",
+            C: "Increase height",
+            D: "Build muscle mass",
+            E: "Enhance memory"
+        },
+        correct: "B"
+    },
+    {
+        id: 21,
+        question: "What is metabolism's main role?",
+        options: {
+            A: "Storing nutrients",
+            B: "Breaking down food",
+            C: "Converting food to energy",
+            D: "Eliminating waste",
+            E: "Regulating hormones"
+        },
+        correct: "C"
+    },
+    {
+        id: 22,
+        question: "If metabolism stops, what happens immediately?",
+        options: {
+            A: "Nutrient buildup",
+            B: "Movement stops",
+            C: "Energy storage increases",
+            D: "Cells lose energy",
+            E: "Body heals faster"
+        },
+        correct: "D"
+    },
+    {
+        id: 23,
+        question: "Which is a digestive sign of malnutrition?",
+        options: {
+            A: "Hypertension",
+            B: "Hair growth",
+            C: "Vision improves",
+            D: "Appetite increases",
+            E: "Constipation"
+        },
+        correct: "E"
+    },
+    {
+        id: 24,
+        question: "What is a musculoskeletal effect of malnutrition?",
+        options: {
+            A: "Strong bones",
+            B: "Muscle wasting",
+            C: "Increased strength",
+            D: "Rapid growth",
+            E: "Joint flexibility"
+        },
+        correct: "B"
+    },
+    {
+        id: 25,
+        question: "What is patient education's main aim?",
+        options: {
+            A: "Empower patients",
+            B: "Give medicine",
+            C: "Perform surgery",
+            D: "Take blood samples",
+            E: "Record history"
+        },
+        correct: "A"
+    },
+    {
+        id: 26,
+        question: "What does evaluation mean in nursing?",
+        options: {
+            A: "Plan care",
+            B: "Assess patient progress",
+            C: "Administer treatment",
+            D: "Document history",
+            E: "Discharge patient"
+        },
+        correct: "B"
+    },
+    {
+        id: 27,
+        question: "What is the primary purpose of documentation of assessment in healthcare?",
+        options: {
+            A: "To prescribe medication",
+            B: "To ensure continuity of care",
+            C: "To perform surgery",
+            D: "To bill patients",
+            E: "To discharge patients"
+        },
+        correct: "B"
+    },
+    {
+        id: 28,
+        question: "Documentation of assessment records which aspects of a patient's health?",
+        options: {
+            A: "Only physical signs",
+            B: "Only lab results",
+            C: "Physical, psychological, and social aspects",
+            D: "Financial status",
+            E: "Family history only"
+        },
+        correct: "C"
+    },
+    {
+        id: 29,
+        question: "Which of the following is a key purpose of assessment documentation?",
+        options: {
+            A: "Increase hospital stay",
+            B: "Provide a legal record of care",
+            C: "Reduce staffing",
+            D: "Hide patient data",
+            E: "Promote advertising"
+        },
+        correct: "B"
+    },
+    {
+        id: 30,
+        question: "Assessment documentation helps improve which process in healthcare?",
+        options: {
+            A: "Patient entertainment",
+            B: "Equipment sales",
+            C: "Research and quality improvement",
+            D: "Marketing strategies",
+            E: "Staff vacations"
+        },
+        correct: "C"
+    },
+    {
+        id: 31,
+        question: "Subjective data in documentation refers to:",
+        options: {
+            A: "Information provided by the patient",
+            B: "Lab test results",
+            C: "Physician's opinion",
+            D: "Observable measurements",
+            E: "Medication orders"
+        },
+        correct: "A"
+    },
+    {
+        id: 32,
+        question: "Objective data in documentation are:",
+        options: {
+            A: "Patient feelings",
+            B: "Family complaints",
+            C: "Measurable, observable findings",
+            D: "Personal assumptions",
+            E: "Emotional states"
+        },
+        correct: "C"
+    },
+    {
+        id: 33,
+        question: "The assessment step in documentation involves:",
+        options: {
+            A: "Writing prescriptions",
+            B: "Interpreting subjective and objective data",
+            C: "Performing surgery",
+            D: "Collecting invoices",
+            E: "Scheduling appointments"
+        },
+        correct: "B"
+    },
+    {
+        id: 34,
+        question: "Why is communication among providers important in documentation?",
+        options: {
+            A: "To increase costs",
+            B: "To confuse staff",
+            C: "To facilitate coordinated patient care",
+            D: "To hide information",
+            E: "To delay treatment"
+        },
+        correct: "C"
+    },
+    {
+        id: 35,
+        question: "Which guideline ensures legal protection through documentation?",
+        options: {
+            A: "Patient confidentiality only",
+            B: "Accurate recording of care events",
+            C: "Ignoring patient complaints",
+            D: "Skipping assessments",
+            E: "Overcharging patients"
+        },
+        correct: "B"
+    },
+    {
+        id: 36,
+        question: "The ultimate goal of documenting assessment is to:",
+        options: {
+            A: "Maximize profits",
+            B: "Support continuous, safe patient care",
+            C: "Reduce patient visits",
+            D: "Complicate treatment plans",
+            E: "Ignore patient needs"
+        },
+        correct: "B"
+    },
+    {
+        id: 37,
+        question: "Which term describes an individual's overall sexual identity, orientation, and behavior?",
+        options: {
+            A: "Sexual dysfunction",
+            B: "Paraphilia",
+            C: "Sexuality Pattern",
+            D: "Ethical violation",
+            E: "Coercive behavior"
+        },
+        correct: "C"
+    },
+    {
+        id: 38,
+        question: "Abnormal sexuality is best defined as a sexual behavior that:",
+        options: {
+            A: "Enhances personal pleasure without consequences",
+            B: "Is socially acceptable in all cultures",
+            C: "Causes harm, distress, or violates ethical standards",
+            D: "Represents normal developmental stages",
+            E: "Is unrelated to psychological health"
+        },
+        correct: "C"
+    },
+    {
+        id: 39,
+        question: "Which of the following is an example of a condition classified under abnormal sexuality involving atypical sexual interests?",
+        options: {
+            A: "Bipolar disorder",
+            B: "Paraphilia",
+            C: "Gender identity",
+            D: "Sexual satisfaction",
+            E: "Emotional intelligence"
+        },
+        correct: "B"
+    },
+    {
+        id: 40,
+        question: "Which structure in the female reproductive system is primarily responsible for producing estrogen and progesterone?",
+        options: {
+            A: "Uterus",
+            B: "Ovary",
+            C: "Fallopian tube",
+            D: "Cervix",
+            E: "Vagina"
+        },
+        correct: "B"
+    },
+    {
+        id: 41,
+        question: "In the male reproductive system, the organ that stores and matures sperm before ejaculation is the:",
+        options: {
+            A: "Epididymis",
+            B: "Prostate gland",
+            C: "Seminal vesicle",
+            D: "Vas deferens",
+            E: "Testis"
+        },
+        correct: "A"
+    },
+    {
+        id: 42,
+        question: "The urinary system component that transports urine from the kidneys to the bladder in both males and females is the:",
+        options: {
+            A: "Urethra",
+            B: "Nephron",
+            C: "Bladder wall",
+            D: "Ureter",
+            E: "Renal pelvis"
+        },
+        correct: "D"
+    },
+    {
+        id: 43,
+        question: "A nurse meets a new patient in the emergency department for the first time and must gather comprehensive baseline data. Which type of assessment is being performed?",
+        options: {
+            A: "Focused Assessment",
+            B: "Ongoing Assessment",
+            C: "Emergency Assessment",
+            D: "Initial Assessment",
+            E: "Comprehensive Assessment"
+        },
+        correct: "D"
+    },
+    {
+        id: 44,
+        question: "During a patient's hospitalization, the healthcare team continuously monitors the patient's condition to detect any changes in status. Which assessment method is used?",
+        options: {
+            A: "Initial Assessment",
+            B: "Focused Assessment",
+            C: "Ongoing Assessment",
+            D: "Emergency Assessment",
+            E: "Diagnostic Assessment"
+        },
+        correct: "C"
+    },
+    {
+        id: 45,
+        question: "A patient learns to manage a chronic illness by directly tackling the underlying cause of the related stress. Which coping strategy is being applied?",
+        options: {
+            A: "Problem-focused Coping",
+            B: "Emotion-focused Coping",
+            C: "Avoidance Coping",
+            D: "Adaptive Coping",
+            E: "Maladaptive Coping"
+        },
+        correct: "A"
+    },
+    {
+        id: 46,
+        question: "After a traumatic event, a person tries to reduce the emotional distress by engaging in meditation and relaxation techniques without addressing the source of stress. Which coping mechanism is this?",
+        options: {
+            A: "Problem-focused Coping",
+            B: "Emotion-focused Coping",
+            C: "Avoidance Coping",
+            D: "Initial Coping",
+            E: "Reactive Coping"
+        },
+        correct: "B"
+    },
+    {
+        id: 47,
+        question: "A terminally ill patient refuses to believe the doctor's diagnosis and claims the tests must be wrong. Which stage is she experiencing?",
+        options: {
+            A: "Anger",
+            B: "Bargaining",
+            C: "Depression",
+            D: "Acceptance",
+            E: "Denial"
+        },
+        correct: "E"
+    },
+    {
+        id: 48,
+        question: "After initially denying his prognosis, a patient becomes irritable, blaming the medical staff for his condition. Which stage does this behavior represent?",
+        options: {
+            A: "Anger",
+            B: "Denial",
+            C: "Bargaining",
+            D: "Depression",
+            E: "Acceptance"
+        },
+        correct: "A"
+    },
+    {
+        id: 49,
+        question: "A dying patient starts making promises to God in hopes of gaining more time to see his grandchildren. This reflects which stage of grief?",
+        options: {
+            A: "Denial",
+            B: "Anger",
+            C: "Bargaining",
+            D: "Depression",
+            E: "Acceptance"
+        },
+        correct: "C"
+    },
+    {
+        id: 50,
+        question: "When a patient withdraws from social activities and feels overwhelming sadness about his impending death, he is in which stage?",
+        options: {
+            A: "Denial",
+            B: "Anger",
+            C: "Bargaining",
+            D: "Depression",
+            E: "Acceptance"
+        },
+        correct: "D"
+    },
+    {
+        id: 51,
+        question: "A patient finally embraces his mortality, plans his remaining time calmly, and shows peace about the outcome. This indicates which stage?",
+        options: {
+            A: "Denial",
+            B: "Anger",
+            C: "Bargaining",
+            D: "Depression",
+            E: "Acceptance"
+        },
+        correct: "E"
+    },
+    {
+        id: 52,
+        question: "A patient experiences sudden, sharp pain after a fall that resolves within days. Which type of pain is this most likely?",
+        options: {
+            A: "Chronic pain",
+            B: "Neuropathic pain",
+            C: "Acute pain",
+            D: "Referred pain",
+            E: "Nociceptive pain"
+        },
+        correct: "C"
+    },
+    {
+        id: 53,
+        question: "A 45-year-old man reports persistent burning sensation in his legs due to diabetic nerve damage. This pain is classified as:",
+        options: {
+            A: "Acute pain",
+            B: "Neuropathic pain",
+            C: "Nociceptive pain",
+            D: "Referred pain",
+            E: "Chronic somatic pain"
+        },
+        correct: "B"
+    },
+    {
+        id: 54,
+        question: "During a physical exam, a clinician asks a child to point to a face that best represents his hurt after a cut. Which assessment tool is being used?",
+        options: {
+            A: "Wong-Baker Faces Scale",
+            B: "Numeric Rating Scale (NRS)",
+            C: "Visual Analog Scale (VAS)",
+            D: "McGill Pain Questionnaire",
+            E: "Pain Behavior Scale"
+        },
+        correct: "A"
+    },
+    {
+        id: 55,
+        question: "The theory that explains pain perception by suggesting a 'gate' in the spinal cord that modulates signals is the:",
+        options: {
+            A: "Specificity Theory",
+            B: "Pattern Theory",
+            C: "Gate Control Theory",
+            D: "Intensity Theory",
+            E: "Neuromatrix Theory"
+        },
+        correct: "C"
+    },
+    {
+        id: 56,
+        question: "A patient feels chest discomfort radiating to the left arm during a myocardial infarction. This phenomenon is an example of:",
+        options: {
+            A: "Acute pain",
+            B: "Neuropathic pain",
+            C: "Nociceptive pain",
+            D: "Referred pain",
+            E: "Chronic pain"
+        },
+        correct: "D"
+    },
+    {
+        id: 57,
+        question: "A nurse reviews the clinical judgment used to identify a patient's health problem that can be managed independently. Which term best describes this judgment?",
+        options: {
+            A: "Nursing diagnosis",
+            B: "Medical diagnosis",
+            C: "Collaborative problem",
+            D: "Assessment finding",
+            E: "Treatment plan"
+        },
+        correct: "A"
+    },
+    {
+        id: 58,
+        question: "A patient exhibits an existing health issue of acute pain that the nurse can address. Which type of nursing diagnosis is this?",
+        options: {
+            A: "Risk diagnosis",
+            B: "Health promotion diagnosis",
+            C: "Actual diagnosis",
+            D: "Syndrome diagnosis",
+            E: "Collaborative diagnosis"
+        },
+        correct: "C"
+    },
+    {
+        id: 59,
+        question: "After formulating a nursing diagnosis, the nurse's next step involves performing interventions tailored to the diagnosis. Which action is part of the implementation phase?",
+        options: {
+            A: "Collecting assessment data",
+            B: "Administering medications based on diagnosis",
+            C: "Evaluating patient outcomes only",
+            D: "Writing the care plan goals",
+            E: "Identifying health risks"
+        },
+        correct: "B"
+    },
+    {
+        id: 60,
+        question: "A nurse uses a nursing diagnosis primarily to achieve which outcome?",
+        options: {
+            A: "Reduce physician workload",
+            B: "Order laboratory tests",
+            C: "Prescribe medications",
+            D: "Develop an individualized care plan",
+            E: "Document patient complaints"
+        },
+        correct: "D"
+    },
+    {
+        id: 61,
+        question: "A client experiences the loss of a loved one and shows emotional responses to that loss. In nursing terms, what is this emotional response called?",
+        options: {
+            A: "Bereavement",
+            B: "Grieving",
+            C: "Depression",
+            D: "Denial",
+            E: "Acceptance"
+        },
+        correct: "B"
+    },
+    {
+        id: 62,
+        question: "During a postoperative assessment, the nurse identifies that a patient is vulnerable to developing a wound infection due to compromised skin integrity. Which nursing diagnosis best reflects this potential health threat?",
+        options: {
+            A: "Risk Diagnosis",
+            B: "Actual Diagnosis",
+            C: "Health Promotion Diagnosis",
+            D: "Syndrome Diagnosis",
+            E: "Wellness Diagnosis"
+        },
+        correct: "A"
+    },
+    {
+        id: 63,
+        question: "A community health nurse plans an educational program to encourage elderly residents to adopt healthier eating habits and regular exercise to improve their overall wellness. Which type of nursing diagnosis should guide this intervention?",
+        options: {
+            A: "Actual Diagnosis",
+            B: "Risk Diagnosis",
+            C: "Health Promotion Diagnosis",
+            D: "Syndrome Diagnosis",
+            E: "Medical Diagnosis"
+        },
+        correct: "C"
+    },
+    {
+        id: 64,
+        question: "A patient presents with a combination of symptoms including chronic pain, sleep disturbance, and fatigue, which together characterize a complex health condition. Which nursing diagnosis represents this cluster of related problems?",
+        options: {
+            A: "Actual Diagnosis",
+            B: "Risk Diagnosis",
+            C: "Health Promotion Diagnosis",
+            D: "Syndrome Diagnosis",
+            E: "Differential Diagnosis"
+        },
+        correct: "D"
+    },
+    {
+        id: 65,
+        question: "Which of the following best describes how self-perception influences behavior?",
+        options: {
+            A: "It determines genetic traits",
+            B: "It only affects physical health",
+            C: "It guides motivation and decision-making",
+            D: "It isolates individuals from society",
+            E: "It eliminates personal goals"
+        },
+        correct: "C"
+    },
+    {
+        id: 66,
+        question: "Low self-esteem, as a component of self-perception, is most likely to lead to:",
+        options: {
+            A: "Increased confidence",
+            B: "Anxiety or depression",
+            C: "Enhanced social skills",
+            D: "Financial success",
+            E: "Physical strength"
+        },
+        correct: "B"
+    },
+    {
+        id: 67,
+        question: "The primary way self-perception shapes relationships is by:",
+        options: {
+            A: "Controlling external environments",
+            B: "Defining personal hobbies",
+            C: "Determining academic grades",
+            D: "Impacting interactions with others",
+            E: "Ignoring emotional cues"
+        },
+        correct: "D"
+    },
+    {
+        id: 68,
+        question: "A self-concept pattern is best defined as:",
+        options: {
+            A: "External judgments about others",
+            B: "Beliefs, attitudes, and perceptions about oneself",
+            C: "A measure of physical fitness",
+            D: "A financial status indicator",
+            E: "A cultural tradition"
+        },
+        correct: "B"
+    },
+    {
+        id: 69,
+        question: "The 'Personal Identity' function of self-concept primarily helps a person to:",
+        options: {
+            A: "Master cooking skills",
+            B: "Improve mathematical ability",
+            C: "Increase social media followers",
+            D: "Define their sense of individuality",
+            E: "Manage time efficiently"
+        },
+        correct: "D"
+    },
+    {
+        id: 70,
+        question: "Which aspect of self-concept focuses on how a person perceives their physical appearance?",
+        options: {
+            A: "Body image",
+            B: "Self-esteem",
+            C: "Personality traits",
+            D: "Career goals",
+            E: "Emotional intelligence"
+        },
+        correct: "A"
+    }
+];
+
+// ============================================================
 // ALL TESTS
 // ============================================================
 export const ALL_TESTS = {
@@ -1583,6 +2429,15 @@ export const ALL_TESTS = {
         timeLimit: 20,
         passingScore: 50,
         questions: TEST4_QUESTIONS
+    },
+    test5: {
+        id: 'test5',
+        name: 'Fundamentals of Nursing-II',
+        description: '70 MCQs on Fundamentals of Nursing',
+        totalQuestions: 70,
+        timeLimit: 60,
+        passingScore: 50,
+        questions: TEST5_QUESTIONS
     }
 };
 
@@ -1601,9 +2456,9 @@ export const getActiveTestId = () => {
     } catch (error) {
         console.warn('Error reading from localStorage:', error);
     }
-    // Default: Test 4 (Nasal Anatomy)
-    console.log('✅ Using default test: test4');
-    return 'test4';
+    // Default: Test 5 (Fundamentals of Nursing-II)
+    console.log('✅ Using default test: test5');
+    return 'test5';
 };
 
 // Set Active Test ID in localStorage
