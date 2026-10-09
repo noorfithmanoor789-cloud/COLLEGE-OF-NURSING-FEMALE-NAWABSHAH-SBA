@@ -1,6 +1,6 @@
-// ============================================================
+// ================================================
 // COLLEGE INFORMATION
-// ============================================================
+// ================================================
 export const COLLEGE_INFO = {
     name: 'College of Nursing Female Nawabshah',
     shortName: 'CON Nawabshah',
@@ -9,9 +9,9 @@ export const COLLEGE_INFO = {
     firebaseProject: 'college-nursing-nawabshah'
 };
 
-// ============================================================
-// STUDENTS LIST (51 to 116)
-// ============================================================
+// ================================================
+// STUDENTS LIST (51 to 116) - ORIGINAL
+// ================================================
 export const EXAM_STUDENTS = [
     // ====== STUDENTS 51-100 ======
     { name: 'AFHSAN', username: 'student51', password: '51' },
@@ -65,7 +65,7 @@ export const EXAM_STUDENTS = [
     { name: 'UROOSA', username: 'student99', password: '99' },
     { name: 'UZMA', username: 'student100', password: '100' },
 
-    // ====== 🆕 STUDENTS 101-116 ======
+    // ====== STUDENTS 101-116 ======
     { name: 'M. FAIZAN', username: 'student101', password: '101' },
     { name: 'M. AKRAM', username: 'student102', password: '102' },
     { name: 'GUL HASSAN', username: 'student103', password: '103' },
@@ -81,12 +81,114 @@ export const EXAM_STUDENTS = [
     { name: 'JUNAID', username: 'student113', password: '113' },
     { name: 'HARESH KUMAR', username: 'student114', password: '114' },
     { name: 'M. UMER', username: 'student115', password: '115' },
-    { name: 'BHAGCHAND', username: 'student116', password: '116' }
+    { name: 'BHAGCHAND', username: 'student116', password: '116' },
+
+    // ====== 🆕 NEW STUDENTS 117-216 (FROM PROVIDED LIST) ======
+    { name: 'NIRMA', username: 'student117', password: '117' },
+    { name: 'FARAH NAZ', username: 'student118', password: '118' },
+    { name: 'AYESHA', username: 'student119', password: '119' },
+    { name: 'MEHWISH', username: 'student120', password: '120' },
+    { name: 'MUSKAN', username: 'student121', password: '121' },
+    { name: 'ZOHA', username: 'student122', password: '122' },
+    { name: 'SONIA SINDHU', username: 'student123', password: '123' },
+    { name: 'ISHA', username: 'student124', password: '124' },
+    { name: 'IQRA', username: 'student125', password: '125' },
+    { name: 'ALIYA', username: 'student126', password: '126' },
+    { name: 'LAIBA', username: 'student127', password: '127' },
+    { name: 'HIRA NASEEM', username: 'student128', password: '128' },
+    { name: 'JAWARIA', username: 'student129', password: '129' },
+    { name: 'BAKHTAWAR', username: 'student130', password: '130' },
+    { name: 'BUSHRA', username: 'student131', password: '131' },
+    { name: 'ZAHIRA', username: 'student132', password: '132' },
+    { name: 'IQRA', username: 'student133', password: '133' },
+    { name: 'DUA', username: 'student134', password: '134' },
+    { name: 'SOBIA NAZ', username: 'student135', password: '135' },
+    { name: 'PARVEEN', username: 'student136', password: '136' },
+    { name: 'BIBI AMBER NAZ', username: 'student137', password: '137' },
+    { name: 'BENAZEER MEMON', username: 'student138', password: '138' },
+    { name: 'BIBI ZAINAB NAZ', username: 'student139', password: '139' },
+    { name: 'ISHA RIAZ', username: 'student140', password: '140' },
+    { name: 'DUA', username: 'student141', password: '141' },
+    { name: 'IQRA', username: 'student142', password: '142' },
+    { name: 'SAIRA', username: 'student143', password: '143' },
+    { name: 'KAJAL', username: 'student144', password: '144' },
+    { name: 'ERAJ', username: 'student145', password: '145' },
+    { name: 'ALISHAH', username: 'student146', password: '146' },
+    { name: 'NAYAB', username: 'student147', password: '147' },
+    { name: 'UROOJ AIJAZ', username: 'student148', password: '148' },
+    { name: 'TABEER NAZ RAJPER', username: 'student149', password: '149' },
+    { name: 'MURK AQSA', username: 'student150', password: '150' },
+    { name: 'BIBI SUMIYA', username: 'student151', password: '151' },
+    { name: 'ASIA', username: 'student152', password: '152' },
+    { name: 'MANAHIL', username: 'student153', password: '153' },
+    { name: 'SUMERA', username: 'student154', password: '154' },
+    { name: 'SAMRA NAZ', username: 'student155', password: '155' },
+    { name: 'FARWA', username: 'student156', password: '156' },
+    { name: 'NADIA', username: 'student157', password: '157' },
+    { name: 'SASUI', username: 'student158', password: '158' },
+    { name: 'MAHEEN', username: 'student159', password: '159' },
+    { name: 'ROZINA', username: 'student160', password: '160' },
+    { name: 'MUSKAN', username: 'student161', password: '161' },
+    { name: 'SUMAIYA', username: 'student162', password: '162' },
+    { name: 'BISMA', username: 'student163', password: '163' },
+    { name: 'LAIBA', username: 'student164', password: '164' },
+    { name: 'RABIA', username: 'student165', password: '165' },
+    { name: 'AMBAR MEHAK', username: 'student166', password: '166' },
+    { name: 'TAHSEEN UL REHMAN', username: 'student167', password: '167' },
+    { name: 'HIRA', username: 'student168', password: '168' },
+    { name: 'RABIA', username: 'student169', password: '169' },
+    { name: 'ALMAS', username: 'student170', password: '170' },
+    { name: 'KANWAL GUL', username: 'student171', password: '171' },
+    { name: 'MUSKAN', username: 'student172', password: '172' },
+    { name: 'MAHWISH', username: 'student173', password: '173' },
+    { name: 'TANZEEM FATIMA', username: 'student174', password: '174' },
+    { name: 'MEHAK AHMED', username: 'student175', password: '175' },
+    { name: 'KIRPA DEVI', username: 'student176', password: '176' },
+    { name: 'SHOUMAILA', username: 'student177', password: '177' },
+    { name: 'AAISHA', username: 'student178', password: '178' },
+    { name: 'ZAINAB KAREEZ MEMON', username: 'student179', password: '179' },
+    { name: 'SANAM', username: 'student180', password: '180' },
+    { name: 'NISHA', username: 'student181', password: '181' },
+    { name: 'SHAFA', username: 'student182', password: '182' },
+    { name: 'LAIBA UROOJ', username: 'student183', password: '183' },
+    { name: 'FOZIA ZAHID', username: 'student184', password: '184' },
+    { name: 'ADEEBA', username: 'student185', password: '185' },
+    { name: 'RAMSHA AKHTAR', username: 'student186', password: '186' },
+    { name: 'SINDHU', username: 'student187', password: '187' },
+    { name: 'BISMA', username: 'student188', password: '188' },
+    { name: 'KANWAL SOOMRO', username: 'student189', password: '189' },
+    { name: 'REHANA', username: 'student190', password: '190' },
+    { name: 'BIBI SYEDA SANIA SHAH', username: 'student191', password: '191' },
+    { name: 'SHUMAILA', username: 'student192', password: '192' },
+    { name: 'NARGIS NAZ', username: 'student193', password: '193' },
+    { name: 'ALISHA', username: 'student194', password: '194' },
+    { name: 'SANA ZAHRA', username: 'student195', password: '195' },
+    { name: 'REEMA KHOSO', username: 'student196', password: '196' },
+    { name: 'FATIMA', username: 'student197', password: '197' },
+    { name: 'TAHIRA', username: 'student198', password: '198' },
+    { name: 'AQSA BIBI', username: 'student199', password: '199' },
+    { name: 'GHULLAM BATOOL BHAN', username: 'student200', password: '200' },
+    { name: 'GUL NAZ', username: 'student201', password: '201' },
+    { name: 'NAJMA', username: 'student202', password: '202' },
+    { name: 'SANOBER', username: 'student203', password: '203' },
+    { name: 'AMAN FATIMA', username: 'student204', password: '204' },
+    { name: 'MEHNAZ', username: 'student205', password: '205' },
+    { name: 'REEHANA', username: 'student206', password: '206' },
+    { name: 'FATIMA ARAEN', username: 'student207', password: '207' },
+    { name: 'JAVERIA ABID', username: 'student208', password: '208' },
+    { name: 'BIBI MEHAR UL NISA', username: 'student209', password: '209' },
+    { name: 'SUMAYA', username: 'student210', password: '210' },
+    { name: 'KHADEEJA', username: 'student211', password: '211' },
+    { name: 'SAIQA', username: 'student212', password: '212' },
+    { name: 'ALISHBA', username: 'student213', password: '213' },
+    { name: 'RIZWANA', username: 'student214', password: '214' },
+    { name: 'NIMRA', username: 'student215', password: '215' },
+    { name: 'SADAF NAZ', username: 'student216', password: '216' }
 ];
 
-// ============================================================
+// ================================================
 // TEST 1: Cellular Trauma & Injury (25 Questions)
-// ============================================================
+// ================================================
 const TEST1_QUESTIONS = [
     {
         id: 1,
@@ -365,9 +467,9 @@ const TEST1_QUESTIONS = [
     }
 ];
 
-// ============================================================
+// ================================================
 // TEST 2: Pathophysiology (50 Questions)
-// ============================================================
+// ================================================
 const TEST2_QUESTIONS = [
     {
         id: 1,
@@ -971,9 +1073,9 @@ const TEST2_QUESTIONS = [
     }
 ];
 
-// ============================================================
+// ================================================
 // TEST 3: Immunological Disorders (30 Questions)
-// ============================================================
+// ================================================
 const TEST3_QUESTIONS = [
     {
         id: 1,
@@ -1337,9 +1439,9 @@ const TEST3_QUESTIONS = [
     }
 ];
 
-// ============================================================
+// ================================================
 // TEST 4: Nasal Anatomy - Structural Landmarks (20 Questions)
-// ============================================================
+// ================================================
 const TEST4_QUESTIONS = [
     {
         id: 1,
@@ -1563,9 +1665,9 @@ const TEST4_QUESTIONS = [
     }
 ];
 
-// ============================================================
+// ================================================
 // TEST 5: Fundamentals of Nursing-II (70 Questions)
-// ============================================================
+// ================================================
 const TEST5_QUESTIONS = [
     {
         id: 1,
@@ -2409,9 +2511,9 @@ const TEST5_QUESTIONS = [
     }
 ];
 
-// ============================================================
+// ================================================
 // TEST 6: Anatomy & Physiology II (80 Questions)
-// ============================================================
+// ================================================
 const TEST6_QUESTIONS = [
     {
         id: 1,
@@ -3375,9 +3477,1115 @@ const TEST6_QUESTIONS = [
     }
 ];
 
-// ============================================================
+// ================================================
+// 🆕 TEST 7: FON History (100 Questions)
+// ================================================
+const TEST7_QUESTIONS = [
+    {
+        id: 1,
+        question: "Modern definitions of nursing describe it as a science and an art that focuses on:",
+        options: {
+            A: "Curing all diseases",
+            B: "Promoting quality of life",
+            C: "Performing medical procedures only",
+            D: "Managing hospital administration"
+        },
+        correct: "B"
+    },
+    {
+        id: 2,
+        question: "According to the WHO, what percentage of health care professionals do nurses make up in many countries?",
+        options: {
+            A: "One-third",
+            B: "One-quarter",
+            C: "Half",
+            D: "Three-quarters"
+        },
+        correct: "C"
+    },
+    {
+        id: 3,
+        question: "The history of professional nursing traditionally begins with:",
+        options: {
+            A: "Rufaidah Bint Sa'ad",
+            B: "Florence Nightingale",
+            C: "Elizabeth Fry",
+            D: "Hippocrates"
+        },
+        correct: "B"
+    },
+    {
+        id: 4,
+        question: "Florence Nightingale was born on:",
+        options: {
+            A: "12 May 1820",
+            B: "13 August 1910",
+            C: "12 May 1854",
+            D: "13 August 1820"
+        },
+        correct: "A"
+    },
+    {
+        id: 5,
+        question: "Florence Nightingale died in:",
+        options: {
+            A: "12 May 1820",
+            B: "13 August 1910",
+            C: "12 May 1854",
+            D: "13 August 1820"
+        },
+        correct: "B"
+    },
+    {
+        id: 6,
+        question: "Where did Florence Nightingale receive her formal nurse's training?",
+        options: {
+            A: "St. Thomas's Hospital, London",
+            B: "Kaiserswerth, Germany",
+            C: "Kings College London",
+            D: "University of Cambridge"
+        },
+        correct: "B"
+    },
+    {
+        id: 7,
+        question: "During the Crimean War, what was the mortality rate of British troops that appalled Nightingale?",
+        options: {
+            A: "21%",
+            B: "31%",
+            C: "41%",
+            D: "51%"
+        },
+        correct: "C"
+    },
+    {
+        id: 8,
+        question: "Florence Nightingale established the Nightingale School of Nursing at:",
+        options: {
+            A: "St. Thomas's Hospital in London",
+            B: "Women's Hospital of Philadelphia",
+            C: "JPMC, Karachi",
+            D: "Kaiserswerth Hospital"
+        },
+        correct: "A"
+    },
+    {
+        id: 9,
+        question: "Who is considered the first 'visiting nurse'?",
+        options: {
+            A: "Florence Nightingale",
+            B: "Elizabeth Fry",
+            C: "Phoebe",
+            D: "Rufaidah Bint Sa'ad"
+        },
+        correct: "C"
+    },
+    {
+        id: 10,
+        question: "The first Muslim nurse is:",
+        options: {
+            A: "Rufaidah Bint Sa'ad",
+            B: "Maham",
+            C: "Phoebe",
+            D: "Wazir Begum"
+        },
+        correct: "A"
+    },
+    {
+        id: 11,
+        question: "Rufaidah Bint Sa'ad accompanied Prophet Muhammad (PBUH) during which battles?",
+        options: {
+            A: "Badar, Uhud, Khandaq, Khaybar",
+            B: "Only Badar and Uhud",
+            C: "Only Khandaq and Khaybar",
+            D: "All battles of the Islamic era"
+        },
+        correct: "A"
+    },
+    {
+        id: 12,
+        question: "In Islam, nurses provide healthcare services as a manifestation of:",
+        options: {
+            A: "Professional duty only",
+            B: "Love for Allah and Muhammad",
+            C: "Financial need",
+            D: "Social status"
+        },
+        correct: "B"
+    },
+    {
+        id: 13,
+        question: "When was the Pakistan Nursing Council (PNC) established?",
+        options: {
+            A: "1947",
+            B: "1948",
+            C: "1952",
+            D: "1973"
+        },
+        correct: "B"
+    },
+    {
+        id: 14,
+        question: "The Pakistan Nursing Council was formally constituted by Acts in:",
+        options: {
+            A: "1948 and 1952",
+            B: "1952 and 1973",
+            C: "1973 and 1988",
+            D: "1948 and 1973"
+        },
+        correct: "B"
+    },
+    {
+        id: 15,
+        question: "Which ancient civilization was the first to maintain medical records?",
+        options: {
+            A: "Greek",
+            B: "Roman",
+            C: "Egyptian",
+            D: "Chinese"
+        },
+        correct: "C"
+    },
+    {
+        id: 16,
+        question: "The Egyptian healthcare system began maintaining medical records around:",
+        options: {
+            A: "3000 B.C.",
+            B: "400 B.C.",
+            C: "300 B.C.",
+            D: "1000 A.D."
+        },
+        correct: "A"
+    },
+    {
+        id: 17,
+        question: "Who is known as the 'Lady with the Lamp'?",
+        options: {
+            A: "Elizabeth Fry",
+            B: "Florence Nightingale",
+            C: "Phoebe",
+            D: "Rufaidah Bint Sa'ad"
+        },
+        correct: "B"
+    },
+    {
+        id: 18,
+        question: "The first permanent school of nursing founded in the United States was at:",
+        options: {
+            A: "Women's Hospital of Philadelphia",
+            B: "St. Thomas's Hospital",
+            C: "JPMC, Karachi",
+            D: "AKUSON, Karachi"
+        },
+        correct: "A"
+    },
+    {
+        id: 19,
+        question: "When was the first permanent school of nursing established in the United States?",
+        options: {
+            A: "1854",
+            B: "1872",
+            C: "1888",
+            D: "1896"
+        },
+        correct: "B"
+    },
+    {
+        id: 20,
+        question: "Elizabeth Fry founded the Protestant Sisters of Charity in:",
+        options: {
+            A: "1840",
+            B: "1848",
+            C: "1854",
+            D: "1872"
+        },
+        correct: "A"
+    },
+    {
+        id: 21,
+        question: "In 1848, which English Protestant sisterhood was founded?",
+        options: {
+            A: "St. John's House",
+            B: "St. Thomas's House",
+            C: "Protestant Sisters of Charity",
+            D: "Nightingale School"
+        },
+        correct: "A"
+    },
+    {
+        id: 22,
+        question: "In ancient Rome, during the early Christian era, who was selected by the church to provide care for the sick?",
+        options: {
+            A: "Priests",
+            B: "Deaconesses",
+            C: "Medicine men",
+            D: "Midwives"
+        },
+        correct: "B"
+    },
+    {
+        id: 23,
+        question: "The 'Physiocratic school of thought' was developed by:",
+        options: {
+            A: "The Egyptians",
+            B: "The Romans",
+            C: "The ancient Greeks",
+            D: "The Muslims"
+        },
+        correct: "C"
+    },
+    {
+        id: 24,
+        question: "Who believed that disease had natural, not magical, causes?",
+        options: {
+            A: "Apollo",
+            B: "Hippocrates",
+            C: "Florence Nightingale",
+            D: "Rufaidah Bint Sa'ad"
+        },
+        correct: "B"
+    },
+    {
+        id: 25,
+        question: "The first nurse in the Islamic and Eastern world was:",
+        options: {
+            A: "Maham",
+            B: "Rufaidah Bint Sa'ad",
+            C: "Phoebe",
+            D: "Elizabeth Fry"
+        },
+        correct: "B"
+    },
+    {
+        id: 26,
+        question: "Nursing in hospitals in Islam began in:",
+        options: {
+            A: "700",
+            B: "830",
+            C: "1000",
+            D: "1200"
+        },
+        correct: "B"
+    },
+    {
+        id: 27,
+        question: "Maham, a great lady, served as a wet nurse of which king?",
+        options: {
+            A: "King Akbar",
+            B: "King Ashoka",
+            C: "King Babur",
+            D: "King Aurangzeb"
+        },
+        correct: "A"
+    },
+    {
+        id: 28,
+        question: "The trend of starting Male Nursing in Pakistan began in:",
+        options: {
+            A: "1971-1980",
+            B: "1981-1990",
+            C: "1991-2000",
+            D: "2001-2010"
+        },
+        correct: "B"
+    },
+    {
+        id: 29,
+        question: "The Post RN BScN program started in Pakistan in:",
+        options: {
+            A: "1981",
+            B: "1988",
+            C: "1996",
+            D: "2001"
+        },
+        correct: "B"
+    },
+    {
+        id: 30,
+        question: "The 4-year Generic BS Nursing program started in Pakistan in:",
+        options: {
+            A: "1988",
+            B: "1996",
+            C: "2001",
+            D: "2004"
+        },
+        correct: "B"
+    },
+    {
+        id: 31,
+        question: "When was the Pakistan Nurses Act passed?",
+        options: {
+            A: "1948",
+            B: "1951",
+            C: "1956",
+            D: "1973"
+        },
+        correct: "B"
+    },
+    {
+        id: 32,
+        question: "The Pakistan Nurses Act 1973 was established to:",
+        options: {
+            A: "Create the PNC",
+            B: "Regulate nursing education and practice",
+            C: "Establish the PNF",
+            D: "Start male nursing"
+        },
+        correct: "B"
+    },
+    {
+        id: 33,
+        question: "The Pakistan Nursing Federation (PNF) was established on:",
+        options: {
+            A: "July 6, 1972",
+            B: "July 6, 1973",
+            C: "August 6, 1972",
+            D: "August 6, 1973"
+        },
+        correct: "A"
+    },
+    {
+        id: 34,
+        question: "The first Pakistani Nurse to become a Principal was:",
+        options: {
+            A: "Ms. Wazir Begum",
+            B: "Ms. Rufaidah",
+            C: "Ms. Phoebe",
+            D: "Ms. Maham"
+        },
+        correct: "A"
+    },
+    {
+        id: 35,
+        question: "When did Ms. Wazir Begum become a Principal?",
+        options: {
+            A: "1956",
+            B: "1962",
+            C: "1966",
+            D: "1972"
+        },
+        correct: "C"
+    },
+    {
+        id: 36,
+        question: "What is the duration of a Diploma in General Nursing?",
+        options: {
+            A: "2 years",
+            B: "3 years",
+            C: "4 years",
+            D: "5 years"
+        },
+        correct: "B"
+    },
+    {
+        id: 37,
+        question: "What is the duration of a Generic BS Nursing degree?",
+        options: {
+            A: "2 years",
+            B: "3 years",
+            C: "4 years",
+            D: "5 years"
+        },
+        correct: "C"
+    },
+    {
+        id: 38,
+        question: "What is the duration of a Post RN BS Nursing degree?",
+        options: {
+            A: "1 year",
+            B: "2 years",
+            C: "3 years",
+            D: "4 years"
+        },
+        correct: "B"
+    },
+    {
+        id: 39,
+        question: "Which of the following is NOT a type of nursing educational program mentioned?",
+        options: {
+            A: "Diploma program",
+            B: "Degree program",
+            C: "Certificate program",
+            D: "Post Basic Diploma"
+        },
+        correct: "C"
+    },
+    {
+        id: 40,
+        question: "The Pakistan Nursing Council (PNC) certifies all of the following EXCEPT:",
+        options: {
+            A: "Nurses",
+            B: "Midwives",
+            C: "Physicians",
+            D: "Lady Health Visitors"
+        },
+        correct: "C"
+    },
+    {
+        id: 41,
+        question: "What is the nurse-patient ratio in Pakistan according to the presentation?",
+        options: {
+            A: "1:100",
+            B: "1:313",
+            C: "1:500",
+            D: "1:1000"
+        },
+        correct: "B"
+    },
+    {
+        id: 42,
+        question: "What is the nurse-doctor ratio in Pakistan?",
+        options: {
+            A: "1:2",
+            B: "1:4",
+            C: "1:6",
+            D: "1:8"
+        },
+        correct: "C"
+    },
+    {
+        id: 43,
+        question: "What is the nurse-bed ratio in Pakistan?",
+        options: {
+            A: "1:2",
+            B: "1:4",
+            C: "1:6",
+            D: "1:8"
+        },
+        correct: "D"
+    },
+    {
+        id: 44,
+        question: "How many sanctioned posts of nurses are there in the Health Department Government of Sindh?",
+        options: {
+            A: "1703",
+            B: "1968",
+            C: "7188",
+            D: "8253"
+        },
+        correct: "B"
+    },
+    {
+        id: 45,
+        question: "How many filled posts of nurses are there in the Health Department Government of Sindh?",
+        options: {
+            A: "1703",
+            B: "1968",
+            C: "7188",
+            D: "8253"
+        },
+        correct: "A"
+    },
+    {
+        id: 46,
+        question: "How many Schools of Nursing are currently offering Basic Nursing Programs in Pakistan?",
+        options: {
+            A: "24",
+            B: "88",
+            C: "96",
+            D: "100"
+        },
+        correct: "B"
+    },
+    {
+        id: 47,
+        question: "How many Schools of Midwifery are there in Pakistan?",
+        options: {
+            A: "24",
+            B: "88",
+            C: "96",
+            D: "100"
+        },
+        correct: "C"
+    },
+    {
+        id: 48,
+        question: "How many Public Health Nursing Schools are there in Pakistan?",
+        options: {
+            A: "24",
+            B: "88",
+            C: "96",
+            D: "100"
+        },
+        correct: "A"
+    },
+    {
+        id: 49,
+        question: "Every year, how many Registered Nurses are produced in Pakistan?",
+        options: {
+            A: "300-400",
+            B: "1200-1300",
+            C: "1800-2000",
+            D: "2000-2500"
+        },
+        correct: "C"
+    },
+    {
+        id: 50,
+        question: "Every year, how many Midwife Nurses are produced in Pakistan?",
+        options: {
+            A: "300-400",
+            B: "1200-1300",
+            C: "1800-2000",
+            D: "2000-2500"
+        },
+        correct: "B"
+    },
+    {
+        id: 51,
+        question: "Every year, how many Lady Health Visitors are produced in Pakistan?",
+        options: {
+            A: "300-400",
+            B: "1200-1300",
+            C: "1800-2000",
+            D: "2000-2500"
+        },
+        correct: "A"
+    },
+    {
+        id: 52,
+        question: "The Diploma in Ward Administration and Teaching (combination) at JPMC, CON started in:",
+        options: {
+            A: "1951",
+            B: "1956",
+            C: "1962",
+            D: "1966"
+        },
+        correct: "B"
+    },
+    {
+        id: 53,
+        question: "The Diploma in Ward Administration and Teaching Administration separately at JPMC, CON started in:",
+        options: {
+            A: "1951",
+            B: "1956",
+            C: "1962",
+            D: "1966"
+        },
+        correct: "C"
+    },
+    {
+        id: 54,
+        question: "JPMC, CON was established in:",
+        options: {
+            A: "1948",
+            B: "1951",
+            C: "1956",
+            D: "1962"
+        },
+        correct: "C"
+    },
+    {
+        id: 55,
+        question: "The Pakistan Nurses Act, 1951 was passed in:",
+        options: {
+            A: "1948",
+            B: "1951",
+            C: "1956",
+            D: "1973"
+        },
+        correct: "B"
+    },
+    {
+        id: 56,
+        question: "Which program started at AKUSON, Karachi in 1981?",
+        options: {
+            A: "Male Nursing",
+            B: "Self Finance Nursing Education",
+            C: "Post RN BScN",
+            D: "MSc Nursing"
+        },
+        correct: "B"
+    },
+    {
+        id: 57,
+        question: "When did Psychiatric Nursing & CHN become part of the curriculum?",
+        options: {
+            A: "1971-1980",
+            B: "1981-1990",
+            C: "1991-2000",
+            D: "2001-2010"
+        },
+        correct: "B"
+    },
+    {
+        id: 58,
+        question: "Computerized Registration in PNC started in:",
+        options: {
+            A: "1988",
+            B: "1996",
+            C: "2001",
+            D: "2004"
+        },
+        correct: "B"
+    },
+    {
+        id: 59,
+        question: "The MSc Nursing program at AKUSON, Karachi started in:",
+        options: {
+            A: "1996",
+            B: "2001",
+            C: "2007",
+            D: "2008"
+        },
+        correct: "B"
+    },
+    {
+        id: 60,
+        question: "The MSc Nursing program at UHS, Lahore started in:",
+        options: {
+            A: "1996",
+            B: "2001",
+            C: "2007",
+            D: "2008"
+        },
+        correct: "C"
+    },
+    {
+        id: 61,
+        question: "The MSc Nursing program at JPMC CON, Karachi started in:",
+        options: {
+            A: "1996",
+            B: "2001",
+            C: "2007",
+            D: "2008"
+        },
+        correct: "D"
+    },
+    {
+        id: 62,
+        question: "The independent nursing general 'The Silent Voice' started in:",
+        options: {
+            A: "2001",
+            B: "2004",
+            C: "2008",
+            D: "2010"
+        },
+        correct: "C"
+    },
+    {
+        id: 63,
+        question: "Which of the following is NOT a role of the Pakistan Nursing Council (PNC)?",
+        options: {
+            A: "To constitute a provincial nursing examination board",
+            B: "To recognize institution or authority conducting training",
+            C: "To negotiate with the government regarding nurses' welfare",
+            D: "To maintain a register"
+        },
+        correct: "C"
+    },
+    {
+        id: 64,
+        question: "Which of the following is a function of the Pakistan Nursing Federation (PNF)?",
+        options: {
+            A: "To certify nurses for practice",
+            B: "To work for the welfare and betterment of nurses",
+            C: "To inspect institutions",
+            D: "To grant reciprocal recognition of qualifications"
+        },
+        correct: "B"
+    },
+    {
+        id: 65,
+        question: "The PNC has the power to:",
+        options: {
+            A: "Withdraw recognition",
+            B: "Disqualify registration",
+            C: "Prohibit the employment of unregistered nurses",
+            D: "All of the above"
+        },
+        correct: "D"
+    },
+    {
+        id: 66,
+        question: "The PNF publishes a journal to provide:",
+        options: {
+            A: "Legal aid information",
+            B: "Updated information in nursing",
+            C: "Government regulations",
+            D: "Examination results"
+        },
+        correct: "B"
+    },
+    {
+        id: 67,
+        question: "In primitive societies, the earliest nurses learned through:",
+        options: {
+            A: "Formal education",
+            B: "Oral traditions and trial and error",
+            C: "Medical textbooks",
+            D: "Apprenticeships in hospitals"
+        },
+        correct: "B"
+    },
+    {
+        id: 68,
+        question: "The earliest nurses believed that illness was often viewed as a sign that:",
+        options: {
+            A: "The body was out of balance",
+            B: "Something was done to offend the priests or gods",
+            C: "A natural process",
+            D: "A punishment for sins"
+        },
+        correct: "B"
+    },
+    {
+        id: 69,
+        question: "During the Renaissance period (1500-1700), hospitals were considered:",
+        options: {
+            A: "Places of healing",
+            B: "Places where people went to die",
+            C: "Centers for medical research",
+            D: "Places for the rich only"
+        },
+        correct: "B"
+    },
+    {
+        id: 70,
+        question: "Following the Protestant Reformation, what happened to monasteries and convents?",
+        options: {
+            A: "They were expanded",
+            B: "They were closed and lands seized",
+            C: "They became hospitals",
+            D: "They were converted to schools"
+        },
+        correct: "B"
+    },
+    {
+        id: 71,
+        question: "In Catholic areas during the Reformation, the tradition of nursing nuns:",
+        options: {
+            A: "Was abolished",
+            B: "Continued uninterrupted",
+            C: "Was restricted",
+            D: "Was moved to hospitals"
+        },
+        correct: "B"
+    },
+    {
+        id: 72,
+        question: "Modern nursing began in the 19th century in:",
+        options: {
+            A: "Germany and Britain",
+            B: "USA and Canada",
+            C: "France and Italy",
+            D: "India and Pakistan"
+        },
+        correct: "A"
+    },
+    {
+        id: 73,
+        question: "The practice of modern nursing had spread worldwide by about:",
+        options: {
+            A: "1850",
+            B: "1870",
+            C: "1900",
+            D: "1920"
+        },
+        correct: "C"
+    },
+    {
+        id: 74,
+        question: "Two influential women in nursing during the 19th century were:",
+        options: {
+            A: "Florence Nightingale and Rufaidah",
+            B: "Elizabeth Fry and Florence Nightingale",
+            C: "Phoebe and Elizabeth Fry",
+            D: "Maham and Florence Nightingale"
+        },
+        correct: "B"
+    },
+    {
+        id: 75,
+        question: "The Quaker Elizabeth Fry founded the Protestant Sisters of Charity in:",
+        options: {
+            A: "1840",
+            B: "1848",
+            C: "1854",
+            D: "1872"
+        },
+        correct: "A"
+    },
+    {
+        id: 76,
+        question: "Members of St. John's House were required to work for how many years in return for room and board?",
+        options: {
+            A: "2 years",
+            B: "3 years",
+            C: "5 years",
+            D: "10 years"
+        },
+        correct: "C"
+    },
+    {
+        id: 77,
+        question: "Florence Nightingale was from a:",
+        options: {
+            A: "Poor family",
+            B: "Middle-class family",
+            C: "Wealthy English family",
+            D: "Royal family"
+        },
+        correct: "C"
+    },
+    {
+        id: 78,
+        question: "The ancient Greeks were the first to break with:",
+        options: {
+            A: "Naturalistic conceptions of health",
+            B: "Supernatural conceptions of health and disease",
+            C: "Scientific medicine",
+            D: "Surgical practices"
+        },
+        correct: "B"
+    },
+    {
+        id: 79,
+        question: "The ancient Greeks developed the:",
+        options: {
+            A: "Supernatural school of thought",
+            B: "Physiocratic school of thought",
+            C: "Magical school of thought",
+            D: "Religious school of thought"
+        },
+        correct: "B"
+    },
+    {
+        id: 80,
+        question: "The first Muslim nurse accompanied Prophet Muhammad (PBUH) in:",
+        options: {
+            A: "1 battle",
+            B: "2 battles",
+            C: "3 battles",
+            D: "Many battles"
+        },
+        correct: "D"
+    },
+    {
+        id: 81,
+        question: "Nursing in Islam is considered:",
+        options: {
+            A: "A new profession",
+            B: "Not new to Islam",
+            C: "A Western concept",
+            D: "A male-dominated profession"
+        },
+        correct: "B"
+    },
+    {
+        id: 82,
+        question: "Islamic traditions include:",
+        options: {
+            A: "Sympathy for and responsibility toward those in need",
+            B: "Only financial support",
+            C: "Avoidance of the sick",
+            D: "Hierarchical care only"
+        },
+        correct: "A"
+    },
+    {
+        id: 83,
+        question: "The founder of modern nursing is:",
+        options: {
+            A: "Hippocrates",
+            B: "Florence Nightingale",
+            C: "Rufaidah",
+            D: "Elizabeth Fry"
+        },
+        correct: "B"
+    },
+    {
+        id: 84,
+        question: "Florence Nightingale was born in:",
+        options: {
+            A: "London, UK",
+            B: "Italy",
+            C: "Germany",
+            D: "France"
+        },
+        correct: "B"
+    },
+    {
+        id: 85,
+        question: "Florence Nightingale's nationality was:",
+        options: {
+            A: "Italian",
+            B: "German",
+            C: "British",
+            D: "French"
+        },
+        correct: "C"
+    },
+    {
+        id: 86,
+        question: "Florence Nightingale received nurse's training at Kaiserswerth in:",
+        options: {
+            A: "1840",
+            B: "1850",
+            C: "1854",
+            D: "1860"
+        },
+        correct: "B"
+    },
+    {
+        id: 87,
+        question: "Florence Nightingale's training at Kaiserswerth lasted for:",
+        options: {
+            A: "1 month",
+            B: "3 months",
+            C: "6 months",
+            D: "1 year"
+        },
+        correct: "B"
+    },
+    {
+        id: 88,
+        question: "Florence Nightingale led a team of how many nurses to the Crimean War?",
+        options: {
+            A: "20",
+            B: "38",
+            C: "50",
+            D: "100"
+        },
+        correct: "B"
+    },
+    {
+        id: 89,
+        question: "The military hospital Nightingale was sent to was at:",
+        options: {
+            A: "Scutari",
+            B: "Istanbul",
+            C: "London",
+            D: "Crimea"
+        },
+        correct: "A"
+    },
+    {
+        id: 90,
+        question: "Nightingale believed that well-educated women using scientific principles could:",
+        options: {
+            A: "Replace physicians",
+            B: "Dramatically improve the care of sick patients",
+            C: "Only work in homes",
+            D: "Not be good nurses"
+        },
+        correct: "B"
+    },
+    {
+        id: 91,
+        question: "The hospital-based training model reinforced:",
+        options: {
+            A: "Gender equality",
+            B: "Segregation in nursing",
+            C: "Male dominance",
+            D: "Racial equality"
+        },
+        correct: "B"
+    },
+    {
+        id: 92,
+        question: "Student nurses in the hospital-based training model provided the hospital with:",
+        options: {
+            A: "Paid nursing care",
+            B: "Two or three years of skilled free nursing care",
+            C: "Administrative support",
+            D: "Only cleaning services"
+        },
+        correct: "B"
+    },
+    {
+        id: 93,
+        question: "Visiting nurses taught methods of preventing the spread of diseases such as:",
+        options: {
+            A: "Cancer and diabetes",
+            B: "Tuberculosis, pneumonia, and influenza",
+            C: "Heart disease",
+            D: "Genetic disorders"
+        },
+        correct: "B"
+    },
+    {
+        id: 94,
+        question: "The scope of nursing practice according to the ICN encompasses:",
+        options: {
+            A: "Only hospital care",
+            B: "Autonomous and collaborative care in all settings",
+            C: "Only physician-directed care",
+            D: "Only community care"
+        },
+        correct: "B"
+    },
+    {
+        id: 95,
+        question: "National nursing associations clarify the scope of nursing practice by establishing:",
+        options: {
+            A: "Laws",
+            B: "Practice standards and codes of ethics",
+            C: "Salaries",
+            D: "Educational requirements"
+        },
+        correct: "B"
+    },
+    {
+        id: 96,
+        question: "Which ancient civilization hired women, later known as midwives, to assist with childbirth?",
+        options: {
+            A: "Greek",
+            B: "Roman",
+            C: "Egyptian",
+            D: "Chinese"
+        },
+        correct: "C"
+    },
+    {
+        id: 97,
+        question: "The Greeks believed in which god of healing?",
+        options: {
+            A: "Zeus",
+            B: "Apollo",
+            C: "Hermes",
+            D: "Poseidon"
+        },
+        correct: "B"
+    },
+    {
+        id: 98,
+        question: "The famous Greek physician Hippocrates lived around:",
+        options: {
+            A: "3000 B.C.",
+            B: "400 B.C.",
+            C: "300 B.C.",
+            D: "100 A.D."
+        },
+        correct: "B"
+    },
+    {
+        id: 99,
+        question: "Early physicians built on the groundwork of their predecessors after:",
+        options: {
+            A: "1000 B.C.",
+            B: "300 B.C.",
+            C: "100 A.D.",
+            D: "500 A.D."
+        },
+        correct: "B"
+    },
+    {
+        id: 100,
+        question: "Nursing has been called:",
+        options: {
+            A: "The oldest of the art, and the youngest of the profession",
+            B: "The newest of the art, and the oldest of the profession",
+            C: "The oldest of the art, and the oldest of the profession",
+            D: "The newest of the art, and the youngest of the profession"
+        },
+        correct: "A"
+    }
+];
+
+// ================================================
 // ALL TESTS
-// ============================================================
+// ================================================
 export const ALL_TESTS = {
     test1: {
         id: 'test1',
@@ -3432,12 +4640,21 @@ export const ALL_TESTS = {
         timeLimit: 80,
         passingScore: 50,
         questions: TEST6_QUESTIONS
+    },
+    test7: {
+        id: 'test7',
+        name: 'FON History',
+        description: '100 MCQs on Fundamentals of Nursing History',
+        totalQuestions: 100,
+        timeLimit: 100,
+        passingScore: 50,
+        questions: TEST7_QUESTIONS
     }
 };
 
-// ============================================================
+// ================================================
 // TEST SWITCHING FUNCTIONS
-// ============================================================
+// ================================================
 export const getActiveTestId = () => {
     try {
         const savedTestId = localStorage.getItem('activeTestId');
@@ -3469,17 +4686,18 @@ export const setActiveTestId = (testId) => {
     }
 };
 
-// ============================================================
+// ================================================
 // CURRENT ACTIVE TEST - Load from localStorage
-// ============================================================
+// ================================================
 export const ACTIVE_TEST_ID = getActiveTestId();
 export const EXAM_QUESTIONS = ALL_TESTS[ACTIVE_TEST_ID].questions;
 export const CURRENT_TEST = ALL_TESTS[ACTIVE_TEST_ID];
 
-// ============================================================
+// ================================================
 // LOG CURRENT TEST
-// ============================================================
+// ================================================
 console.log('🏥 College:', COLLEGE_INFO.name);
 console.log('📝 Active Test:', CURRENT_TEST.name);
 console.log('📊 Questions:', CURRENT_TEST.totalQuestions);
 console.log('⏱️ Time Limit:', CURRENT_TEST.timeLimit, 'minutes');
+console.log('👩‍🎓 Total Students:', EXAM_STUDENTS.length);
