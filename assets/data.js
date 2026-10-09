@@ -4666,8 +4666,8 @@ export const getActiveTestId = () => {
         console.warn('Error reading from localStorage:', error);
     }
     // Default: Test 6 (Anatomy & Physiology II)
-    console.log('✅ Using default test: test6');
-    return 'test6';
+    console.log('✅ Using default test: test7');
+    return 'test7';
 };
 
 export const setActiveTestId = (testId) => {
